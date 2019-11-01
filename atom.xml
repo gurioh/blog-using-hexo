@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-01T09:37:14.602Z</updated>
+  <updated>2019-11-01T10:51:32.032Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,89 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>help</title>
+    <link href="http://yoursite.com/2019/11/01/help/"/>
+    <id>http://yoursite.com/2019/11/01/help/</id>
+    <published>2019-11-01T10:51:32.000Z</published>
+    <updated>2019-11-01T10:51:32.032Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>category</title>
+    <link href="http://yoursite.com/2019/11/01/category/"/>
+    <id>http://yoursite.com/2019/11/01/category/</id>
+    <published>2019-11-01T10:49:10.000Z</published>
+    <updated>2019-11-01T10:49:10.170Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2019/11/01/test/"/>
+    <id>http://yoursite.com/2019/11/01/test/</id>
+    <published>2019-11-01T10:37:57.000Z</published>
+    <updated>2019-11-01T11:13:15.686Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="cat1" scheme="http://yoursite.com/categories/cat1/"/>
+    
+      <category term="cat2" scheme="http://yoursite.com/categories/cat2/"/>
+    
+    
+      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+    
+      <category term="test2" scheme="http://yoursite.com/tags/test2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>tags/test</title>
+    <link href="http://yoursite.com/2019/11/01/tags-test/"/>
+    <id>http://yoursite.com/2019/11/01/tags-test/</id>
+    <published>2019-11-01T10:35:41.000Z</published>
+    <updated>2019-11-01T10:35:41.865Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>categories/test</title>
+    <link href="http://yoursite.com/2019/11/01/categories-test/"/>
+    <id>http://yoursite.com/2019/11/01/categories-test/</id>
+    <published>2019-11-01T10:35:31.000Z</published>
+    <updated>2019-11-01T10:35:31.479Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
