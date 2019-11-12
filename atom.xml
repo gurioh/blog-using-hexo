@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-12T11:54:03.179Z</updated>
+  <updated>2019-11-02T14:33:12.658Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>20191112_report</title>
-    <link href="http://yoursite.com/2019/11/12/index/"/>
-    <id>http://yoursite.com/2019/11/12/index/</id>
-    <published>2019-11-12T11:52:41.000Z</published>
-    <updated>2019-11-12T11:54:03.179Z</updated>
-    
-    <content type="html"><![CDATA[<p>SQL report</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;SQL report&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Spring_CRUD_practice</title>
@@ -68,6 +45,37 @@
       <category term="H2" scheme="http://yoursite.com/tags/H2/"/>
     
       <category term="CRUD" scheme="http://yoursite.com/tags/CRUD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Group by 대체 방법.</title>
+    <link href="http://yoursite.com/2019/11/01/index/"/>
+    <id>http://yoursite.com/2019/11/01/index/</id>
+    <published>2019-11-01T10:37:57.000Z</published>
+    <updated>2019-11-12T12:02:06.301Z</updated>
+    
+    <content type="html"><![CDATA[<p>SQL report</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;SQL report&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Study" scheme="http://yoursite.com/categories/Study/"/>
+    
+      <category term="SQL" scheme="http://yoursite.com/categories/SQL/"/>
+    
+    
+      <category term="Mysql" scheme="http://yoursite.com/tags/Mysql/"/>
+    
+      <category term="SQL" scheme="http://yoursite.com/tags/SQL/"/>
     
   </entry>
   
