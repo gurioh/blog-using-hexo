@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/11/24/kafka/</loc>
+    <loc>http://yoursite.com/kafka/What%2520is%2520kafka.html</loc>
     
-    <lastmod>2019-11-24T12:23:16.637Z</lastmod>
+    <lastmod>2019-12-01T10:26:37.474Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/kafka/How_to_build_kafka_source_intellij.html</loc>
+    
+    <lastmod>2019-12-01T10:26:36.151Z</lastmod>
     
   </url>
   
