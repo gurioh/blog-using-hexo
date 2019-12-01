@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/12/01/How_to_build_kafka_source_intellij/</loc>
+    <loc>http://yoursite.com/2019/11/01/Backup-program/</loc>
     
-    <lastmod>2019-12-01T10:30:02.007Z</lastmod>
+    <lastmod>2019-12-01T10:39:35.143Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2019/12/01/What%2520is%2520kafka/</loc>
     
-    <lastmod>2019-12-01T10:30:02.007Z</lastmod>
+    <lastmod>2019-12-01T10:38:12.370Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/01/How_to_build_kafka_source_intellij/</loc>
+    
+    <lastmod>2019-12-01T10:38:04.992Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2019-11-02T14:35:32.965Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/11/01/Backup-program/</loc>
-    
-    <lastmod>2019-11-02T14:35:29.695Z</lastmod>
     
   </url>
   
