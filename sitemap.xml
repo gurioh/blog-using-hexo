@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/12/02/hexo-command/</loc>
+    
+    <lastmod>2019-12-02T00:22:54.900Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/12/01/What%2520is%2520kafka/</loc>
     
     <lastmod>2019-12-01T11:11:48.131Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2019/11/01/Backup-program/</loc>
     
     <lastmod>2019-12-01T10:39:35.143Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/11/01/index/</loc>
-    
-    <lastmod>2019-11-21T05:13:06.320Z</lastmod>
     
   </url>
   
