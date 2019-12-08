@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-03T14:53:44.016Z</updated>
+  <updated>2019-12-08T13:43:26.058Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,156 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>menu</title>
+    <link href="http://yoursite.com/2019/12/08/menu/"/>
+    <id>http://yoursite.com/2019/12/08/menu/</id>
+    <published>2019-12-08T13:43:01.181Z</published>
+    <updated>2019-12-08T13:43:26.058Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><a href="/hexo-theme-book-demo">Home</a></li><li>Test<ul><li><a href="https://github.com/hexojs/hexo-theme-unit-test" target="_blank" rel="noopener">hexo-unit-test</a><ul><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/categories">Categories</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/elements">Elements</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/excerpts">Excerpts</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/gallery-post">Gallery Post</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/hello-world">Hello World</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/images">Images</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title">Untitled</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/link-post">Link Post</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/long-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/no-title">Untitled</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins">Tag Plugins</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/tags">Tags</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/videos">Videos</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6">中文測試</a></li><li><a href="/hexo-theme-book-demo/test/hexo-unit-test/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88">日本語テスト</a></li></ul></li><li><a href="/hexo-theme-book-demo/test/list-test">list test</a></li></ul></li><li>Demo<ul><li><a href="/hexo-theme-book-demo/demo/markdown-it-demo">markdown-it demo</a></li><li><a href="/hexo-theme-book-demo/demo/katex-demo">katex demo</a></li><li><a href="/hexo-theme-book-demo/demo/footnotes-demo">footnotes demo</a></li><li><a href="/hexo-theme-book-demo/demo/tc-demo">繁體中文測試</a></li><li><a href="/hexo-theme-book-demo/demo/sc-demo">简体中文测试</a></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/hexo-theme-book-demo&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Test
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/hexojs/hexo-theme-unit-test&quot; target=&quot;_b
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2019/12/08/test/"/>
+    <id>http://yoursite.com/2019/12/08/test/</id>
+    <published>2019-12-08T13:33:15.000Z</published>
+    <updated>2019-12-08T13:33:15.267Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Spring_20191205</title>
+    <link href="http://yoursite.com/2019/12/06/Spring-20191205/"/>
+    <id>http://yoursite.com/2019/12/06/Spring-20191205/</id>
+    <published>2019-12-06T01:05:25.000Z</published>
+    <updated>2019-12-06T04:57:36.191Z</updated>
+    
+    <content type="html"><![CDATA[<p>스프링 제어<br>WebMvcConfigurer</p><ul><li>포멧, 메시지 컨버트 관련하여 스프링 MVC를 제어 한다.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;스프링 제어&lt;br&gt;WebMvcConfigurer&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;포멧, 메시지 컨버트 관련하여 스프링 MVC를 제어 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git</title>
+    <link href="http://yoursite.com/2019/12/05/git/"/>
+    <id>http://yoursite.com/2019/12/05/git/</id>
+    <published>2019-12-05T12:55:49.000Z</published>
+    <updated>2019-12-06T00:11:23.679Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Git-ignore-리모트-적용방법"><a href="#Git-ignore-리모트-적용방법" class="headerlink" title="Git ignore 리모트 적용방법"></a>Git ignore 리모트 적용방법</h1><blockquote><p>git rm -r –cached .<br> git add .<br> git commit -m “Apply .gitignore”</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Git-ignore-리모트-적용방법&quot;&gt;&lt;a href=&quot;#Git-ignore-리모트-적용방법&quot; class=&quot;headerlink&quot; title=&quot;Git ignore 리모트 적용방법&quot;&gt;&lt;/a&gt;Git ignore 리모트 적용방법&lt;/h1&gt;&lt;bloc
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shellscript</title>
+    <link href="http://yoursite.com/2019/12/04/shellscript/"/>
+    <id>http://yoursite.com/2019/12/04/shellscript/</id>
+    <published>2019-12-03T15:26:09.810Z</published>
+    <updated>2019-12-04T08:03:34.562Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="쉘스크립트-문법-정리"><a href="#쉘스크립트-문법-정리" class="headerlink" title="쉘스크립트 문법 정리"></a>쉘스크립트 문법 정리</h1><blockquote><p>쉘스크립트 첫라인 #!/bin/bash 의미?</p><ul><li><p>스크립트파일을 bash로 실행시킨다는 의미</p></li><li><p>기재하지 않으면 리눅스 배포판의 경우 디폴트가 bash이므로 무리 없이 작동하지만<br>다른 쉘간의 오류를 방지를 위함.</p></li></ul></blockquote><h2 id="기본-문법"><a href="#기본-문법" class="headerlink" title="기본 문법"></a>기본 문법</h2><ul><li><code>echo</code>, <code>printf</code></li><li><code>$#</code> : 스크립트에 전달되는 인자들의 수(C언어에서 argc)</li><li><code>$0</code> : 실행하는 스크립트의 파일명으로 실행했을 때 경로를 포함한다면 경로를 포함해서 나옵니다.</li><li><code>$1</code>, <code>$2</code> … : 스크립트로 전달된 인자들(C언어에서 argv[0], argv[1]…)</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"Echo Test"</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">"printf Test\n"</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">"Name of script : %s\n"</span> <span class="variable">$0</span> </span><br><span class="line"><span class="built_in">printf</span> <span class="string">"%d arguments %s %s\n"</span> <span class="variable">$#</span> <span class="variable">$1</span> <span class="variable">$2</span></span><br></pre></td></tr></table></figure><h2 id="exit"><a href="#exit" class="headerlink" title="exit"></a>exit</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">exit 100</span><br><span class="line"></span><br><span class="line"># 스크립트 종료후 echo $? 로 확인.</span><br><span class="line"># 관습적으로 &apos;exit 0&apos;은 성공을 의미합니다.</span><br><span class="line"># 0이 아닌 값은 에러나 예외상황을 나타냅니다.</span><br></pre></td></tr></table></figure><p><code>$?</code>는 스크립트에서 실행시키 명령어의 결과를 확인하는데 특별히 유용</p><h2 id="특수문자"><a href="#특수문자" class="headerlink" title="특수문자"></a>특수문자</h2><p><code>#</code> : 주석  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 주석 뒤에는 명령어가 올수 없다.</span><br><span class="line">\# 이스케이프된 #은 주석을 나타내지 않는다.</span><br></pre></td></tr></table></figure><p><code>;</code> : 명령어 구분자, 두개 이상의 명령어를 한 줄에서 같이 사용할 수 있다.</p><p><code>부분쿼우팅</code>[이중쿼우트]  “content” <strong>문자열</strong> 대부분 특수문자 해석을 막는다.</p><p><code>완전쿼우팅</code>[단일쿼우트]  ‘content’  <strong>문자열</strong>에 들어 있는 모든 특수 문자를 해석하지 못하도록 막아줍니다</p><p><code>명령어치환</code>[백틱(backticks)] ``명령어` 라고 하면 명령어의 결과를 변수값으로 설정할 수있다.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;쉘스크립트-문법-정리&quot;&gt;&lt;a href=&quot;#쉘스크립트-문법-정리&quot; class=&quot;headerlink&quot; title=&quot;쉘스크립트 문법 정리&quot;&gt;&lt;/a&gt;쉘스크립트 문법 정리&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;쉘스크립트 첫라인 #!/bin/bash
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>EC2</title>
+    <link href="http://yoursite.com/2019/12/03/AWS_Study_2/"/>
+    <id>http://yoursite.com/2019/12/03/AWS_Study_2/</id>
+    <published>2019-12-03T10:37:57.000Z</published>
+    <updated>2019-12-04T15:48:40.404Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="EC2-101"><a href="#EC2-101" class="headerlink" title="EC2 101"></a>EC2 101</h1><p>Amazon Elastic Compute Cloud (EC2) </p><p>= a Web service that provide resizable compute capacity in the cloud</p><ul><li>새로운 서버를 생성하는데 들어가는 비용 감소</li><li>on demand</li><li>reserved</li><li>Spot</li><li>dedicated hosts</li><li>Test</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;EC2-101&quot;&gt;&lt;a href=&quot;#EC2-101&quot; class=&quot;headerlink&quot; title=&quot;EC2 101&quot;&gt;&lt;/a&gt;EC2 101&lt;/h1&gt;&lt;p&gt;Amazon Elastic Compute Cloud (EC2) &lt;/p&gt;
+&lt;p&gt;= a Web
+      
+    
+    </summary>
+    
+    
+      <category term="aws" scheme="http://yoursite.com/categories/aws/"/>
+    
+    
+      <category term="EC2" scheme="http://yoursite.com/tags/EC2/"/>
+    
+      <category term="AWS" scheme="http://yoursite.com/tags/AWS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>IAM &amp; S3</title>
     <link href="http://yoursite.com/2019/12/03/AWS_Study/"/>
     <id>http://yoursite.com/2019/12/03/AWS_Study/</id>
     <published>2019-12-03T10:37:57.000Z</published>
-    <updated>2019-12-03T14:53:44.016Z</updated>
+    <updated>2019-12-03T15:56:50.928Z</updated>
     
     <content type="html"><![CDATA[<h1 id="S3-Transfer-Acceleration"><a href="#S3-Transfer-Acceleration" class="headerlink" title="S3 Transfer Acceleration"></a>S3 Transfer Acceleration</h1><p>Edge 레이어에 유저가 업로드를 하게 되면 벡본 네트워크를 통해 region으로 업로드 전송된다.</p><p>것을 설명함</p><h1 id="CloudFront"><a href="#CloudFront" class="headerlink" title="CloudFront"></a>CloudFront</h1><p>CloudFront 는 CDN이다.</p><p>Content delibery network</p><p>용어 설명</p><p>Edge location </p><p>Origin</p><p>Distribution</p><h1 id="Snowball-It’s-fun"><a href="#Snowball-It’s-fun" class="headerlink" title="Snowball ( It’s fun)"></a>Snowball ( It’s fun)</h1><p>Snowball is petabyte-scale data transport solution</p><h1 id="Snowmobile"><a href="#Snowmobile" class="headerlink" title="Snowmobile"></a>Snowmobile</h1><p>Snowmobile is an Exabyte-scale data transfer service</p><h1 id="Storage-Gateway-Popular-topic"><a href="#Storage-Gateway-Popular-topic" class="headerlink" title="Storage Gateway(Popular topic)"></a>Storage Gateway(Popular topic)</h1><p>Type</p><p>File gateway (NFS &amp; SMB)</p><p>Volume gateway (iSCSI)</p><ul><li>Stored Volumnes</li><li>Cached Volumnes</li></ul><p>Volume gateway - Tape gateway</p>]]></content>
     
@@ -38,11 +183,26 @@
       <category term="aws" scheme="http://yoursite.com/categories/aws/"/>
     
     
+      <category term="AWS" scheme="http://yoursite.com/tags/AWS/"/>
+    
       <category term="IAM" scheme="http://yoursite.com/tags/IAM/"/>
     
       <category term="S3" scheme="http://yoursite.com/tags/S3/"/>
     
-      <category term="AWS" scheme="http://yoursite.com/tags/AWS/"/>
+  </entry>
+  
+  <entry>
+    <title>RestfulController</title>
+    <link href="http://yoursite.com/2019/12/03/RestfulController/"/>
+    <id>http://yoursite.com/2019/12/03/RestfulController/</id>
+    <published>2019-12-03T04:32:19.000Z</published>
+    <updated>2019-12-04T00:25:47.620Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
     
   </entry>
   
@@ -51,16 +211,18 @@
     <link href="http://yoursite.com/2019/12/03/SpringSecurity_#1/"/>
     <id>http://yoursite.com/2019/12/03/SpringSecurity_#1/</id>
     <published>2019-12-03T04:32:19.000Z</published>
-    <updated>2019-12-03T06:53:42.769Z</updated>
+    <updated>2019-12-05T05:39:44.717Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>Ref : <a href="https://coding-start.tistory.com/153" target="_blank" rel="noopener">https://coding-start.tistory.com/153</a></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p>![스크린샷 2019-12-05 오전 11.13.11](/Users/hoonoh/Desktop/스크린샷 2019-12-05 오전 11.13.11.png)</p><p>스프링시큐리티 시나리오 </p><ul><li>인증</li><li>권한체크</li></ul><h4 id="Authentication-객체"><a href="#Authentication-객체" class="headerlink" title="Authentication 객체"></a>Authentication 객체</h4><ul><li>이름</li><li>권한</li><li>인증여부</li></ul><p>AuthenticatioFilter 에서 사용자 정보를 꺼내 Authentication 객체를 만들고,</p><p>AuthenticationProvider에 전달한다.</p><p>AuthenticationProvider에서는 실제 인증이 이루어 지고, 인증 결과를 Authentication에 담아 SecurityContextHolder에 저장 성공 여부에 따라 handler를 실행한다.</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;blockquote&gt;
-&lt;p&gt;Ref : &lt;a href=&quot;https://coding-start.tistory.com/153&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://coding-start.tistory.com/153&lt;/a&gt;
+        &lt;p&gt;![스크린샷 2019-12-05 오전 11.13.11](/Users/hoonoh/Desktop/스크린샷 2019-12-05 오전 11.13.11.png)&lt;/p&gt;
+&lt;p&gt;스프링시큐리티 시나리오 &lt;/p&gt;
+&lt;ul&gt;
+&lt;li
       
     
     </summary>
