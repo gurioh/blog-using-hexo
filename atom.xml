@@ -124,9 +124,9 @@
     <link href="https://gurioh.github.io/guriOH.github.io/menu/"/>
     <id>https://gurioh.github.io/guriOH.github.io/menu/</id>
     <published>2019-12-10T13:23:12.971Z</published>
-    <updated>2019-12-17T15:19:15.962Z</updated>
+    <updated>2019-12-17T15:31:45.953Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><a href="AWS_Study.md">Home</a></li><li>Toy-project</li><li>IT<ul><li>BigData<ul><li><a href="/guriOH.github.io/git">Kafka</a></li></ul></li></ul></li></ul><!-- * Test  * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)    * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)    * [Elements](/hexo-theme-book-demo/test/hexo-unit-test/elements)    * [Excerpts](/hexo-theme-book-demo/test/hexo-unit-test/excerpts)    * [Gallery Post](/hexo-theme-book-demo/test/hexo-unit-test/gallery-post)    * [Hello World](/hexo-theme-book-demo/test/hexo-unit-test/hello-world)    * [Images](/hexo-theme-book-demo/test/hexo-unit-test/images)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title)    * [Link Post](/hexo-theme-book-demo/test/hexo-unit-test/link-post)    * [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.](/hexo-theme-book-demo/test/hexo-unit-test/long-title)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/no-title)    * [Tag Plugins](/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins)    * [Tags](/hexo-theme-book-demo/test/hexo-unit-test/tags)    * [Videos](/hexo-theme-book-demo/test/hexo-unit-test/videos)    * [中文測試](/hexo-theme-book-demo/test/hexo-unit-test/中文測試)    * [日本語テスト](/hexo-theme-book-demo/test/hexo-unit-test/日本語テスト)  * [list test](/hexo-theme-book-demo/test/list-test) --><!-- * Demo  * [markdown-it demo](/hexo-theme-book-demo/demo/markdown-it-demo)  * [katex demo](/hexo-theme-book-demo/demo/katex-demo)  * [footnotes demo](/hexo-theme-book-demo/demo/footnotes-demo)  * [繁體中文測試](/hexo-theme-book-demo/demo/tc-demo)  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo) -->]]></content>
+    <content type="html"><![CDATA[<ul><li><a href="AWS_Study.md">Home</a></li><li>Toy-project</li><li>IT<ul><li>BigData<ul><li><a href="/guriOH.github.io/test/test">Kafka</a></li></ul></li></ul></li></ul><!-- * Test  * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)    * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)    * [Elements](/hexo-theme-book-demo/test/hexo-unit-test/elements)    * [Excerpts](/hexo-theme-book-demo/test/hexo-unit-test/excerpts)    * [Gallery Post](/hexo-theme-book-demo/test/hexo-unit-test/gallery-post)    * [Hello World](/hexo-theme-book-demo/test/hexo-unit-test/hello-world)    * [Images](/hexo-theme-book-demo/test/hexo-unit-test/images)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title)    * [Link Post](/hexo-theme-book-demo/test/hexo-unit-test/link-post)    * [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.](/hexo-theme-book-demo/test/hexo-unit-test/long-title)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/no-title)    * [Tag Plugins](/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins)    * [Tags](/hexo-theme-book-demo/test/hexo-unit-test/tags)    * [Videos](/hexo-theme-book-demo/test/hexo-unit-test/videos)    * [中文測試](/hexo-theme-book-demo/test/hexo-unit-test/中文測試)    * [日本語テスト](/hexo-theme-book-demo/test/hexo-unit-test/日本語テスト)  * [list test](/hexo-theme-book-demo/test/list-test) --><!-- * Demo  * [markdown-it demo](/hexo-theme-book-demo/demo/markdown-it-demo)  * [katex demo](/hexo-theme-book-demo/demo/katex-demo)  * [footnotes demo](/hexo-theme-book-demo/demo/footnotes-demo)  * [繁體中文測試](/hexo-theme-book-demo/demo/tc-demo)  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo) -->]]></content>
     
     <summary type="html">
     
@@ -139,7 +139,7 @@
 &lt;ul&gt;
 &lt;li&gt;BigData
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/guriOH.github.io/git&quot;&gt;Kafka&lt;/a
+&lt;li&gt;&lt;a href=&quot;/guriOH.github.io/test/test&quot;&gt;Ka
       
     
     </summary>
@@ -220,9 +220,17 @@
     <link href="https://gurioh.github.io/guriOH.github.io/test/test/"/>
     <id>https://gurioh.github.io/guriOH.github.io/test/test/</id>
     <published>2019-12-08T13:33:15.000Z</published>
-    <updated>2019-12-17T15:18:31.974Z</updated>
+    <updated>2019-12-17T15:31:55.438Z</updated>
+    
+    <content type="html"><![CDATA[<p>asdasd</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;asdasd&lt;/p&gt;
+
+      
     
     </summary>
     
