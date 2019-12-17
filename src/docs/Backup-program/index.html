@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/guriOH.github.io/favicon.ico" />
+    
+
+    <title>
+        
+          Migration_java_program - Henry 기술블로그
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <!-- Noto Sans SC -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
+    <!-- Noto Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+    <!-- theme css & js -->
+    <link rel="stylesheet" href="/guriOH.github.io/css/book.css">
+    <script src="/guriOH.github.io/js/book.js"></script>
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('img')
+})
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="book-container">
+    <div class="columns">
+      <div class="column col-2 hide-lg">
+        <div class="book-sidebar">
+  <h4 class="site-meta">
+    <a href="/guriOH.github.io/">Henry 기술블로그</a>
+  </h4>
+  <div class="sidebar-content">
+    <ul>
+<li><a href="AWS_Study.md">Home</a></li>
+<li>Toy-project</li>
+<li>IT
+<ul>
+<li>BigData
+<ul>
+<li><a href="/git">Kafka</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Test
+<ul>
+<li><a href="https://github.com/hexojs/hexo-theme-unit-test" target="_blank" rel="noopener">hexo-unit-test</a>
+<ul>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/categories">Categories</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/elements">Elements</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/excerpts">Excerpts</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/gallery-post">Gallery Post</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/hello-world">Hello World</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/images">Images</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title">Untitled</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/link-post">Link Post</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/long-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/no-title">Untitled</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins">Tag Plugins</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/tags">Tags</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/videos">Videos</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6">中文測試</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88">日本語テスト</a></li>
+</ul>
+</li>
+<li><a href="/hexo-theme-book-demo/test/list-test">list test</a></li>
+</ul>
+</li>
+<li>Demo
+<ul>
+<li><a href="/hexo-theme-book-demo/demo/markdown-it-demo">markdown-it demo</a></li>
+<li><a href="/hexo-theme-book-demo/demo/katex-demo">katex demo</a></li>
+<li><a href="/hexo-theme-book-demo/demo/footnotes-demo">footnotes demo</a></li>
+<li><a href="/hexo-theme-book-demo/demo/tc-demo">繁體中文測試</a></li>
+<li><a href="/hexo-theme-book-demo/demo/sc-demo">简体中文测试</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script src="/guriOH.github.io/js/book-sidebar.js"></script>
+
+<script>
+collapse_sidebar(2)
+highlight_tab()
+show_sidebar()
+</script>
+      </div>
+
+      <div class="column col-8 col-lg-12">
+        <div class="book-content">
+          <div class="book-navbar">
+  <header class="navbar">
+  <section class="navbar-section">
+    <img class="navbar-icon" src="/guriOH.github.io/favicon.ico">
+  </section>
+  <section class="navbar-center">
+    Henry 기술블로그
+  </section>
+  <section class="navbar-section">
+    <label class="accordion-header c-hand" for="accordion-sidebar">
+      <i class="icon icon-menu"></i>
+    </label>
+  </section>
+</header>
+
+<div class="accordion">
+  <input type="checkbox" id="accordion-sidebar" name="accordion-checkbox" hidden>
+  <div class="accordion-body">
+    <ul>
+<li><a href="AWS_Study.md">Home</a></li>
+<li>Toy-project</li>
+<li>IT
+<ul>
+<li>BigData
+<ul>
+<li><a href="/git">Kafka</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Test
+<ul>
+<li><a href="https://github.com/hexojs/hexo-theme-unit-test" target="_blank" rel="noopener">hexo-unit-test</a>
+<ul>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/categories">Categories</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/elements">Elements</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/excerpts">Excerpts</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/gallery-post">Gallery Post</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/hello-world">Hello World</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/images">Images</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title">Untitled</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/link-post">Link Post</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/long-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/no-title">Untitled</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins">Tag Plugins</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/tags">Tags</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/videos">Videos</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6">中文測試</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88">日本語テスト</a></li>
+</ul>
+</li>
+<li><a href="/hexo-theme-book-demo/test/list-test">list test</a></li>
+</ul>
+</li>
+<li>Demo
+<ul>
+<li><a href="/hexo-theme-book-demo/demo/markdown-it-demo">markdown-it demo</a></li>
+<li><a href="/hexo-theme-book-demo/demo/katex-demo">katex demo</a></li>
+<li><a href="/hexo-theme-book-demo/demo/footnotes-demo">footnotes demo</a></li>
+<li><a href="/hexo-theme-book-demo/demo/tc-demo">繁體中文測試</a></li>
+<li><a href="/hexo-theme-book-demo/demo/sc-demo">简体中文测试</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+</div>
+
+<div class="book-post">
+  <p>Autor : 오 훈</p>
+<p>Title : Backup-program</p>
+<h1 id="backup-program-github-link">Backup-program (<a href="https://github.com/guriOH/backup-program.git" target="_blank" rel="noopener">GitHub Link</a>)</h1>
+<h2 id="1-시스템-구성">1. 시스템 구성</h2>
+<p><img src="/image/backup_program/1.png" alt=""></p>
+<h3 id="1-1-역할">1.1 역할</h3>
+<h4 id="master">Master</h4>
+<ul>
+<li>0.1초 주기로 Random 하게 생성되는 정수 값을 TimeStamp와 함께 DB에 저장.</li>
+<li>소켓 연결 시 1초 단위로 꺼내서 데이터 전달.</li>
+</ul>
+<h4 id="slave">Slave</h4>
+<ul>
+<li>소켓 통신을 이용하여 DataSource로부터 데이터를 가져옴.</li>
+<li>설정한 back up DB에 데이터 저장.</li>
+</ul>
+<h3 id="1-2-개발-방법">1.2 개발 방법</h3>
+<ul>
+<li>다중 Slave 접속을 위한 멀티 쓰레드 활용</li>
+<li>ScheduledExecutorService를 이용한 Thread trigger</li>
+<li>Slave 세션별 Offset맵핑을 통한 데이터 유실 보안</li>
+</ul>
+<h2 id="2-master-상세-설명">2. Master 상세 설명</h2>
+<p><img src="/image/backup_program/2.png" alt="스크린샷 2019-08-26 오후 11.21.21"></p>
+<p>Master는 위와 같은 데이터 플로우를 가지고 있습니다.</p>
+<p>코드의 실행은 다음과 같습니다.</p>
+<ol>
+<li>
+<p><strong>Generator 실행</strong></p>
+<p>Master 프로그램은 데이터를 생성하는 중요한 프로그램입니다.<br>
+따라서 멀티 유저와의 소켓 연결시 예측할수 없는 에러로 부터 최대한 분리하여야 하기때문에 별도의 Thread로 실행합니다.<br>
+즉, 유저의 연결과 상관없이 Master가 실행이 되면 데이터 생성 및 적재를 시작합니다.</p>
+</li>
+<li>
+<p><strong>SocketService</strong> 실행<br>
+SocketService는 다중 연결 접속을 지원합니다.<br>
+먼저 SocketService는 소켓서버를 생성합니다.<br>
+이후 Client(Slave)가 연결이 되면,  WorkerPool(쓰레드풀)에서  Thread를 생성하여 해당 소켓 연결을 별도의 Thread로 동작 시킵니다.<br>
+Thread실행 후, 다른 소켓 연결을 대기합니다.<br>
+​</p>
+</li>
+</ol>
+<h4 id="2-1-코드-설명-스크린샷-2019-08-28-오전-1-15-52"><strong>2.1 코드 설명</strong> <img src="/image/backup_program/3.png" alt="스크린샷 2019-08-28 오전 1.15.52"></h4>
+<h3 id="2-1-1-serverstarter">2.1.1 ServerStarter</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ServerStarter</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> Logger logger = LogManager.getLogger(ServerStarter<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Start</span><span class="params">(AppProperties props)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 데이터 제너레이터 실행</span></span><br><span class="line">		Generator generator = <span class="keyword">new</span> Generator(props); </span><br><span class="line">		generator.start();</span><br><span class="line">		</span><br><span class="line">        <span class="comment">//소켓 서비스 실행</span></span><br><span class="line">		SocketService service = <span class="keyword">new</span> SocketService();</span><br><span class="line">		service.initialize(props);</span><br><span class="line">		service.start();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		String propFile = <span class="string">""</span>;</span><br><span class="line">		<span class="keyword">for</span>(String l_arg : args) &#123; </span><br><span class="line">            <span class="comment">/*</span></span><br><span class="line"><span class="comment">              =/Users/hoon/pjt/project/backup-program/p1/slave/src/main/resources/config/app.properties</span></span><br><span class="line"><span class="comment">            */</span></span><br><span class="line">			<span class="keyword">if</span>(l_arg.indexOf(<span class="string">""</span>) &gt; -<span class="number">1</span>) &#123;</span><br><span class="line">				propFile = l_arg.split(<span class="string">"="</span>)[<span class="number">1</span>];</span><br><span class="line">				</span><br><span class="line">				AppProperties props = <span class="keyword">new</span> AppProperties();</span><br><span class="line">				props.initialize();</span><br><span class="line">				props.loadConfig(propFile);</span><br><span class="line">				</span><br><span class="line">				</span><br><span class="line">				Start(props);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				logger.info(<span class="string">"Put properties location"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		logger.info(<span class="string">"There are no properties info"</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>프로그램의 실행을 위해 설정 파일의 Path를 읽어와야 합니다.</p>
+<p>만일 Path가 없거나 args 인자가 없다면 실행하지 않습니다.</p>
+<h3 id="2-1-2-generator-class">2.1.2. Generator.class</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Generator</span></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> Logger logger = LogManager.getLogger(Generator<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">	<span class="keyword">private</span> AbstractRepositoryManager repositoryManager = <span class="keyword">null</span>;</span><br><span class="line">	<span class="keyword">private</span> String target_data_table = <span class="string">"myData"</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Generator</span><span class="params">(AppProperties props)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.repositoryManager = <span class="keyword">new</span> PostgresqlRepositoryManager(props); </span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(Constant.DB_TARGET_TABLE_NAME) != <span class="keyword">null</span>)&#123;</span><br><span class="line">    		target_data_table = props.getPropsMap().get(Constant.DB_TARGET_TABLE_NAME);</span><br><span class="line">    	&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	.</span><br><span class="line">    .</span><br><span class="line">	.</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Generator는 생성자로 부터 설정정보 객체를 전달 받아 DB커넥션 정보를 얻기 위한 RepositoryManager, 데이터 적재를 위한 테이블 네이밍 값을 초기화 합니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span>&#123;</span><br><span class="line">			<span class="keyword">final</span> Connection con = repositoryManager.getConnection();</span><br><span class="line">			logger.info(<span class="string">"DataGenerator DB connection set"</span>);</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">if</span> (!repositoryManager.isExist(con, target_data_table))&#123;</span><br><span class="line">                <span class="comment">//테이블이 존재하지 않는다면 생성.</span></span><br><span class="line">				repositoryManager.createTargetDataTable(con, target_data_table);</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			Runnable runnable = <span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">				String query = <span class="string">"INSERT INTO "</span>+target_data_table+<span class="string">"(value, created) VALUES(?, ?)"</span>;</span><br><span class="line">				</span><br><span class="line">	            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	            	<span class="keyword">try</span> &#123;</span><br><span class="line">	            		Random rf = <span class="keyword">new</span> Random();</span><br><span class="line">						PreparedStatement pst = con.prepareStatement(query);</span><br><span class="line">						pst.setInt(<span class="number">1</span>,rf.nextInt());</span><br><span class="line">						pst.setTimestamp(<span class="number">2</span>, <span class="keyword">new</span> Timestamp(System.currentTimeMillis()));</span><br><span class="line">						pst.executeUpdate();</span><br><span class="line">					&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">						e.printStackTrace();</span><br><span class="line">					&#125;</span><br><span class="line">	            &#125;</span><br><span class="line">	        &#125;;</span><br><span class="line">	        ScheduledExecutorService service = Executors.newScheduledThreadPool(<span class="number">1</span>);</span><br><span class="line">	        service.scheduleAtFixedRate(runnable, <span class="number">0</span>, <span class="number">100</span>, TimeUnit.MILLISECONDS);</span><br><span class="line">		</span><br><span class="line">		&#125;<span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			logger.error(e.getMessage());</span><br><span class="line">		&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>Generator의 수행 로직입니다.</p>
+<ol>
+<li>Connection 생성.</li>
+<li>테이블 생성.</li>
+<li>주기적으로 Insert를 실행시켜 데이터를 생성.</li>
+</ol>
+<p>주기적인 Thread 로직 수행을 위해 ScheduledExecutorService 클래스를 사용하였습니다.<br>
+자세한 이유는 뒤에서 설명하겠습니다.</p>
+<h3 id="2-1-3-socketservice-class">2.1.3. SocketService.class</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SocketService</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> Logger logger = LogManager.getLogger(SocketService<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">	<span class="keyword">private</span> WorkerPool workerPool;</span><br><span class="line">	<span class="keyword">private</span> AbstractRepositoryManager repositoryManager = <span class="keyword">null</span>;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> DEFAULT_PORT_NUM = <span class="number">20000</span>;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> port;</span><br><span class="line">	<span class="keyword">private</span> String sync_table = <span class="string">"sync_info"</span>;</span><br><span class="line">	<span class="keyword">private</span> ServerSocket _serverSocket;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">SocketService</span><span class="params">()</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">initialize</span><span class="params">(AppProperties props)</span> </span>&#123;</span><br><span class="line">		workerPool = <span class="keyword">new</span> WorkerPool(props);</span><br><span class="line">		<span class="keyword">this</span>.repositoryManager = <span class="keyword">new</span> PostgresqlRepositoryManager(props);</span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(<span class="string">"PORT"</span>) != <span class="keyword">null</span>)&#123;</span><br><span class="line">			port = Integer.valueOf(props.getPropsMap().get(<span class="string">"PORT"</span>));</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			port = DEFAULT_PORT_NUM;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(Constant.DB_SYNC_TABLE_NAME) != <span class="keyword">null</span>)&#123;</span><br><span class="line">			sync_table = props.getPropsMap().get(Constant.DB_SYNC_TABLE_NAME);</span><br><span class="line">    	&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			repositoryManager.createSyncDataTable(sync_table);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			_serverSocket = <span class="keyword">new</span> ServerSocket(port);</span><br><span class="line">			Socket l_socket = <span class="keyword">null</span>;</span><br><span class="line">			<span class="keyword">while</span>(<span class="keyword">true</span>) &#123;</span><br><span class="line">				l_socket = _serverSocket.accept();</span><br><span class="line">				Sender l_worker = (Sender) workerPool.getWorker();</span><br><span class="line">				l_worker.setSocket(l_socket);</span><br><span class="line">				</span><br><span class="line">				ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();</span><br><span class="line">				service.scheduleAtFixedRate(l_worker, <span class="number">0</span>, <span class="number">1000</span>, TimeUnit.MILLISECONDS);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			logger.error(e.getMessage());</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>SocketService는 slave와의 소켓 통신을 위한 소켓서버 역할을 합니다.</p>
+<p>SocketService 초기화시 Port번호와 Sync_table이 생성됩니다.</p>
+<p>먼저 설정된 Port 가 있다면 해당 Port로 초기화 하고, 이후 Start() 메소드에서 해당 Port 번호로 소켓서버를 생성합니다.</p>
+<p>sync_table은 데이터 유실을 막기위한 Client별 데이터 Offset정보를 가지는 테이블의 이름입니다.</p>
+<p>소켓연결 방법은 아래와 같습니다.</p>
+<ol>
+<li>소켓서버 연결대기 상태</li>
+<li>WorkerPool에서 Thread(Worker)생성</li>
+<li>소켓 연결</li>
+<li>Thread(Worker) 실행</li>
+<li>다시 1번 부터 반복</li>
+</ol>
+<p>Slave(Client)로 주기적인 데이터 전송을 위해 ScheduledExecutorService를 사용하였습니다.</p>
+<h3 id="2-1-4-workerpool-class">2.1.4 WorkerPool.class</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WorkerPool</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> Logger logger = LogManager.getLogger(WorkerPool<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">	<span class="keyword">private</span> List&lt;AbstractWorker&gt; senderList = <span class="keyword">null</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">final</span> Object lockObject = <span class="keyword">new</span> Object();</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> activeThreadCount = <span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">private</span> AppProperties props;</span><br><span class="line">	<span class="keyword">private</span> AbstractRepositoryManager repositoryManager = <span class="keyword">null</span>;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">WorkerPool</span><span class="params">(AppProperties props)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.senderList = <span class="keyword">new</span> ArrayList&lt;AbstractWorker&gt;();</span><br><span class="line">		<span class="keyword">this</span>.props = props;</span><br><span class="line">		<span class="keyword">this</span>.repositoryManager = <span class="keyword">new</span> PostgresqlRepositoryManager(props);</span><br><span class="line">		logger.debug(<span class="string">"WorkerPool is created."</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> List&lt;AbstractWorker&gt; <span class="title">getSenderList</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> senderList;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSenderList</span><span class="params">(List&lt;AbstractWorker&gt; senderList)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.senderList = senderList;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getActiveThreadCount</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> activeThreadCount;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setActiveThreadCount</span><span class="params">(<span class="keyword">int</span> activeThreadCount)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.activeThreadCount = activeThreadCount;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>WorkerPool은 현재 생성된 Thread의 상태 또는 갯수를 관리 합니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> AbstractWorker <span class="title">getWorker</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		AbstractWorker l_worker = <span class="keyword">null</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">synchronized</span> (lockObject) &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				l_worker = (AbstractWorker)Class.forName(<span class="string">"org.opensource.master.socket.Sender"</span>)</span><br><span class="line">						.getConstructor(AppProperties<span class="class">.<span class="keyword">class</span>, <span class="title">AbstractRepositoryManager</span>.<span class="title">class</span>)</span></span><br><span class="line"><span class="class">						.<span class="title">newInstance</span>(<span class="title">props</span>, <span class="title">repositoryManager</span>)</span>;</span><br><span class="line">				l_worker.setId(<span class="string">"Test"</span>);</span><br><span class="line">				<span class="keyword">this</span>.senderList.add(l_worker);</span><br><span class="line">				<span class="keyword">this</span>.activeThreadCount = <span class="keyword">this</span>.senderList.size();</span><br><span class="line">			&#125; <span class="keyword">catch</span>(Exception e) &#123;</span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125; </span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">return</span> l_worker;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Master의 소켓서비스는 다중 연결을 지원하기때문에, Thread 생성시 데드락 방지를 위해 synchronized를 사용합니다.</p>
+<p>Thread객체인 Sender를 생성하며, 생성된 Thread를 리스트에 담고, 사용 Thread 갯수를 최신화 합니다.</p>
+<p>위 정보는 소켓 연결이 끊어지거나 Thread에 문제가 있을경우, Thread 컨드롤에 사용하기 위해 추가 하였습니다.</p>
+<p>하지만 현재 기능을 개발은 못하였습니다.</p>
+<h3 id="2-1-4-sender-class">2.1.4 Sender.class</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Sender</span> <span class="keyword">extends</span> <span class="title">AbstractWorker</span></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> Logger logger = LogManager.getLogger(Sender<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">	<span class="keyword">private</span> AbstractRepositoryManager repositoryManager = <span class="keyword">null</span>;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> LIMIT = <span class="number">100</span>;</span><br><span class="line">	<span class="keyword">private</span> Socket _socket;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">private</span> String target_data_table = <span class="string">"myData"</span>;</span><br><span class="line">	<span class="keyword">private</span> String sync_table = <span class="string">"sync_info"</span>;</span><br><span class="line">	</span><br><span class="line">	String slaveID = <span class="string">""</span>;</span><br><span class="line">	ObjectInputStream ois = <span class="keyword">null</span>;</span><br><span class="line">	ObjectOutputStream oos = <span class="keyword">null</span>;</span><br><span class="line">	Connection con = <span class="keyword">null</span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Sender</span><span class="params">(AppProperties props, AbstractRepositoryManager repositoryManager)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.repositoryManager = repositoryManager; </span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(Constant.DB_SYNC_TABLE_NAME) != <span class="keyword">null</span>)&#123;</span><br><span class="line">			sync_table = props.getPropsMap().get(Constant.DB_SYNC_TABLE_NAME);</span><br><span class="line">    	&#125;</span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(Constant.DB_TARGET_TABLE_NAME) != <span class="keyword">null</span>)&#123;</span><br><span class="line">    		target_data_table = props.getPropsMap().get(Constant.DB_TARGET_TABLE_NAME);</span><br><span class="line">    	&#125;</span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(Constant.DB_DATA_LIMIT) != <span class="keyword">null</span>)&#123;</span><br><span class="line">			LIMIT = Integer.parseInt(props.getPropsMap().get(Constant.DB_DATA_LIMIT));</span><br><span class="line">    	&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>Sender는 Slave와 연결된 소켓으로 데이터를 전송하는 실질적인 로직이 수행되는 역할을 하고 있습니다.</p>
+<p>target_data_table은 데이터를 적제할 테이블이고, Limit값은 데이터 전송을 위해 DB에서 Select시 한번에 얼마만큼 가져올지를 나타내는 설정입니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSocket</span><span class="params">(Socket p_socket)</span> </span>&#123;</span><br><span class="line">		_socket = p_socket;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			ois = <span class="keyword">new</span> ObjectInputStream(_socket.getInputStream());</span><br><span class="line">            slaveID = (String) ois.readObject();</span><br><span class="line">            logger.info(<span class="string">"Connected client ID : "</span> + slaveID);</span><br><span class="line">            oos = <span class="keyword">new</span> ObjectOutputStream(_socket.getOutputStream());</span><br><span class="line">			</span><br><span class="line">            con = repositoryManager.getConnection();</span><br><span class="line">			logger.info(<span class="string">"Client connection set"</span>);</span><br><span class="line">			</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">			logger.error(e);</span><br><span class="line">		&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>setSocket 메소드는 소켓 연결과 stream연결과 DB 커넥션을 연결하는 메소드입니다.</p>
+<p>이때, 소켓이 연결 되면 Slave는 자신의 ID를 서버에 전송합니다.</p>
+<p>해당 ID는 클래스변수로 관리되며 해당 세션에서 Offset과 함께 사용이 됩니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">       <span class="comment">// 데이터 전송에 사용할 DataContainer 객체를 생성</span></span><br><span class="line">		DataContainer dataContainer = <span class="keyword">new</span> DataContainer();</span><br><span class="line">		dataContainer.setSlaveID(slaveID); <span class="comment">// 현재 연결된 Slave의 ID값을 헤더정보로 세팅.</span></span><br><span class="line">    	String sql = buildSyncInfoSQL(slaveID); </span><br><span class="line">        <span class="comment">// Sync_table에 현재 Slave에 전송된 데이터 Offset값을 가져쿼리 생성.</span></span><br><span class="line">    	<span class="keyword">int</span> offset = <span class="number">0</span>; <span class="comment">//Default값은 0</span></span><br><span class="line">    	</span><br><span class="line">    	<span class="keyword">try</span> &#123;</span><br><span class="line">    		Statement st = con.createStatement();</span><br><span class="line">    		ResultSet rs = st.executeQuery(sql);</span><br><span class="line">    		</span><br><span class="line">    		<span class="keyword">if</span> (rs.next()) &#123;</span><br><span class="line">                <span class="comment">//만약 Offset 값이 있다면 해당 값으로 Offset값을 변경</span></span><br><span class="line">    			offset = rs.getInt(<span class="number">2</span>);</span><br><span class="line">            &#125;</span><br><span class="line">    		sql = buildSelectDataSQL(String.valueOf(offset));</span><br><span class="line">    		</span><br><span class="line">    		<span class="comment">//target_data_table에 Offset 값 만큼 데이터를 가져온다.</span></span><br><span class="line">            rs = st.executeQuery(sql);</span><br><span class="line">    		<span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">    		<span class="keyword">while</span>(rs.next())&#123;</span><br><span class="line">               <span class="comment">//해당 데이터들을 객체로 변환</span></span><br><span class="line">    			dataContainer.add(</span><br><span class="line">    				<span class="keyword">new</span> ArrayList&lt;&gt;(</span><br><span class="line">    					Arrays.asList(</span><br><span class="line">    							String.valueOf(rs.getInt(<span class="number">1</span>)), </span><br><span class="line">    							rs.getTimestamp(<span class="number">2</span>).toString()</span><br><span class="line">    					)</span><br><span class="line">    				)</span><br><span class="line">    			);</span><br><span class="line">    			count++;</span><br><span class="line">    		&#125;</span><br><span class="line">    		</span><br><span class="line">            <span class="comment">// 객체 전송</span></span><br><span class="line">    		oos.writeObject(dataContainer);</span><br><span class="line">    		</span><br><span class="line">            <span class="comment">// 객체 전송이 완료가 되면, 현재의 Offset값을 최신화 시킨다.</span></span><br><span class="line">     		sql = buildUpdateOffsetSQL(slaveID, offset+count);</span><br><span class="line">    		<span class="keyword">int</span> <span class="keyword">var</span> = st.executeUpdate(sql);</span><br><span class="line">    		</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			setWorkerState(WorkerState.NON_ACTIVE);</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				ois.close();</span><br><span class="line">				oos.close();</span><br><span class="line">			&#125; <span class="keyword">catch</span> (Exception e1) &#123;</span><br><span class="line">				e1.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">    		<span class="keyword">try</span> &#123;</span><br><span class="line">				<span class="keyword">this</span>.wait();</span><br><span class="line">				</span><br><span class="line">			&#125; <span class="keyword">catch</span> (InterruptedException e1) &#123;</span><br><span class="line">				e1.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>Sender의 수행 로직입니다.</p>
+<ol>
+<li>데이터 전송에 사용할 DataContainer 객체를 생성</li>
+<li>해당 DataContainer의 헤더 정보로 현재 연결된 Slave의 ID값을 세팅</li>
+<li>Sync_table에 현재 Slave에 전송된 데이터 Offset값을 가져쿼리 생성</li>
+<li>만약 Offset 값이 있다면 해당 값으로 Offset값을 변경</li>
+<li>target_data_table에 Offset 값 만큼 데이터 로드</li>
+<li>DataContainer에 데이터 추가</li>
+<li>데이터 전송</li>
+<li>객체 전송이 완료가 되면, 현재의 Offset값을 최신화<br>
+​</li>
+</ol>
+<h3 id="2-1-4-master-sequence-flow-chart">2.1.4 Master Sequence flow chart<img src="/image/backup_program/4.png" alt=""></h3>
+<h2 id="3-slave-상세-설명">3. Slave 상세 설명</h2>
+<h3 id="3-1-코드-설명">3.1 코드 설명<img src="/image/backup_program/5.png" alt=""></h3>
+<h3 id="3-1-1-clientstarter-class">3.1.1 ClientStarter.class</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClientStarter</span> </span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> Logger logger = LogManager.getLogger(ClientStarter<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Start</span><span class="params">(AppProperties props)</span> </span>&#123;</span><br><span class="line">		SocketService service = <span class="keyword">new</span> SocketService();</span><br><span class="line">		service.initialize(props);</span><br><span class="line">		service.socketClientStart();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		String propFile = <span class="string">""</span>;</span><br><span class="line">		<span class="keyword">for</span>(String l_arg : args) &#123;</span><br><span class="line">			<span class="keyword">if</span>(l_arg.indexOf(<span class="string">""</span>) &gt; -<span class="number">1</span>) &#123;</span><br><span class="line">				propFile = l_arg.split(<span class="string">"="</span>)[<span class="number">1</span>];</span><br><span class="line">				</span><br><span class="line">				AppProperties props = <span class="keyword">new</span> AppProperties();</span><br><span class="line">				props.initialize();</span><br><span class="line">				props.loadConfig(propFile);</span><br><span class="line">				</span><br><span class="line">				</span><br><span class="line">				Start(props);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				logger.info(<span class="string">"Put properties location"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		logger.info(<span class="string">"There are no properties info"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Slave(Client)역시 프로그램의 실행을 위해 설정 파일의 Path를 읽어와야 합니다.</p>
+<p>만일 Path가 없거나 args 인자가 없다면 실행하지 않습니다.</p>
+<h3 id="3-1-2-socketservice-class">3.1.2 SocketService.class</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SocketService</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> Logger logger = LogManager.getLogger(SocketService<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">private</span> AbstractRepositoryManager repositoryManager = <span class="keyword">null</span>;</span><br><span class="line">	<span class="keyword">private</span> AppProperties props;</span><br><span class="line">	<span class="keyword">private</span> String back_data_table = <span class="string">"myData"</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">SocketService</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">initialize</span><span class="params">(AppProperties props)</span> </span>&#123;</span><br><span class="line">		repositoryManager = <span class="keyword">new</span> PostgresqlRepositoryManager(props);</span><br><span class="line">		<span class="keyword">this</span>.props = props;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(Constant.DB_BACKUP_TABLE_NAME) != <span class="keyword">null</span>)&#123;</span><br><span class="line">			back_data_table = props.getPropsMap().get(Constant.DB_BACKUP_TABLE_NAME);</span><br><span class="line">    	&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			repositoryManager.createTargetDataTable(back_data_table);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">socketClientStart</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		Reciever reciever = <span class="keyword">new</span> Reciever(props, repositoryManager);</span><br><span class="line">		reciever.startReciving();</span><br><span class="line">		logger.info(<span class="string">"client start"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>SocketService 초기화시 벡업 테이블이 생성됩니다.</p>
+<p>먼저 설정된 벡업 테이블 네임이없다면 default네임은 myData입니다.</p>
+<h3 id="3-1-1-reciever-class">3.1.1 Reciever.class</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Reciever</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> Logger logger = LogManager.getLogger(Reciever<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> PORT = <span class="number">20000</span>;</span><br><span class="line">	<span class="keyword">private</span> String IP = <span class="string">"127.0.0.1"</span>;</span><br><span class="line">	<span class="keyword">private</span> String ID = <span class="string">"TEST"</span>;</span><br><span class="line">	</span><br><span class="line">	AbstractRepositoryManager repositoryManager;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">private</span> String back_data_table = <span class="string">"myData"</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Reciever</span><span class="params">(AppProperties props, AbstractRepositoryManager repositoryManager)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.repositoryManager = repositoryManager;</span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(Constant.MASTERPORT) != <span class="keyword">null</span>)&#123;</span><br><span class="line">			PORT = Integer.valueOf(props.getPropsMap().get(Constant.MASTERPORT));</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			PORT = <span class="number">20000</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(Constant.MASTERIP) != <span class="keyword">null</span>)&#123;</span><br><span class="line">			IP = props.getPropsMap().get(Constant.MASTERIP);</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			IP = <span class="string">"127.0.0.1"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(Constant.SLAVEID) != <span class="keyword">null</span>)&#123;</span><br><span class="line">			ID = props.getPropsMap().get(Constant.SLAVEID);</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			ID = <span class="string">"Slave"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span>(props.getPropsMap().get(Constant.DB_BACKUP_TABLE_NAME) != <span class="keyword">null</span>)&#123;</span><br><span class="line">			back_data_table = props.getPropsMap().get(Constant.DB_BACKUP_TABLE_NAME);</span><br><span class="line">    	&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	.</span><br><span class="line">	.</span><br></pre></td></tr></table></figure>
+<p>Reciever는 Slave에서 데이터의 수신과 저장을 하는 역할을 합니다.</p>
+<p>생성자를 통해 접속할 서버의 IP, PORT 정보를 설정값으로 초기화 하고, 현재 Slave의 ID값도 초기화 합니다.</p>
+<p>각 변수의 Default값은 각각 “127.0.0.1”,  “20000”, “Slave” 입니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">startReciving</span><span class="params">()</span></span>&#123;</span><br><span class="line">		Socket socket = <span class="keyword">null</span>;</span><br><span class="line">		ObjectOutputStream oos =<span class="keyword">null</span>;</span><br><span class="line">		ObjectInputStream ois = <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			socket = <span class="keyword">new</span> Socket(IP,PORT);</span><br><span class="line">		</span><br><span class="line">			oos = <span class="keyword">new</span> ObjectOutputStream(socket.getOutputStream());</span><br><span class="line">            <span class="comment">// 현재 실행된 Slave의 ID를 전송.</span></span><br><span class="line">			oos.writeObject(ID);</span><br><span class="line">			logger.info(<span class="string">"Sending request to Socket Server"</span>);</span><br><span class="line">			ois = <span class="keyword">new</span> ObjectInputStream(socket.getInputStream());</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">				<span class="keyword">if</span>(!socket.isConnected()) <span class="keyword">break</span>; <span class="comment">// 소켓이 끊겼다면 서비스 로직 종료.</span></span><br><span class="line">		        DataContainer dataContainer = (DataContainer) ois.readObject();</span><br><span class="line">		        <span class="keyword">if</span>(dataContainer.getSlaveID().equals(ID))&#123; <span class="comment">// 현재 연결된 Slave의 ID가 아니라면 데이터를 적재하지 않는다.</span></span><br><span class="line">		        	logger.info(<span class="string">"Reciever Data Count: "</span> + dataContainer.getRowCount());</span><br><span class="line">	            	backUpData(dataContainer); <span class="comment">// 수신한 데이터 백업테이블에 적재.</span></span><br><span class="line">		        &#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">			logger.error(e.getMessage());</span><br><span class="line">		&#125;<span class="keyword">finally</span>&#123;</span><br><span class="line">			 <span class="keyword">try</span> &#123;</span><br><span class="line">				ois.close();</span><br><span class="line">				oos.close();</span><br><span class="line">			&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>소켓 연결시 현재 Slave의 ID를 Master에 전송합니다.</p>
+<p>이후, DataContainer객체로 데이터를 수신하여 backUpData(dataContainer)에서 데이터를 백업 테이블에 저장합니다.</p>
+<p>하지만 만일 전달 받은  DataContainer가 현재 연결된 Slave의 ID가 아니라면 데이터를 저장하지 않습니다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">backUpData</span><span class="params">(DataContainer dataContainer)</span> </span>&#123;</span><br><span class="line">		SimpleDateFormat format = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd hh:mm:ss.SSS"</span>);</span><br><span class="line">		Connection con = <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			con = repositoryManager.getConnection();</span><br><span class="line">			</span><br><span class="line">			Statement stmt = con.createStatement();</span><br><span class="line">            con.setAutoCommit(<span class="keyword">false</span>);</span><br><span class="line">			PreparedStatement pstmt = con.prepareStatement(</span><br><span class="line">                    <span class="string">"INSERT INTO "</span>+back_data_table+<span class="string">"(value, created) VALUES(?,?)"</span>);</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">for</span> (List&lt;String&gt; row : dataContainer.getRowList()) &#123;</span><br><span class="line">                <span class="comment">// Add each parameter to the row.</span></span><br><span class="line">                pstmt.setInt(<span class="number">1</span>, Integer.parseInt(row.get(<span class="number">0</span>)));</span><br><span class="line">                Date d = format.parse(row.get(<span class="number">1</span>));</span><br><span class="line">                pstmt.setTimestamp(<span class="number">2</span>,  <span class="keyword">new</span> Timestamp(d.getTime()));</span><br><span class="line">                pstmt.addBatch();</span><br><span class="line">            &#125;</span><br><span class="line">	     </span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                pstmt.executeBatch();</span><br><span class="line">            &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                System.out.println(<span class="string">"Error message: "</span> + e.getMessage());</span><br><span class="line">                <span class="keyword">return</span>; </span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            con.commit();</span><br><span class="line">		&#125; <span class="keyword">catch</span>(Exception e) &#123;</span><br><span class="line">			logger.error(e);</span><br><span class="line">		&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				con.close();</span><br><span class="line">			&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p>backUpData 메소드에서는 다중 PreparedStatement을 생성하여 batch로 데이터 Insert를 수행 합니다.</p>
+<h2 id="5-테스트방법-case-1">5. 테스트방법 Case 1</h2>
+<ul>
+<li>JDK 8</li>
+</ul>
+<ul>
+<li>eclipse 설치</li>
+<li>Postgresql 9.4 of higher 설치</li>
+</ul>
+<h3 id="postgresql-설치-주의-사항">Postgresql 설치 주의 사항<img src="/image/backup_program/6.png" alt=""></h3>
+<ul>
+<li>
+<h3 id="데이터베이스-변경"><strong>데이터베이스 변경</strong></h3>
+<ul>
+<li>
+<h5 id="db-url의-jdbc-postgresql-localhost-5432-db-name">DB_URL의 jdbc:postgresql://localhost:5432/{DB_Name}</h5>
+<p>postgres는 postgres설치시 디폴트 DB 입니다. 다른것을 이용하고자 한다면 DB 생성후 해당 DB이름으로 변경</p>
+<p>ex&gt; jdbc:postgresql://localhost:5432/opensource</p>
+</li>
+<li>
+<p>소문자로 생성 하는 것을 권장합니다.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<h3 id="db-user-db-password"><strong>DB_USER, DB_PASSWORD</strong></h3>
+<p>DB_USER, DB_PASSWORD 역시 postgres 설치 시 설정한 유저명과 비밀번호 입니다. 새로운 유저로 사용하고자 한다면 해당 DB 접속 후<br>
+USER, PASSWORD 생성 후 properties에 변경 (소문자로 생성 하는 것을 권장합니다.)</p>
+<p>ex&gt; ![](/image/backup_program/스크린샷 2019-08-28 오전 6.17.07.png)</p>
+</li>
+</ul>
+<h4 id="5-1-1-git-clone-https-github-com-gurioh-backup-program-git">5.1.1 git clone <a href="https://github.com/guriOH/backup-program.git" target="_blank" rel="noopener">https://github.com/guriOH/backup-program.git</a></h4>
+<h4 id="5-1-2-eclipse-maven-import">5.1.2 eclipse maven import</h4>
+<img src="/image/backup_program/7.png" width="300"/>
+<h4 id="5-1-3-maven-build">5.1.3 Maven build</h4>
+ <img src="/image/backup_program/8.png" width="300"/>
+<h4 id="5-1-4-run-master-slave">5.1.4 Run Master &amp; Slave <img src="/image/backup_program/9.png" alt=""></h4>
+<p>Program arguments : ‘={app.properties 파일 위치}’</p>
+<p>VM arguments : ‘-Dlog4j.configurationFile=file:////{log4j2.xml 파일 위치}’</p>
+<h2 id="6-테스트방법-case-2">6. 테스트방법 case 2</h2>
+<h4 id="6-1-5-1-1-3-까지-동일">6.1 5.1.1~3 까지 동일</h4>
+<h4 id="6-2-runnable-jar-file-각각-export">6.2 Runnable JAR file 각각 export</h4>
+<img src="/image/backup_program/10.png" width="300"/> 
+<h4 id="6-3-terminal-command">6.3 Terminal command</h4>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -Dlog4j.configurationFile=file:////&#123;log4j2.xml 파일 위치&#125; -jar master.jar &#123;=app.properties 파일 위치&#125;</span><br><span class="line">java -Dlog4j.configurationFile=file:////&#123;log4j2.xml 파일 위치&#125; -jar slave.jar &#123;=app.properties 파일 위치&#125;</span><br></pre></td></tr></table></figure>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+<script src="/guriOH.github.io/js/book-post.js"></script>
+        </div>
+      </div>
+
+      <div class="column col-2 hide-lg">
+        <div class="book-toc">
+  <div class="book-tocbot">
+  </div>
+  <div class="book-tocbot-menu">
+    <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+    <a onclick="go_top()">Back to top</a>
+    <a onclick="go_bottom()">Go to bottom</a>
+  </div>
+</div>
+
+<script>
+tocbot.init({
+  tocSelector: '.book-tocbot',
+  contentSelector: '.book-post',
+  headingSelector: 'h1, h2, h3, h4, h5',
+  collapseDepth: 2,
+  orderedList: false,
+  scrollSmooth: false,
+});
+
+function expand_toc(){
+  var b = document.querySelector(".book-toc-expand");
+  tocbot.init({
+    tocSelector: '.book-tocbot',
+    contentSelector: '.book-post',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    collapseDepth: 6,
+    orderedList: false,
+    scrollSmooth: false,
+  });
+  b.setAttribute("onclick", "collapse_toc()");
+  b.innerHTML = "Collapse all"
+}
+
+function collapse_toc(){
+  var b = document.querySelector(".book-toc-expand");
+  tocbot.init({
+    tocSelector: '.book-tocbot',
+    contentSelector: '.book-post',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    collapseDepth: 2,
+    orderedList: false,
+    scrollSmooth: false,
+  });
+  b.setAttribute("onclick", "expand_toc()");
+  b.innerHTML = "Expand all"
+}
+
+function go_top() {
+  window.scrollTo(0, 0);
+}
+
+function go_bottom() {
+  window.scrollTo(0, document.body.scrollHeight);
+}
+
+</script>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

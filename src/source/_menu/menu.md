@@ -1,9 +1,9 @@
-* [Home](/hexo-theme-book-demo)
+<!-- * [Home](/hexo-theme-book-demo)
 * Toy-project
 * IT
   * BigData
-    * [Kafka](https://github.com/hexojs/hexo-theme-unit-test)
-* Test
+    * [Kafka](/hexo-theme-book-demo/test/hexo-unit-test/git) -->
+<!-- * Test
   * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)
     * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)
     * [Elements](/hexo-theme-book-demo/test/hexo-unit-test/elements)
@@ -20,10 +20,10 @@
     * [Videos](/hexo-theme-book-demo/test/hexo-unit-test/videos)
     * [中文測試](/hexo-theme-book-demo/test/hexo-unit-test/中文測試)
     * [日本語テスト](/hexo-theme-book-demo/test/hexo-unit-test/日本語テスト)
-  * [list test](/hexo-theme-book-demo/test/list-test)
-* Demo
+  * [list test](/hexo-theme-book-demo/test/list-test) -->
+<!-- * Demo
   * [markdown-it demo](/hexo-theme-book-demo/demo/markdown-it-demo)
   * [katex demo](/hexo-theme-book-demo/demo/katex-demo)
   * [footnotes demo](/hexo-theme-book-demo/demo/footnotes-demo)
   * [繁體中文測試](/hexo-theme-book-demo/demo/tc-demo)
-  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo)
+  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo) -->
