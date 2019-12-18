@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Kafka/What_is_kafka/</loc>
+    
+    <lastmod>2019-12-18T14:25:30.343Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Kafka/How_to_build_kafka_source_intellij/</loc>
+    
+    <lastmod>2019-12-18T14:24:54.677Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/menu/</loc>
+    
+    <lastmod>2019-12-18T14:23:59.478Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Seminar/GCP_SEMINAR/</loc>
     
     <lastmod>2019-12-18T14:15:46.143Z</lastmod>
@@ -26,13 +47,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/hexo/hexo-command/</loc>
     
     <lastmod>2019-12-18T14:15:09.046Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Kafka/What%2520is%2520kafka/</loc>
-    
-    <lastmod>2019-12-18T14:14:51.245Z</lastmod>
     
   </url>
   
@@ -93,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Kafka/How_to_build_kafka_source_intellij/</loc>
-    
-    <lastmod>2019-12-18T14:11:24.506Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gurioh.github.io/guriOH.github.io/AWS/AWS_Study/</loc>
     
     <lastmod>2019-12-18T14:10:48.425Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/test/test/</loc>
     
     <lastmod>2019-12-17T15:31:55.438Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/menu/</loc>
-    
-    <lastmod>2019-12-17T15:31:45.953Z</lastmod>
     
   </url>
   
