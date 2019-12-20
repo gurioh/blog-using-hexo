@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/menu/</loc>
+    
+    <lastmod>2019-12-20T08:54:43.559Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Opensource/Trend/2020-opensource-trend/</loc>
+    
+    <lastmod>2019-12-20T08:38:39.838Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Agile/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25A6%25E1%2584%258B%25E1%2585%25B5%25E1%2586%25AF%25E1%2584%2583%25E1%2585%25B3%2520%25E1%2584%258B%25E1%2585%25A2%25E1%2584%258C%25E1%2585%25A1%25E1%2584%258B%25E1%2585%25B5%25E1%2586%25AF%2520%25E1%2584%2591%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25A6%25E1%2584%258B%25E1%2585%25B5%25E1%2586%25B7%25E1%2584%258B%25E1%2585%25AF%25E1%2584%258F%25E1%2585%25B3/</loc>
+    
+    <lastmod>2019-12-20T08:38:38.292Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Opensource/Trend/CI_CD_kubernetes/</loc>
+    
+    <lastmod>2019-12-20T08:38:36.077Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Kafka/What_is_kafka/</loc>
     
     <lastmod>2019-12-18T14:25:30.343Z</lastmod>
@@ -12,13 +40,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/Kafka/How_to_build_kafka_source_intellij/</loc>
     
     <lastmod>2019-12-18T14:24:54.677Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/menu/</loc>
-    
-    <lastmod>2019-12-18T14:23:59.478Z</lastmod>
     
   </url>
   
