@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2019-12-20T08:38:36.077Z</updated>
+  <updated>2019-12-21T13:11:09.330Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -15,6 +15,133 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Shell/Configuration_env_with_intellij</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Shell/Configuration_env_with_intellij/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Shell/Configuration_env_with_intellij/</id>
+    <published>2019-12-21T13:05:08.280Z</published>
+    <updated>2019-12-21T13:11:09.330Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="인텔리제이-쉘스크립트-개발환경-구성">인텔리제이 쉘스크립트 개발환경 구성</h1><p>Linux/Mac라면 굳이 쉘스크립트 작성을 위한 개발환경이 필요하지 않아도 되지만,</p><p>제품 빌드 스크립트등을 작성 할 시, 각종 환경변수와 컨피그 파일 로드를 포함하여 복잡한 스크립트를 작성해야 할 수도 있다.</p><p>이 때, 조금이라도 더 편하게 스크립트를 작성 할 수 있을 것 같다…ㅎㅎ</p><h2 id="empty-project-생성">Empty project 생성</h2><p>단지 쉘스크립트를 위한 환경이니 빈프로젝트를 생성.<br><img src="../../image/shell/1.png" alt=""></p><p>개인 취향에 맡게 개발 환경을 만들자. 나는 아래와 같은 폴더구조를 만들었다.</p><p><img src="../../image/shell/2.png" alt=""></p><h2 id="테스트-프로그램-실행">테스트 프로그램 실행.</h2><p>아래의 코드를 실행해보자 .<br><img src="../../image/shell/3.png" alt=""></p><p>인텔리제이에서는 아래에서 보이듯이 여러가지 언어 또는 프레임워크를 지원한다.<br><img src="../../image/shell/4.png" alt=""></p><p>쉘스크립트 실행 환경을 선택하자.</p><p>그리고 실행할 script path를 입력하고</p><p>아래와 같이 인터프리터를 설정하면 실행 준비 끝.</p><p>일단 기본 Bash쉘로 설정하였다.</p><p><img src="../../image/shell/5.png" alt=""></p><p>Mac 기준 Ctrl + R 로  그때그때 실행하며 편하게 개발시작.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;인텔리제이-쉘스크립트-개발환경-구성&quot;&gt;인텔리제이 쉘스크립트 개발환경 구성&lt;/h1&gt;
+&lt;p&gt;Linux/Mac라면 굳이 쉘스크립트 작성을 위한 개발환경이 필요하지 않아도 되지만,&lt;/p&gt;
+&lt;p&gt;제품 빌드 스크립트등을 작성 할 시, 각종 환경변수
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/Lambda</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/Lambda/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/Lambda/</id>
+    <published>2019-12-21T11:07:00.872Z</published>
+    <updated>2019-12-21T12:03:42.121Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="lambda">Lambda</h1><p>Lambda is the ultimate abstraction layer</p><p>Lambda scales out ( not up ) automatically</p><h1 id="alexa">Alexa</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;lambda&quot;&gt;Lambda&lt;/h1&gt;
+&lt;p&gt;Lambda is the ultimate abstraction layer&lt;/p&gt;
+&lt;p&gt;Lambda scales out ( not up ) automatically&lt;/p&gt;
+&lt;h1 id=&quot;alexa&quot;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/VPC</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/VPC/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/VPC/</id>
+    <published>2019-12-21T11:06:29.993Z</published>
+    <updated>2019-12-21T12:03:47.359Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vpc">VPC</h1><p>5~10 question</p><h2 id="what-can-we-do-with-a-vpc">What can we do with a VPC?</h2><ul><li>Launch instance into a subnet of your choosing</li><li>Assign custom IP address ranges in each subnet</li><li>Configure route tables between subnets</li><li>Create internet gateway and attach in to our VPC</li><li>Much better security control over your AWS resources</li><li>Instance security groups</li><li>Subnet network access control lists(ACLS)</li></ul><h2 id="vpc-peering">VPC Peering</h2><ul><li>Allows you to connect on VPC with another via a direct network route using private IP address</li><li>Instance behave as if they other AWS accounts as well as with other</li><li>You can peer VPC’s with other AWS accounts as well as with other VPCs in the same account</li><li>Peering is in a star configuration: ie 1central VPC peers with 4 others</li><li>You can peer between regions.</li></ul><h2 id="nat-gatway">NAT Gatway</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;vpc&quot;&gt;VPC&lt;/h1&gt;
+&lt;p&gt;5~10 question&lt;/p&gt;
+&lt;h2 id=&quot;what-can-we-do-with-a-vpc&quot;&gt;What can we do with a VPC?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch instance into 
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/Route53</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/Route53/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/Route53/</id>
+    <published>2019-12-21T09:52:30.163Z</published>
+    <updated>2019-12-21T09:52:30.163Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="dns-101">DNS 101</h1><h2 id="route-53">Route 53</h2><h3 id="register-a-domain-name-lab">Register A Domain Name - LAB</h3><h2 id="routing-policy">Routing policy</h2><p>One recode - mule IP address</p><h2 id="weighted-routing-policy">Weighted Routing Policy</h2><p>health checks</p><h2 id="latency-based-routing">Latency-Based Routing</h2><h2 id="failover-routing-policy">Failover Routing policy</h2><h2 id="geolocation-routing-policy">Geolocation Routing policy</h2><h2 id="geoproximity-routing-traffic-flow-only">Geoproximity Routing(Traffic Flow Only)</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;dns-101&quot;&gt;DNS 101&lt;/h1&gt;
+&lt;h2 id=&quot;route-53&quot;&gt;Route 53&lt;/h2&gt;
+&lt;h3 id=&quot;register-a-domain-name-lab&quot;&gt;Register A Domain Name - LAB&lt;/h3&gt;
+&lt;h2 id=&quot;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>home</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/home/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/home/</id>
+    <published>2019-12-20T08:57:11.075Z</published>
+    <updated>2019-12-20T08:57:14.545Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><a href="AWS_Study.md">Home</a></li><li>Toy-project<ul><li><a href="/guriOH.github.io/Project/Backup-program">마이그레이션</a></li></ul></li><li>Category<ul><li>Linux<ul><li><a href="/guriOH.github.io/Shell/shellscript">Shell</a></li></ul></li><li>AWS</li><li>BigData<ul><li>Kafka<ul><li><a href="/guriOH.github.io/Kafka/What_is_kafka">Kafka(카프카)</a></li><li><a href="/guriOH.github.io/Kafka/How_to_build_kafka_source_intellij">Kafka(카프카) 실행</a></li><li><a href="/guriOH.github.io/Kafka/How_to_build_kafka_with_intellij">Kafka(카프카) 인텔리제이 빌드 디버깅환경 구성</a></li></ul></li></ul></li><li>hexo<ul><li><a href="/guriOH.github.io/hexo/hexo-command">명령어</a></li></ul></li><li>Database<ul><li>Mysql<ul><li><a href="/guriOH.github.io/Database/Mysql/sql_tunning">SQL 튜닝</a></li></ul></li></ul></li><li>Spring<ul><li>Security<ul><li><a href="/guriOH.github.io/Spring/JWT_authenticate_process">JWT 토큰</a></li></ul></li></ul></li></ul></li></ul><!-- * Test  * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)    * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)    * [Elements](/hexo-theme-book-demo/test/hexo-unit-test/elements)    * [Excerpts](/hexo-theme-book-demo/test/hexo-unit-test/excerpts)    * [Gallery Post](/hexo-theme-book-demo/test/hexo-unit-test/gallery-post)    * [Hello World](/hexo-theme-book-demo/test/hexo-unit-test/hello-world)    * [Images](/hexo-theme-book-demo/test/hexo-unit-test/images)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title)    * [Link Post](/hexo-theme-book-demo/test/hexo-unit-test/link-post)    * [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.](/hexo-theme-book-demo/test/hexo-unit-test/long-title)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/no-title)    * [Tag Plugins](/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins)    * [Tags](/hexo-theme-book-demo/test/hexo-unit-test/tags)    * [Videos](/hexo-theme-book-demo/test/hexo-unit-test/videos)    * [中文測試](/hexo-theme-book-demo/test/hexo-unit-test/中文測試)    * [日本語テスト](/hexo-theme-book-demo/test/hexo-unit-test/日本語テスト)  * [list test](/hexo-theme-book-demo/test/list-test) --><!-- * Demo  * [markdown-it demo](/hexo-theme-book-demo/demo/markdown-it-demo)  * [katex demo](/hexo-theme-book-demo/demo/katex-demo)  * [footnotes demo](/hexo-theme-book-demo/demo/footnotes-demo)  * [繁體中文測試](/hexo-theme-book-demo/demo/tc-demo)  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo) -->]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;AWS_Study.md&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Toy-project
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/guriOH.github.io/Project/Backup-program&quot;&gt;마이그레이션&lt;/a&gt;&lt;/li&gt;
+&lt;/
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>CI/CD</title>
@@ -199,9 +326,9 @@
     <link href="https://gurioh.github.io/guriOH.github.io/menu/"/>
     <id>https://gurioh.github.io/guriOH.github.io/menu/</id>
     <published>2019-12-10T13:23:12.971Z</published>
-    <updated>2019-12-20T08:54:43.559Z</updated>
+    <updated>2019-12-21T13:10:03.657Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><a href="AWS_Study.md">Home</a></li><li>Toy-project<ul><li><a href="/guriOH.github.io/Project/Backup-program">마이그레이션</a></li></ul></li><li>Category<ul><li>Linux<ul><li><a href="/guriOH.github.io/Shell/shellscript">Shell</a></li></ul></li><li>AWS</li><li>BigData<ul><li>Kafka<ul><li><a href="/guriOH.github.io/Kafka/What_is_kafka">Kafka(카프카)</a></li><li><a href="/guriOH.github.io/Kafka/How_to_build_kafka_source_intellij">Kafka(카프카) 실행</a></li><li><a href="/guriOH.github.io/Kafka/How_to_build_kafka_with_intellij">Kafka(카프카) 인텔리제이 빌드 디버깅환경 구성</a></li></ul></li></ul></li><li>hexo<ul><li><a href="/guriOH.github.io/hexo/hexo-command">명령어</a></li></ul></li><li>Database<ul><li>Mysql<ul><li><a href="/guriOH.github.io/Database/Mysql/sql_tunning">SQL 튜닝</a></li></ul></li></ul></li><li>Spring<ul><li>Security<ul><li><a href="/guriOH.github.io/Spring/JWT_authenticate_process">JWT 토큰</a></li></ul></li></ul></li></ul></li></ul><!-- * Test  * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)    * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)    * [Elements](/hexo-theme-book-demo/test/hexo-unit-test/elements)    * [Excerpts](/hexo-theme-book-demo/test/hexo-unit-test/excerpts)    * [Gallery Post](/hexo-theme-book-demo/test/hexo-unit-test/gallery-post)    * [Hello World](/hexo-theme-book-demo/test/hexo-unit-test/hello-world)    * [Images](/hexo-theme-book-demo/test/hexo-unit-test/images)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title)    * [Link Post](/hexo-theme-book-demo/test/hexo-unit-test/link-post)    * [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.](/hexo-theme-book-demo/test/hexo-unit-test/long-title)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/no-title)    * [Tag Plugins](/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins)    * [Tags](/hexo-theme-book-demo/test/hexo-unit-test/tags)    * [Videos](/hexo-theme-book-demo/test/hexo-unit-test/videos)    * [中文測試](/hexo-theme-book-demo/test/hexo-unit-test/中文測試)    * [日本語テスト](/hexo-theme-book-demo/test/hexo-unit-test/日本語テスト)  * [list test](/hexo-theme-book-demo/test/list-test) --><!-- * Demo  * [markdown-it demo](/hexo-theme-book-demo/demo/markdown-it-demo)  * [katex demo](/hexo-theme-book-demo/demo/katex-demo)  * [footnotes demo](/hexo-theme-book-demo/demo/footnotes-demo)  * [繁體中文測試](/hexo-theme-book-demo/demo/tc-demo)  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo) -->]]></content>
+    <content type="html"><![CDATA[<ul><li><a href="AWS_Study.md">Home</a></li><li>Toy-project<ul><li><a href="/guriOH.github.io/Project/Backup-program">마이그레이션</a></li></ul></li><li>Category<ul><li>Linux<ul><li><a href="/guriOH.github.io/Shell/shellscript">Shell</a></li><li><a href="/guriOH.github.io/Shell/Configuration_env_with_intellij">스크립트 개발환경 만들기</a></li></ul></li><li>AWS</li><li>BigData<ul><li>Kafka<ul><li><a href="/guriOH.github.io/Kafka/What_is_kafka">Kafka(카프카)</a></li><li><a href="/guriOH.github.io/Kafka/How_to_build_kafka_source_intellij">Kafka(카프카) 실행</a></li><li><a href="/guriOH.github.io/Kafka/How_to_build_kafka_with_intellij">Kafka(카프카) 인텔리제이 빌드 디버깅환경 구성</a></li></ul></li></ul></li><li>hexo<ul><li><a href="/guriOH.github.io/hexo/hexo-command">명령어</a></li></ul></li><li>Database<ul><li>Mysql<ul><li><a href="/guriOH.github.io/Database/Mysql/sql_tunning">SQL 튜닝</a></li></ul></li></ul></li><li>Spring<ul><li>Security<ul><li><a href="/guriOH.github.io/Spring/JWT_authenticate_process">JWT 토큰</a></li></ul></li></ul></li></ul></li></ul><!-- * Test  * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)    * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)    * [Elements](/hexo-theme-book-demo/test/hexo-unit-test/elements)    * [Excerpts](/hexo-theme-book-demo/test/hexo-unit-test/excerpts)    * [Gallery Post](/hexo-theme-book-demo/test/hexo-unit-test/gallery-post)    * [Hello World](/hexo-theme-book-demo/test/hexo-unit-test/hello-world)    * [Images](/hexo-theme-book-demo/test/hexo-unit-test/images)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title)    * [Link Post](/hexo-theme-book-demo/test/hexo-unit-test/link-post)    * [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.](/hexo-theme-book-demo/test/hexo-unit-test/long-title)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/no-title)    * [Tag Plugins](/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins)    * [Tags](/hexo-theme-book-demo/test/hexo-unit-test/tags)    * [Videos](/hexo-theme-book-demo/test/hexo-unit-test/videos)    * [中文測試](/hexo-theme-book-demo/test/hexo-unit-test/中文測試)    * [日本語テスト](/hexo-theme-book-demo/test/hexo-unit-test/日本語テスト)  * [list test](/hexo-theme-book-demo/test/list-test) --><!-- * Demo  * [markdown-it demo](/hexo-theme-book-demo/demo/markdown-it-demo)  * [katex demo](/hexo-theme-book-demo/demo/katex-demo)  * [footnotes demo](/hexo-theme-book-demo/demo/footnotes-demo)  * [繁體中文測試](/hexo-theme-book-demo/demo/tc-demo)  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo) -->]]></content>
     
     <summary type="html">
     
@@ -395,147 +522,6 @@ git commit -m “Apply .gitignore
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>IAM &amp; S3</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/AWS_Study/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/AWS_Study/</id>
-    <published>2019-12-03T10:37:57.000Z</published>
-    <updated>2019-12-18T14:10:48.425Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="s3-transfer-acceleration">S3 Transfer Acceleration</h1><p>Edge 레이어에 유저가 업로드를 하게 되면 벡본 네트워크를 통해 region으로 업로드 전송된다.</p><p>것을 설명함</p><h1 id="cloudfront">CloudFront</h1><p>CloudFront 는 CDN이다.</p><p>Content delibery network</p><p>용어 설명</p><p>Edge location</p><p>Origin</p><p>Distribution</p><h1 id="snowball-it-s-fun">Snowball ( It’s fun)</h1><p>Snowball is petabyte-scale data transport solution</p><h1 id="snowmobile">Snowmobile</h1><p>Snowmobile is an Exabyte-scale data transfer service</p><h1 id="storage-gateway-popular-topic">Storage Gateway(Popular topic)</h1><p>Type</p><p>File gateway (NFS &amp; SMB)</p><p>Volume gateway (iSCSI)</p><ul><li>Stored Volumnes</li><li>Cached Volumnes</li></ul><p>Volume gateway - Tape gateway</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;s3-transfer-acceleration&quot;&gt;S3 Transfer Acceleration&lt;/h1&gt;
-&lt;p&gt;Edge 레이어에 유저가 업로드를 하게 되면 벡본 네트워크를 통해 region으로 업로드 전송된다.&lt;/p&gt;
-&lt;p&gt;것을 설명함&lt;/p&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="aws" scheme="https://gurioh.github.io/guriOH.github.io/categories/aws/"/>
-    
-    
-      <category term="IAM" scheme="https://gurioh.github.io/guriOH.github.io/tags/IAM/"/>
-    
-      <category term="S3" scheme="https://gurioh.github.io/guriOH.github.io/tags/S3/"/>
-    
-      <category term="AWS" scheme="https://gurioh.github.io/guriOH.github.io/tags/AWS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>EC2</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/AWS_Study_2/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/AWS_Study_2/</id>
-    <published>2019-12-03T10:37:57.000Z</published>
-    <updated>2019-12-18T14:10:45.641Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="ec2-101">EC2 101</h1><p>Amazon Elastic Compute Cloud (EC2)</p><p>= a Web service that provide resizable compute capacity in the cloud</p><ul><li>새로운 서버를 생성하는데 들어가는 비용 감소</li><li>on demand</li><li>reserved</li><li>Spot</li><li>dedicated hosts<br>*Test</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;ec2-101&quot;&gt;EC2 101&lt;/h1&gt;
-&lt;p&gt;Amazon Elastic Compute Cloud (EC2)&lt;/p&gt;
-&lt;p&gt;= a Web service that provide resizable compute capacity in the cl
-      
-    
-    </summary>
-    
-    
-      <category term="aws" scheme="https://gurioh.github.io/guriOH.github.io/categories/aws/"/>
-    
-    
-      <category term="AWS" scheme="https://gurioh.github.io/guriOH.github.io/tags/AWS/"/>
-    
-      <category term="EC2" scheme="https://gurioh.github.io/guriOH.github.io/tags/EC2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>스프링 시큐리티 이해하기</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Spring/SpringSecurity_#1/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Spring/SpringSecurity_#1/</id>
-    <published>2019-12-03T04:32:19.000Z</published>
-    <updated>2019-12-18T14:12:52.893Z</updated>
-    
-    <content type="html"><![CDATA[<p>![스크린샷 2019-12-05 오전 11.13.11](/Users/hoonoh/Desktop/스크린샷 2019-12-05 오전 11.13.11.png)</p><p>스프링시큐리티 시나리오</p><ul><li>인증</li><li>권한체크</li></ul><h4 id="authentication-객체">Authentication 객체</h4><ul><li>이름</li><li>권한</li><li>인증여부</li></ul><p>AuthenticatioFilter 에서 사용자 정보를 꺼내 Authentication 객체를 만들고,</p><p>AuthenticationProvider에 전달한다.</p><p>AuthenticationProvider에서는 실제 인증이 이루어 지고, 인증 결과를 Authentication에 담아 SecurityContextHolder에 저장 성공 여부에 따라 handler를 실행한다.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;![스크린샷 2019-12-05 오전 11.13.11](/Users/hoonoh/Desktop/스크린샷 2019-12-05 오전 11.13.11.png)&lt;/p&gt;
-&lt;p&gt;스프링시큐리티 시나리오&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hexo command</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/hexo/hexo-command/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/hexo/hexo-command/</id>
-    <published>2019-12-02T00:21:02.000Z</published>
-    <updated>2019-12-18T14:15:09.046Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure><p>layout : 기본 레이아웃은 3가지 종류가 있고 각기 다른 경로에 보관됩니다.</p><ul><li>post(Default)</li><li>page</li><li>draft<br>title : 파일 제목</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla
-      
-    
-    </summary>
-    
-    
-    
-      <category term="hexo-command" scheme="https://gurioh.github.io/guriOH.github.io/tags/hexo-command/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>카프카(Kafka) 실행시키기 - 스크립트</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Kafka/How_to_build_kafka_source_intellij/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Kafka/How_to_build_kafka_source_intellij/</id>
-    <published>2019-12-01T08:46:57.000Z</published>
-    <updated>2019-12-18T14:24:54.677Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="../../image/kafka/1.jpeg" alt=""></p><p>이제 카프카를 실행 시켜 보자!!</p><p>목표는 아래와 같다.</p><ol><li>카프카를 설치해서 빌드된 스크립트를 이용하여 카프카의 동작여부를 확인해보자.</li><li>최종적으로는 Intellij를 통해 빌드해보며 어떤 식으로 돌아가는지 코드로 확인해 보자.</li></ol><h1 id="카프카-kafka-실행시키기-스크립트">카프카(Kafka) 실행시키기 - 스크립트</h1><h1 id="step-1-download">Step.1 DownLoad</h1><p>카프카 공식 홈페이지에서 다운로드!!</p><p>현재기준 kafka 최신 버전은 2.3.0이다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ tar -zvxf kafka_2.12-2.3.0.tgz </span><br><span class="line">$ cd kafka_2.12-2.3.0.tgz</span><br></pre></td></tr></table></figure><p>다운로드 받아서 압축을 푹어준다.</p><h1 id="step-2-실행시키기">Step.2 실행시키기</h1><p>카프카를 실행 시켜주면 된다.</p><p>먼저 카프카는 기본적으로 Zookeeper에서 관리가 되고 있기 때문에 Zookeeper가 실행이 되어야만 동작한다.</p><p>따라서 Kafka실행전 Zookeeper를 실행해야 한다.</p><p>먼저 두 어플리케이션을 실행시키기 전에 설정파일을 일부 수정한다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">zookeeper.properties</span><br><span class="line"></span><br><span class="line"># the directory where the snapshot is stored.</span><br><span class="line">dataDir=/tmp/zookeeper</span><br><span class="line"># the port at which the clients will connect</span><br><span class="line">clientPort=2181</span><br><span class="line"># disable the per-ip limit on the number of connections since this is a non-production config</span><br><span class="line">maxClientCnxns=0</span><br><span class="line"></span><br><span class="line">server.1 = 127.0.0.1&quot;2888:3888 //.[number] 는 아이디 값.</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">server.properties</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">############################# Server Basics #############################</span><br><span class="line"></span><br><span class="line"># The id of the broker. This must be set to a unique integer for each broker.</span><br><span class="line">broker.id=1</span><br><span class="line"></span><br><span class="line">############################# Socket Server Settings #############################</span><br><span class="line">listeners=PLAINTEXT://:9092</span><br><span class="line">advertised.listeners=PLAINTEXT://127.0.0.1:9092</span><br><span class="line"></span><br><span class="line">############################# Zookeeper #############################</span><br><span class="line"></span><br><span class="line"># Zookeeper connection string (see zookeeper docs for details).</span><br><span class="line"># This is a comma separated host:port pairs, each corresponding to a zk</span><br><span class="line"># server. e.g. &quot;127.0.0.1:3000,127.0.0.1:3001,127.0.0.1:3002&quot;.</span><br><span class="line"># You can also append an optional chroot string to the urls to specify the</span><br><span class="line"># root directory for all kafka znodes.</span><br><span class="line">zookeeper.connect=127.0.0.1:2181</span><br><span class="line"></span><br><span class="line"># Timeout in ms for connecting to zookeeper</span><br><span class="line">zookeeper.connection.timeout.ms=6000</span><br></pre></td></tr></table></figure><p>위 와 같이 zookeeper에 서버정보를 추가하고 (복수개 설정가능)</p><p>Kafka의 server 프로퍼티에도 해당 zookeeper의 정보를 입력해주면 된다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ zookeeper-server-start.sh config/zookeeper.properties</span><br><span class="line">$ kafka-server-start.sh config/server.properties</span><br></pre></td></tr></table></figure><p>그리고 두 어플리케이션을 실행한다.</p><p>이제 Topic을 생성 후 Producer 인풋 메시지를 저장하고 Consumer로 받아보자.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kafka-topics.sh --create --zookeeper 127.0.0.1:2181 --replication-factor 1 --partitions 1 --topic test</span><br><span class="line"></span><br><span class="line">Created topic test.</span><br></pre></td></tr></table></figure><p>다운받은 소스에서 토픽을 생성하는 스크립트를 이용하여 Test 라는 토픽을 생성하였다.</p><blockquote><p>Topic은 추가로 생성, 삭제가 가능하다</p></blockquote><p>이제 Topic과 마찬가지로 생산자와 소비자 스크립트를 이용해서 메시지를 교환하여 보자</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">kafka-console-producer.sh --ber-list 127.0.0.1:9092 --topic test</span><br><span class="line">&gt;Test</span><br><span class="line">&gt;Hi</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure><p>위와 같이 생산자가 메시지를 입력한다.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic test --from-beginning</span><br><span class="line">Test</span><br><span class="line">Hi</span><br></pre></td></tr></table></figure><p>–from-beginning 은 처음부터 메시지를 읽겠다는 뜻이고 입력한 메시지를 읽어온것을 확인 할 수 있다.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;../../image/kafka/1.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;이제 카프카를 실행 시켜 보자!!&lt;/p&gt;
-&lt;p&gt;목표는 아래와 같다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;카프카를 설치해서 빌드된 스크립트를 이용하여 카프카의 동작여부를
-      
-    
-    </summary>
-    
-    
-      <category term="BigData" scheme="https://gurioh.github.io/guriOH.github.io/categories/BigData/"/>
-    
-    
-      <category term="Kafka" scheme="https://gurioh.github.io/guriOH.github.io/tags/Kafka/"/>
     
   </entry>
   

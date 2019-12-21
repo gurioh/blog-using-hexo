@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Shell/Configuration_env_with_intellij/</loc>
+    
+    <lastmod>2019-12-21T13:11:09.330Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gurioh.github.io/guriOH.github.io/menu/</loc>
     
-    <lastmod>2019-12-20T08:54:43.559Z</lastmod>
+    <lastmod>2019-12-21T13:10:03.657Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/AWS/VPC/</loc>
+    
+    <lastmod>2019-12-21T12:03:47.359Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/AWS/Lambda/</loc>
+    
+    <lastmod>2019-12-21T12:03:42.121Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/AWS/Route53/</loc>
+    
+    <lastmod>2019-12-21T09:52:30.163Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/home/</loc>
+    
+    <lastmod>2019-12-20T08:57:14.545Z</lastmod>
     
   </url>
   
