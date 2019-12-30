@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2019-12-21T13:11:09.330Z</updated>
+  <updated>2019-12-30T06:34:37.022Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -17,11 +17,76 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Shell/Configuration_env_with_intellij</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Shell/Configuration_env_with_intellij/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Shell/Configuration_env_with_intellij/</id>
+    <title>Java/Spring/java-reflection</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Java/Spring/java-reflection/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Java/Spring/java-reflection/</id>
+    <published>2019-12-30T06:34:33.221Z</published>
+    <updated>2019-12-30T06:34:37.022Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java/Spring/Spring-AOP</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Java/Spring/Spring-AOP/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Java/Spring/Spring-AOP/</id>
+    <published>2019-12-30T05:46:59.739Z</published>
+    <updated>2019-12-30T06:38:32.479Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="스프링-aop를-구현하는-방법-기술">스프링 AOP를 구현하는 방법 기술.</h1><p>AOP 개념</p><p>Aspect : 공통 기능을 말합니다.</p><p>Advice : Aspect의 기능 자체를 말합니다.</p><p>Jointpoint : Advice를 적용해야 하는 부분입니다. 필드나 메소드이고, 스프링에서는 메소드만</p><p>해당됩니다.</p><p>Pointcut : Jointpoint의 부분,  실제로 Advice가 적용된 부분</p><p>Weaving : Advice를 핵심 기능에 적용하는 행위를 말합니다.</p><ul><li><p>RTW (Runtime Weaving)<br>스프링 AOP에서 사용하는 위빙 방식. Proxy를 생성하여 실제 타깃 오브젝트의 변형없이 위빙을 수행.<br>실제 런타임 시, 메소드 호출과 동시에 위빙이 이루어 지는 방식이다.</p><p>장점 : 소스파일, 클래스파일의 변형이 없다.<br>단점 : 포인트 컷에 대한 어드바이스 적용 갯수가 늘어 날수록 성능이 떨어진다.</p></li><li><p>CTW (Compile time Weaving)<br>AspectJ에는 AJC (AspectJ Compiler)라는 컴파일러가 있는데 Java Compiler를 확장한 형태의 컴파일러이다. AJC를 통해 java파일을 컴파일 하며, 컴파일 과정에서 바이트 코드 조작을 통해 Advisor 코드를 직접 삽입하여 위빙을 수행</p><p>장점 : 위빙중 가장 빠른 퍼포먼스 (JVM상에 올라 갈때 메소드 내에 이미 advice 코드가 삽입 되어있기 때문에…)<br>단점 : 컴파일 과정에서 lombok과 같이 컴파일 과정에서 코드를 조작하는 플러그인과 충돌이 발생할 가능성이 아주 높다. (거의 같이 사용 불가)</p></li><li><p>LTW (Load time Weaving)<br>ClassLoader를 통해 JVM에 로드 될 때 바이트 코드 조작을 통해 위빙이 되는 방식<br>RTW와 마찬가지로 소스코드와 클래스파일에 조작이 없다.<br>하지만 오브젝트가 메모리에 올라가는 과정에서 위빙이 일어나기 때문에 런타임 시, 시간은 CTW보다 상대적으로 느리다</p><p>장점 : 소스파일, 클래스파일의 변형이 없다.<br>단점 : performance가 저하, 설정의 복잡.</p></li></ul><p>스프링 프레임워크에서 지원하는 3가지 AOP 기술</p><ul><li>JDK dynamic proxy, CGLIB, AspectJ</li></ul><p>AOP 적용 방식에 따른 분류</p><ul><li>프록시 기반 : JDK dynamic proxy, CGLIB</li><li>타깃 오브젝트 조작 : AspectJ</li></ul><p><strong>JDK Dynamic Proxy &amp; CGLIB</strong></p><p>Aspect 프레임워크와는 달리 스프링에서는 간단한 설정만으로 JDK Dynamic Proxy와 CGLIB 방식을 사용할 수 있도록 되어 있습니다. 두 방식의 차이는 인터페이스의 유무로서, AOP의 타깃이 되는 클래스가 인터페이스를 구현했다면 JDK Dynamic Proxy를 사용하고, 구현하지 않았다면 CGLIB 방식을 사용합니다</p><p><strong>[출처]</strong> [Spring AOP에 관하여 - <a href="http://blog.naver.com/tmondev/220558804255" target="_blank" rel="noopener">2] JDK Dynamic Proxy &amp; CGLIB</a></p><p>Aspect란?</p><p>도메인 로직에 필요한 다양한 부가기능을 추상화 시킨것.</p><p>어노테이션 기반으로 AOP를 구현은 런타임이 아닌 <code>Compile</code> 시점에 Aspect를 적용하는 것이다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Aspect</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestAspect</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger logger = LoggerFactory.getLogger(TestAspect<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Before</span>(<span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onBeforeHandler</span><span class="params">(JoinPoint joinPoint)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"=============== onBeforeThing"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@After</span>(<span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onAfterHandler</span><span class="params">(JoinPoint joinPoint)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"=============== onAfterHandler"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@AfterReturning</span>(pointcut = <span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>,</span><br><span class="line">      returning = <span class="string">"str"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onAfterReturningHandler</span><span class="params">(JoinPoint joinPoint, Object str)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"@AfterReturning : "</span> + str);</span><br><span class="line">    logger.info(<span class="string">"=============== onAfterReturningHandler"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Pointcut</span>(<span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onPointcut</span><span class="params">(JoinPoint joinPoint)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"=============== onPointcut"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;스프링-aop를-구현하는-방법-기술&quot;&gt;스프링 AOP를 구현하는 방법 기술.&lt;/h1&gt;
+&lt;p&gt;AOP 개념&lt;/p&gt;
+&lt;p&gt;Aspect : 공통 기능을 말합니다.&lt;/p&gt;
+&lt;p&gt;Advice : Aspect의 기능 자체를 말합니다.&lt;/p&gt;
+&lt;p&gt;Jo
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java/Spring/Spring_basic</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Java/Spring/Spring_basic/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Java/Spring/Spring_basic/</id>
+    <published>2019-12-30T04:13:03.963Z</published>
+    <updated>2019-12-30T06:00:42.394Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="anotation">Anotation</h1><h4 id="어노테이셔-소스코드에-메타데이터를-표현하는것">어노테이셔 : 소스코드에 메타데이터를 표현하는것</h4><h2 id="built-in-annotation">Built-in Annotation</h2><p>@Override - 메소드 오버라이드 검증</p><p>@Deprecated - 메소드를 사용하지 않도록 유도.</p><p>@SuppressWarnings - 컴파일 경고를 무시하도록 함.</p><p>@SafeVarargs - 제너릴 같은 가변인자 매개변수를 사용할 때 경고 무시 (자바 7 이상)</p><p>@FunctionalInterface - 람다 함수등을 위한 인터페이스를 지정. 메소드가 두개 이상 되면 컴파일 오류 (자바 8 이상)</p><h2 id="meta-annotations">Meta Annotations</h2><p>@Retention - 어노테이션 영향 범위 결정.</p><p>@Documented - 어노테이션 정보 출력.</p><p>@Target - 어노테이션 적용 위치 결정.</p><p>@Inherited - 자식클래스 어노테이션 상속 여부 결정.</p><p>@Repeatable - 반복적으로 어노테이션을 선언</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;anotation&quot;&gt;Anotation&lt;/h1&gt;
+&lt;h4 id=&quot;어노테이셔-소스코드에-메타데이터를-표현하는것&quot;&gt;어노테이셔 : 소스코드에 메타데이터를 표현하는것&lt;/h4&gt;
+&lt;h2 id=&quot;built-in-annotation&quot;&gt;Built-in An
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux/Shell/Configuration_env_with_intellij</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Linux/Shell/Configuration_env_with_intellij/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Linux/Shell/Configuration_env_with_intellij/</id>
     <published>2019-12-21T13:05:08.280Z</published>
-    <updated>2019-12-21T13:11:09.330Z</updated>
+    <updated>2019-12-22T06:54:21.360Z</updated>
     
     <content type="html"><![CDATA[<h1 id="인텔리제이-쉘스크립트-개발환경-구성">인텔리제이 쉘스크립트 개발환경 구성</h1><p>Linux/Mac라면 굳이 쉘스크립트 작성을 위한 개발환경이 필요하지 않아도 되지만,</p><p>제품 빌드 스크립트등을 작성 할 시, 각종 환경변수와 컨피그 파일 로드를 포함하여 복잡한 스크립트를 작성해야 할 수도 있다.</p><p>이 때, 조금이라도 더 편하게 스크립트를 작성 할 수 있을 것 같다…ㅎㅎ</p><h2 id="empty-project-생성">Empty project 생성</h2><p>단지 쉘스크립트를 위한 환경이니 빈프로젝트를 생성.<br><img src="../../image/shell/1.png" alt=""></p><p>개인 취향에 맡게 개발 환경을 만들자. 나는 아래와 같은 폴더구조를 만들었다.</p><p><img src="../../image/shell/2.png" alt=""></p><h2 id="테스트-프로그램-실행">테스트 프로그램 실행.</h2><p>아래의 코드를 실행해보자 .<br><img src="../../image/shell/3.png" alt=""></p><p>인텔리제이에서는 아래에서 보이듯이 여러가지 언어 또는 프레임워크를 지원한다.<br><img src="../../image/shell/4.png" alt=""></p><p>쉘스크립트 실행 환경을 선택하자.</p><p>그리고 실행할 script path를 입력하고</p><p>아래와 같이 인터프리터를 설정하면 실행 준비 끝.</p><p>일단 기본 Bash쉘로 설정하였다.</p><p><img src="../../image/shell/5.png" alt=""></p><p>Mac 기준 Ctrl + R 로  그때그때 실행하며 편하게 개발시작.</p>]]></content>
     
@@ -223,9 +288,9 @@
     <link href="https://gurioh.github.io/guriOH.github.io/build%20location/"/>
     <id>https://gurioh.github.io/guriOH.github.io/build location/</id>
     <published>2019-12-17T11:54:24.555Z</published>
-    <updated>2019-12-17T11:54:24.555Z</updated>
+    <updated>2019-12-24T00:56:49.910Z</updated>
     
-    <content type="html"><![CDATA[<p>sudo ls -al /root/.jenkins/workspace/중랑구_스마트시티/iot-api/build/asciidoc/html5/admin</p><p>sudo ls -al /root/.jenkins/workspace/중랑구_스마트시티/iot-api/build/libs/</p>]]></content>
+    <content type="html"><![CDATA[<p>sudo ls -al /root/.jenkins/workspace/중랑구_스마트시티/iot-api/build/asciidoc/html5/admin</p><p>sudo ls -al /root/.jenkins/workspace/중랑구_스마트시티/iot-api/build/libs/</p><p>/root/.jenkins/workspace/중랑구_스마트시티/iot-api/build/libs</p>]]></content>
     
     <summary type="html">
     
@@ -242,9 +307,9 @@
   </entry>
   
   <entry>
-    <title>Spring/JWT_authenticate_process</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Spring/JWT_authenticate_process/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Spring/JWT_authenticate_process/</id>
+    <title>Java/Spring/JWT_authenticate_process</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Java/Spring/JWT_authenticate_process/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Java/Spring/JWT_authenticate_process/</id>
     <published>2019-12-16T04:33:21.743Z</published>
     <updated>2019-12-18T14:11:45.276Z</updated>
     
@@ -430,93 +495,6 @@
       
         &lt;p&gt;asdasd&lt;/p&gt;
 
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Spring_20191205</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Spring/Spring-20191205/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Spring/Spring-20191205/</id>
-    <published>2019-12-06T01:05:25.000Z</published>
-    <updated>2019-12-18T14:13:00.309Z</updated>
-    
-    <content type="html"><![CDATA[<p>스프링 제어<br>WebMvcConfigurer</p><ul><li>포멧, 메시지 컨버트 관련하여 스프링 MVC를 제어 한다.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;스프링 제어&lt;br&gt;
-WebMvcConfigurer&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;포멧, 메시지 컨버트 관련하여 스프링 MVC를 제어 한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>git</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Git/git/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Git/git/</id>
-    <published>2019-12-05T12:55:49.000Z</published>
-    <updated>2019-12-18T14:12:42.703Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="git-ignore-리모트-적용방법">Git ignore 리모트 적용방법</h1><blockquote><p>git rm -r --cached .<br>git add .<br>git commit -m “Apply .gitignore”</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;git-ignore-리모트-적용방법&quot;&gt;Git ignore 리모트 적용방법&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;git rm -r --cached .&lt;br&gt;
-git add .&lt;br&gt;
-git commit -m “Apply .gitignore
-      
-    
-    </summary>
-    
-    
-      <category term="git" scheme="https://gurioh.github.io/guriOH.github.io/categories/git/"/>
-    
-    
-      <category term="git" scheme="https://gurioh.github.io/guriOH.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shell/shellscript</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Shell/shellscript/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Shell/shellscript/</id>
-    <published>2019-12-03T15:26:09.810Z</published>
-    <updated>2019-12-18T14:12:09.528Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="쉘스크립트-문법-정리">쉘스크립트 문법 정리</h1><blockquote><p>쉘스크립트 첫라인 #!/bin/bash 의미?</p><ul><li><p>스크립트파일을 bash로 실행시킨다는 의미</p></li><li><p>기재하지 않으면 리눅스 배포판의 경우 디폴트가 bash이므로 무리 없이 작동하지만<br>다른 쉘간의 오류를 방지를 위함.</p></li></ul></blockquote><h2 id="기본-문법">기본 문법</h2><ul><li><code>echo</code>, <code>printf</code></li><li><code>$#</code> : 스크립트에 전달되는 인자들의 수(C언어에서 argc)</li><li><code>$0</code> : 실행하는 스크립트의 파일명으로 실행했을 때 경로를 포함한다면 경로를 포함해서 나옵니다.</li><li><code>$1</code>, <code>$2</code> … : 스크립트로 전달된 인자들(C언어에서 argv[0], argv[1]…)</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"Echo Test"</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">"printf Test\n"</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">"Name of script : %s\n"</span> <span class="variable">$0</span> </span><br><span class="line"><span class="built_in">printf</span> <span class="string">"%d arguments %s %s\n"</span> <span class="variable">$#</span> <span class="variable">$1</span> <span class="variable">$2</span></span><br></pre></td></tr></table></figure><h2 id="exit">exit</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">exit 100</span><br><span class="line"></span><br><span class="line"># 스크립트 종료후 echo $? 로 확인.</span><br><span class="line"># 관습적으로 &apos;exit 0&apos;은 성공을 의미합니다.</span><br><span class="line"># 0이 아닌 값은 에러나 예외상황을 나타냅니다.</span><br></pre></td></tr></table></figure><p><code>$?</code>는 스크립트에서 실행시키 명령어의 결과를 확인하는데 특별히 유용</p><h2 id="특수문자">특수문자</h2><p><code>#</code> : 주석</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 주석 뒤에는 명령어가 올수 없다.</span><br><span class="line">\# 이스케이프된 #은 주석을 나타내지 않는다.</span><br></pre></td></tr></table></figure><p><code>;</code> : 명령어 구분자, 두개 이상의 명령어를 한 줄에서 같이 사용할 수 있다.</p><p><code>부분쿼우팅</code>[이중쿼우트]  “content” <strong>문자열</strong> 대부분 특수문자 해석을 막는다.</p><p><code>완전쿼우팅</code>[단일쿼우트]  ‘content’  <strong>문자열</strong>에 들어 있는 모든 특수 문자를 해석하지 못하도록 막아줍니다</p><p><code>명령어치환</code>[백틱(backticks)] ``명령어` 라고 하면 명령어의 결과를 변수값으로 설정할 수있다.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;쉘스크립트-문법-정리&quot;&gt;쉘스크립트 문법 정리&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;쉘스크립트 첫라인 #!/bin/bash 의미?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;스크립트파일을 bash로 실행시킨다는 의미&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;기
       
     
     </summary>
