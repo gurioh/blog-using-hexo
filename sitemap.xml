@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper01/</loc>
+    
+    <lastmod>2020-01-08T09:02:56.965Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/AWS/IAM/chapter01/</loc>
+    
+    <lastmod>2020-01-08T07:48:39.638Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Tips/Markdown_env/</loc>
+    
+    <lastmod>2020-01-08T06:10:42.401Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/mybatis/mybatis-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4%2520%25ED%2595%25B4%25EA%25B2%25B0/</loc>
+    
+    <lastmod>2020-01-07T06:48:59.935Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/menu/</loc>
+    
+    <lastmod>2020-01-07T02:22:03.085Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Java/Spring/Spring-AOP/</loc>
     
     <lastmod>2019-12-30T06:38:32.479Z</lastmod>
@@ -33,13 +68,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/Linux/Shell/Configuration_env_with_intellij/</loc>
     
     <lastmod>2019-12-22T06:54:21.360Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/menu/</loc>
-    
-    <lastmod>2019-12-21T13:10:03.657Z</lastmod>
     
   </url>
   
