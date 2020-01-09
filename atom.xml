@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2020-01-09T08:48:40.426Z</updated>
+  <updated>2020-01-09T14:26:11.420Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -17,20 +17,102 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AWS/EC2/chaper10</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper10/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper10/</id>
+    <published>2020-01-09T14:07:04.224Z</published>
+    <updated>2020-01-09T14:26:11.420Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="cloudwatch-101">CloudWatch 101</h1><p>Tips</p><ul><li>Standard Monitoring = 5 min</li><li>Detailed Monitoring = 1 min</li></ul><p>What can i do with CloudWatch</p><ol><li><p>Dashboard - Creates awesome dashboards to see what is happening with your AWS env</p></li><li><p>Alarms - Allows you to set Alarms that norify you when particular threshold are hit.</p></li><li><p>Events - CloudWatch Events helps you to respond to state changes in your AWS resources.</p></li><li><p>Logs - CloudWatch Logs helps you to aggregate, monitor, and store logs.</p></li></ol><ul><li>CloudWatch monitors performance</li><li>CloudTrail monitors API calls in AWS platform.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;cloudwatch-101&quot;&gt;CloudWatch 101&lt;/h1&gt;
+&lt;p&gt;Tips&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Standard Monitoring = 5 min&lt;/li&gt;
+&lt;li&gt;Detailed Monitoring = 1 min&lt;/li&gt;
+&lt;/ul&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper09</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper09/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper09/</id>
+    <published>2020-01-09T13:58:38.542Z</published>
+    <updated>2020-01-09T14:07:02.908Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="cloudwatch-101">CloudWatch 101</h1><p>What is Cloud watch</p><ul><li>monitoring service</li></ul><p>cloudWatch monitors performance</p><ul><li>Compute<ul><li>EC2</li><li>Autoscaling Groups</li><li>Elastic Load Balancers</li><li>Route53 Health Checks</li></ul></li><li>Storage &amp; Content Delivery<ul><li>EBS Volumes</li><li>Storage Gateways</li><li>CloudFront</li></ul></li></ul><p>Host Level Metrics Consist of</p><ul><li>CPU</li><li>Network</li><li>Disk</li><li>Status Check</li></ul><p>Cloud Trail compare with CloudWatch</p><p>Cloud Trail like CCTV</p><ul><li>CloudWatch monitors performance.</li><li>CloudTrail monitors API calls in the AWS platform.</li></ul><p>Remember;</p><ul><li>CW is used for monitoring performance</li><li>CW can monitor most of AWS as well as your applications that run on AWS.</li><li>CW with ec2 will monitor events every 5 minutes by default.</li><li>You can have 1 minute intervals by turning on detailed monitoring.</li><li>You can create CW alarms whi<br>ch trigger norification.</li><li>CW is all about performance. CloudTrail is all about auditing.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;cloudwatch-101&quot;&gt;CloudWatch 101&lt;/h1&gt;
+&lt;p&gt;What is Cloud watch&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;monitoring service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;cloudWatch monitors perform
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper08</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper08/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper08/</id>
+    <published>2020-01-09T13:46:19.471Z</published>
+    <updated>2020-01-09T13:58:37.026Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="encryped-root-device-volumes-snapshots">Encryped Root Device Volumes &amp; Snapshots</h1><ul><li>Snapshots of encrypted volumes are encrypted automatically</li><li>Volumes restored from encrypted snapshots are encrypted automatically</li><li>You can share snapshots, but only if they are unencrypted.</li><li>These snapshots can be shared with other AWS accounts or made public</li></ul><p>Process</p><ol><li>Create a Snapshot of the unencrypted root device volume</li><li>Create a copy of the Snapshot and select encrypt option</li><li>Create an AMI from the encrypted Snapshot</li><li>Use that AMI to launch new encryted instances</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;encryped-root-device-volumes-snapshots&quot;&gt;Encryped Root Device Volumes &amp;amp; Snapshots&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Snapshots of encrypted volumes ar
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>AWS/EC2/chaper07</title>
     <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper07/"/>
     <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper07/</id>
     <published>2020-01-09T08:48:10.690Z</published>
-    <updated>2020-01-09T08:48:40.426Z</updated>
+    <updated>2020-01-09T13:46:03.933Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="ami-types-ebs-vs-instance-store">AMI types (EBS vs Instance store)</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="ami-types-ebs-vs-instance-store">AMI types (EBS vs Instance store)</h1><ul><li>Select AMI based on:</li></ul><ol><li>Region</li><li>Operating system.</li><li>Architecture (32-bit or 64-bit)</li><li>Launch Permissions</li><li>Storage for Root device</li></ol><h2 id="all-amis-are-categorized-as-either-backed-by-ebs-or-instance-store">All AMIs are categorized as either backed by EBS or Instance store</h2><ul><li><p>For EBD Volume : The root device for an instance launched from the AMI is an Amazon EBS volume created from an Amazon EBS snapshot</p></li><li><p>For Instance Store Volumes : The root device for an instance launched from the AMI is an instance store volume created from a template stored in Amazon S3.</p></li></ul><p>tips</p><ul><li>Instance Store Volume are somethimes called Ephemeral Storage</li><li>Instance store volume cannot be stopped If the underlying host fails, you will lose your data.</li><li>EBS backed instances can be stopped. You will not lose the data on this instance if it is stopped.</li><li>You can reboot both, you will not lose your data.</li><li>By default, both ROOT volumes will be deleted on termination. However, with EBS volumes, you can tell aws to keep the root device volume</li></ul>]]></content>
     
     <summary type="html">
     
       
       
         &lt;h1 id=&quot;ami-types-ebs-vs-instance-store&quot;&gt;AMI types (EBS vs Instance store)&lt;/h1&gt;
-
+&lt;ul&gt;
+&lt;li&gt;Select AMI based on:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Region&lt;/li
       
     
     </summary>
@@ -435,79 +517,6 @@
 &lt;h2 id=&quot;route-53&quot;&gt;Route 53&lt;/h2&gt;
 &lt;h3 id=&quot;register-a-domain-name-lab&quot;&gt;Register A Domain Name - LAB&lt;/h3&gt;
 &lt;h2 id=&quot;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>home</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/home/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/home/</id>
-    <published>2019-12-20T08:57:11.075Z</published>
-    <updated>2019-12-20T08:57:14.545Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li><a href="AWS_Study.md">Home</a></li><li>Toy-project<ul><li><a href="/guriOH.github.io/Project/Backup-program">마이그레이션</a></li></ul></li><li>Category<ul><li>Linux<ul><li><a href="/guriOH.github.io/Shell/shellscript">Shell</a></li></ul></li><li>AWS</li><li>BigData<ul><li>Kafka<ul><li><a href="/guriOH.github.io/Kafka/What_is_kafka">Kafka(카프카)</a></li><li><a href="/guriOH.github.io/Kafka/How_to_build_kafka_source_intellij">Kafka(카프카) 실행</a></li><li><a href="/guriOH.github.io/Kafka/How_to_build_kafka_with_intellij">Kafka(카프카) 인텔리제이 빌드 디버깅환경 구성</a></li></ul></li></ul></li><li>hexo<ul><li><a href="/guriOH.github.io/hexo/hexo-command">명령어</a></li></ul></li><li>Database<ul><li>Mysql<ul><li><a href="/guriOH.github.io/Database/Mysql/sql_tunning">SQL 튜닝</a></li></ul></li></ul></li><li>Spring<ul><li>Security<ul><li><a href="/guriOH.github.io/Spring/JWT_authenticate_process">JWT 토큰</a></li></ul></li></ul></li></ul></li></ul><!-- * Test  * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)    * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)    * [Elements](/hexo-theme-book-demo/test/hexo-unit-test/elements)    * [Excerpts](/hexo-theme-book-demo/test/hexo-unit-test/excerpts)    * [Gallery Post](/hexo-theme-book-demo/test/hexo-unit-test/gallery-post)    * [Hello World](/hexo-theme-book-demo/test/hexo-unit-test/hello-world)    * [Images](/hexo-theme-book-demo/test/hexo-unit-test/images)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title)    * [Link Post](/hexo-theme-book-demo/test/hexo-unit-test/link-post)    * [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.](/hexo-theme-book-demo/test/hexo-unit-test/long-title)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/no-title)    * [Tag Plugins](/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins)    * [Tags](/hexo-theme-book-demo/test/hexo-unit-test/tags)    * [Videos](/hexo-theme-book-demo/test/hexo-unit-test/videos)    * [中文測試](/hexo-theme-book-demo/test/hexo-unit-test/中文測試)    * [日本語テスト](/hexo-theme-book-demo/test/hexo-unit-test/日本語テスト)  * [list test](/hexo-theme-book-demo/test/list-test) --><!-- * Demo  * [markdown-it demo](/hexo-theme-book-demo/demo/markdown-it-demo)  * [katex demo](/hexo-theme-book-demo/demo/katex-demo)  * [footnotes demo](/hexo-theme-book-demo/demo/footnotes-demo)  * [繁體中文測試](/hexo-theme-book-demo/demo/tc-demo)  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo) -->]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;AWS_Study.md&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Toy-project
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/guriOH.github.io/Project/Backup-program&quot;&gt;마이그레이션&lt;/a&gt;&lt;/li&gt;
-&lt;/
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>CI/CD</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Opensource/Trend/CI_CD_kubernetes/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Opensource/Trend/CI_CD_kubernetes/</id>
-    <published>2019-12-19T04:09:23.000Z</published>
-    <updated>2019-12-20T08:38:36.077Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="ci-ci">CI/CI</h1><p>![image-20191219143935282](/Users/hoonoh/Library/Application Support/typora-user-images/image-20191219143935282.png)</p><h2 id="지속적-통합">지속적 통합</h2><p><a href="https://www.redhat.com/ko/solutions/cloud-native-development" target="_blank" rel="noopener">현대적인 애플리케이션 개발</a>에서는 여러 개발자들이 동일한 애플리케이션의 각기 다른 기능을 동시에 작업할 수 있도록 하는 것을 목표로 합니다. 그러나 조직에서 특정한 날(“<a href="https://thedailywtf.com/articles/Happy_Merge_Day!" target="_blank" rel="noopener">병합의 날(merge day)</a>”)을 정해 모든 분기 소스 코드를 병합하는 경우, 결과적으로 반복적인 수작업에 많은 시간을 소모하게 됩니다. 이렇게 반복적인 수작업을 하는 이유는 독립적으로 작업하는 개발자가 애플리케이션에 변경 사항을 적용할 때 다른 개발자가 동시에 적용하는 변경 사항과 충돌할 가능성이 있기 때문입니다. 이는 팀이 하나의 클라우드 기반 <a href="https://www.redhat.com/ko/topics/middleware/what-is-ide" target="_blank" rel="noopener">통합 개발 환경(Integrated Development Environment, IDE)</a> 사용에 동의하는 대신 각 개발자가 각자의 로컬 IDE를 커스터마이징하는 경우 더욱 복합적인 문제가 될 수 있습니다.</p><p>CI(지속적 통합)를 통해 개발자들은 코드 변경 사항을 공유 브랜치 또는 &quot;트렁크&quot;로 다시 병합하는 작업을 더욱 수월하게 자주 수행할 수 있습니다. 개발자가 애플리케이션에 적용한 변경 사항이 병합되면 이러한 변경 사항이 애플리케이션을 손상시키지 않도록 자동으로 애플리케이션을 구축하고 각기 다른 레벨의 자동화 테스트(일반적으로 단위 테스트 및 통합 테스트) 실행을 통해 변경 사항이 애플리케이션에 제대로 적용되었는지를 확인합니다. 다시 말해, 클래스와 기능에서부터 전체 애플리케이션을 구성하는 서로 다른 모듈에 이르기까지 모든 것에 대한 테스트를 수행합니다. 자동화된 테스트에서 기존 코드와 신규 코드 간의 충돌이 발견되면 CI를 통해 이러한 버그를 더욱 빠르게 자주 수정할 수 있습니다.</p><p><a href="https://developers.redhat.com/blog/2017/09/06/continuous-integration-a-typical-process/" target="_blank" rel="noopener">기술적인 내용에 대해 자세히 알아보기</a></p><hr><h2 id="지속적-제공">지속적 제공</h2><p>CI의 빌드 자동화, 유닛 및 통합 테스트 수행 후, 이어지는 지속적 제공 프로세스에서는 유효한 코드를 리포지토리에 자동으로 릴리스합니다. 그러므로 효과적인 지속적 제공 프로세스를 실현하기 위해서는 개발 파이프라인에 CI가 먼저 구축되어 있어야 합니다. 지속적 제공의 목표는 프로덕션 환경으로 배포할 준비가 되어 있는 코드베이스를 확보하는 것입니다.</p><p>지속적 제공의 경우, 코드 변경 사항 병합부터 프로덕션에 적합한 빌드 제공에 이르는 모든 단계에는 테스트 자동화와 코드 릴리스 자동화가 포함됩니다. 이 프로세스를 완료하면 운영팀이 보다 빠르고 손쉽게 애플리케이션을 프로덕션으로 배포할 수 있게 됩니다.</p><hr><h2 id="지속적-배포">지속적 배포</h2><p>CI/CD 파이프라인의 마지막 단계는 지속적 배포입니다. 프로덕션 준비가 완료된 빌드를 코드 리포지토리에 자동으로 릴리스하는 지속적 제공의 확장된 형태인 지속적 배포는 애플리케이션을 프로덕션으로 릴리스하는 작업을 자동화합니다. 프로덕션 이전의 파이프라인 단계에는 수동 작업 과정이 없으므로, 지속적 배포가 제대로 이루어지려면 테스트 자동화가 제대로 설계되어 있어야 합니다.</p><p>실제 사례에서 지속적 배포란 개발자가 애플리케이션에 변경 사항을 작성한 후 몇 분 이내에 애플리케이션을 자동으로 실행할 수 있는 것을 의미합니다(자동화된 테스트를 통과한 것으로 간주). 이를 통해 사용자 피드백을 지속적으로 수신하고 통합하는 일이 훨씬 수월해집니다. 이러한 모든 CI/CD 적용 사례는 애플리케이션 배포의 위험성을 줄여주므로 애플리케이션 변경 사항을 한 번에 모두 릴리스하지 않고 작은 조각으로 세분화하여 더욱 손쉽게 릴리스할 수 있습니다. 그러나 자동화된 테스트는 CI/CD 파이프라인의 여러 테스트 및 릴리스 단계를 수행할 수 있어야 하기 때문에 많은 선행 투자가 필요합니다.</p><p>Ref. <a href="https://www.redhat.com/ko/topics/devops/what-is-ci-cd" target="_blank" rel="noopener">https://www.redhat.com/ko/topics/devops/what-is-ci-cd</a></p><h1 id="kubernetes">Kubernetes</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;ci-ci&quot;&gt;CI/CI&lt;/h1&gt;
-&lt;p&gt;![image-20191219143935282](/Users/hoonoh/Library/Application Support/typora-user-images/image-20191219143935282
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Agile/스케일드 애자일 프레임워크</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Agile/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%83%E1%85%B3%20%E1%84%8B%E1%85%A2%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%8B%E1%85%AF%E1%84%8F%E1%85%B3/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Agile/스케일드 애자일 프레임워크/</id>
-    <published>2019-12-19T02:19:13.468Z</published>
-    <updated>2019-12-20T08:38:38.292Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="pi">PI</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;pi&quot;&gt;PI&lt;/h1&gt;
-
       
     
     </summary>

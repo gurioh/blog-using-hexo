@@ -11,7 +11,7 @@
 
     <title>
         
-          AWS/EC2/chaper07 - Henry 기술블로그
+          AWS/EC2/chaper09 - Henry 기술블로그
         
     </title>
 
@@ -262,33 +262,51 @@ show_sidebar()
 </div>
 
 <div class="book-post">
-  <h1 id="ami-types-ebs-vs-instance-store">AMI types (EBS vs Instance store)</h1>
+  <h1 id="cloudwatch-101">CloudWatch 101</h1>
+<p>What is Cloud watch</p>
 <ul>
-<li>Select AMI based on:</li>
+<li>monitoring service</li>
 </ul>
-<ol>
-<li>Region</li>
-<li>Operating system.</li>
-<li>Architecture (32-bit or 64-bit)</li>
-<li>Launch Permissions</li>
-<li>Storage for Root device</li>
-</ol>
-<h2 id="all-amis-are-categorized-as-either-backed-by-ebs-or-instance-store">All AMIs are categorized as either backed by EBS or Instance store</h2>
+<p>cloudWatch monitors performance</p>
 <ul>
-<li>
-<p>For EBD Volume : The root device for an instance launched from the AMI is an Amazon EBS volume created from an Amazon EBS snapshot</p>
+<li>Compute
+<ul>
+<li>EC2</li>
+<li>Autoscaling Groups</li>
+<li>Elastic Load Balancers</li>
+<li>Route53 Health Checks</li>
+</ul>
 </li>
-<li>
-<p>For Instance Store Volumes : The root device for an instance launched from the AMI is an instance store volume created from a template stored in Amazon S3.</p>
+<li>Storage &amp; Content Delivery
+<ul>
+<li>EBS Volumes</li>
+<li>Storage Gateways</li>
+<li>CloudFront</li>
+</ul>
 </li>
 </ul>
-<p>tips</p>
+<p>Host Level Metrics Consist of</p>
 <ul>
-<li>Instance Store Volume are somethimes called Ephemeral Storage</li>
-<li>Instance store volume cannot be stopped If the underlying host fails, you will lose your data.</li>
-<li>EBS backed instances can be stopped. You will not lose the data on this instance if it is stopped.</li>
-<li>You can reboot both, you will not lose your data.</li>
-<li>By default, both ROOT volumes will be deleted on termination. However, with EBS volumes, you can tell aws to keep the root device volume</li>
+<li>CPU</li>
+<li>Network</li>
+<li>Disk</li>
+<li>Status Check</li>
+</ul>
+<p>Cloud Trail compare with CloudWatch</p>
+<p>Cloud Trail like CCTV</p>
+<ul>
+<li>CloudWatch monitors performance.</li>
+<li>CloudTrail monitors API calls in the AWS platform.</li>
+</ul>
+<p>Remember;</p>
+<ul>
+<li>CW is used for monitoring performance</li>
+<li>CW can monitor most of AWS as well as your applications that run on AWS.</li>
+<li>CW with ec2 will monitor events every 5 minutes by default.</li>
+<li>You can have 1 minute intervals by turning on detailed monitoring.</li>
+<li>You can create CW alarms whi<br>
+ch trigger norification.</li>
+<li>CW is all about performance. CloudTrail is all about auditing.</li>
 </ul>
 
 </div>

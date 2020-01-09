@@ -11,7 +11,7 @@
 
     <title>
         
-          AWS/EC2/chaper07 - Henry 기술블로그
+          AWS/EC2/chaper10 - Henry 기술블로그
         
     </title>
 
@@ -262,33 +262,30 @@ show_sidebar()
 </div>
 
 <div class="book-post">
-  <h1 id="ami-types-ebs-vs-instance-store">AMI types (EBS vs Instance store)</h1>
+  <h1 id="cloudwatch-101">CloudWatch 101</h1>
+<p>Tips</p>
 <ul>
-<li>Select AMI based on:</li>
+<li>Standard Monitoring = 5 min</li>
+<li>Detailed Monitoring = 1 min</li>
 </ul>
+<p>What can i do with CloudWatch</p>
 <ol>
-<li>Region</li>
-<li>Operating system.</li>
-<li>Architecture (32-bit or 64-bit)</li>
-<li>Launch Permissions</li>
-<li>Storage for Root device</li>
+<li>
+<p>Dashboard - Creates awesome dashboards to see what is happening with your AWS env</p>
+</li>
+<li>
+<p>Alarms - Allows you to set Alarms that norify you when particular threshold are hit.</p>
+</li>
+<li>
+<p>Events - CloudWatch Events helps you to respond to state changes in your AWS resources.</p>
+</li>
+<li>
+<p>Logs - CloudWatch Logs helps you to aggregate, monitor, and store logs.</p>
+</li>
 </ol>
-<h2 id="all-amis-are-categorized-as-either-backed-by-ebs-or-instance-store">All AMIs are categorized as either backed by EBS or Instance store</h2>
 <ul>
-<li>
-<p>For EBD Volume : The root device for an instance launched from the AMI is an Amazon EBS volume created from an Amazon EBS snapshot</p>
-</li>
-<li>
-<p>For Instance Store Volumes : The root device for an instance launched from the AMI is an instance store volume created from a template stored in Amazon S3.</p>
-</li>
-</ul>
-<p>tips</p>
-<ul>
-<li>Instance Store Volume are somethimes called Ephemeral Storage</li>
-<li>Instance store volume cannot be stopped If the underlying host fails, you will lose your data.</li>
-<li>EBS backed instances can be stopped. You will not lose the data on this instance if it is stopped.</li>
-<li>You can reboot both, you will not lose your data.</li>
-<li>By default, both ROOT volumes will be deleted on termination. However, with EBS volumes, you can tell aws to keep the root device volume</li>
+<li>CloudWatch monitors performance</li>
+<li>CloudTrail monitors API calls in AWS platform.</li>
 </ul>
 
 </div>
