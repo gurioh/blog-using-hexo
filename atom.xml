@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2020-01-08T09:02:56.965Z</updated>
+  <updated>2020-01-09T08:48:40.426Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -17,20 +17,175 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AWS/EC2/chaper07</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper07/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper07/</id>
+    <published>2020-01-09T08:48:10.690Z</published>
+    <updated>2020-01-09T08:48:40.426Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ami-types-ebs-vs-instance-store">AMI types (EBS vs Instance store)</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;ami-types-ebs-vs-instance-store&quot;&gt;AMI types (EBS vs Instance store)&lt;/h1&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper06</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper06/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper06/</id>
+    <published>2020-01-09T08:12:37.991Z</published>
+    <updated>2020-01-09T08:47:53.851Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ebs1-volumne">EBS1 Volumne</h1><p>EBS 스토리지는 ec2 인스턴스와 같은 가용공간에 있어야함.</p><p>추가적인 볼륨들은 Ec2인스턴스 삭제를 해도 지워지지 않는다.</p><p>Tips</p><ul><li><p>EBS : virtual hard disk</p></li><li><p>Snapshots exist on S3. Think of snapshots as a photograph of the disk</p></li><li><p>Snapshots are point in time copies of Volumes.</p></li><li><p>Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3.</p></li><li><p>To create a snapshot for Amazone EBS volumes that serve as root devices, you should stop the instance before taking the snapshot.</p></li><li><p>however you can snap while instance running.</p></li><li><p>You can create AMI’s from both Volumes and Snapshots</p></li><li><p>You can change EBS volume size on the fly, including changing the size the type.</p></li><li><p>Volume will ALWAYS be in the same availability zone as the EC2 instance.</p></li><li><p>To move an EC2 volume from one AZ to another, take a snapshot of it, create an AMI from the snapshot and then use the AMI to launch the EC2 instance in a new AZ.</p></li><li><p>To move an EC2 volume from one region to another.<br>EC2 -&gt; snapshot -&gt; AMI -&gt; copy AMI to another zone.</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;ebs1-volumne&quot;&gt;EBS1 Volumne&lt;/h1&gt;
+&lt;p&gt;EBS 스토리지는 ec2 인스턴스와 같은 가용공간에 있어야함.&lt;/p&gt;
+&lt;p&gt;추가적인 볼륨들은 Ec2인스턴스 삭제를 해도 지워지지 않는다.&lt;/p&gt;
+&lt;p&gt;Tips&lt;/p&gt;
+&lt;ul&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper05</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper05/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper05/</id>
+    <published>2020-01-09T08:03:47.634Z</published>
+    <updated>2020-01-09T08:12:14.503Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ebs101">EBS101</h1><p>What is EBS</p><p>Elastic Block Store</p><p>5 diff type of EBS storage;</p><ol><li>General Purpose (SSD)</li><li>Provisioned IOPS (SSD)</li><li>Throughput Optimized HDD</li><li>Cold HDD</li><li>EBS Magnetic</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;ebs101&quot;&gt;EBS101&lt;/h1&gt;
+&lt;p&gt;What is EBS&lt;/p&gt;
+&lt;p&gt;Elastic Block Store&lt;/p&gt;
+&lt;p&gt;5 diff type of EBS storage;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;General Purpose (SSD)&lt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper04</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper04/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper04/</id>
+    <published>2020-01-09T07:55:43.013Z</published>
+    <updated>2020-01-09T08:03:38.036Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="security-group">Security Group</h1><p>Tips</p><ul><li><p>All inbound traffic is blocked by default</p></li><li><p>All Outbountd traffic is allowed.</p></li><li><p>Change to Security groups take effect immediatly.</p></li><li><p>You can have any number of EC2 instances within a security group</p></li><li><p>You can have multiple security groups attached to Ec2 instances.</p></li><li><p>Security Groups are STATEFUL.</p></li><li><p>If you create an inbound rule allowing traffic in, that traffic is automatically allowed back out again</p></li><li><p>You cannot block specific IP address using security groups, instead use Network Access Control Lists.</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;security-group&quot;&gt;Security Group&lt;/h1&gt;
+&lt;p&gt;Tips&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;All inbound traffic is blocked by default&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;All Outboun
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper03</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper03/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper03/</id>
+    <published>2020-01-09T06:23:06.423Z</published>
+    <updated>2020-01-09T07:33:07.597Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="lanuch-ec2-instance-lab2">Lanuch EC2 Instance lab2</h1><p>Tips</p><ul><li>Terminate Protection Turned off by default</li><li>On an EBS-backed instance, the default action is for the root EBS volume to be deleted when the instance is terminated.</li><li>EBS Root Volumes of your DEFAULT AMI’s can be encrypted</li><li>Additional volumnes can be encypted.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;lanuch-ec2-instance-lab2&quot;&gt;Lanuch EC2 Instance lab2&lt;/h1&gt;
+&lt;p&gt;Tips&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Terminate Protection Turned off by default&lt;/li&gt;
+&lt;li&gt;On 
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper02</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper02/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper02/</id>
+    <published>2020-01-09T05:42:36.679Z</published>
+    <updated>2020-01-09T05:44:41.492Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="lanuch-ec2-instance-lab1">Lanuch EC2 Instance lab1</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;lanuch-ec2-instance-lab1&quot;&gt;Lanuch EC2 Instance lab1&lt;/h1&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>AWS/EC2/chaper01</title>
     <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper01/"/>
     <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper01/</id>
     <published>2020-01-08T07:48:57.441Z</published>
-    <updated>2020-01-08T09:02:56.965Z</updated>
+    <updated>2020-01-09T07:32:33.294Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="ec2-101-elastic-compute-cloud">EC2 101 Elastic compute cloud</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="ec2-101-elastic-compute-cloud">EC2 101 Elastic compute cloud</h1><p>What is EC2</p><p>EC2 is a web service that provide resizable compute capacity in the cloud.</p><p>장점 : EC2는 서버 인스턴스 구성시 간편하고, 스케일 업/다운 방식에 상관없이 빠르게 변경 가능하다.</p><p>Pricing Models</p><ol><li>On Demand</li><li>Reserved<ul><li>Standard Reserved instances</li><li>Convertible Reserved Instances</li><li>Scheduled Reserved Instances</li></ul></li><li>spot<ul><li>etc</li></ul></li><li>Dedicated Hosts<ul><li>etc</li></ul></li></ol><p>EC2 Instance Types</p><ul><li>F1, I3, G3, H1, T3…</li><li>tips [Fight <a href="http://DR.MC" target="_blank" rel="noopener">DR.MC</a> PXZ AU]</li></ul>]]></content>
     
     <summary type="html">
     
       
       
         &lt;h1 id=&quot;ec2-101-elastic-compute-cloud&quot;&gt;EC2 101 Elastic compute cloud&lt;/h1&gt;
-
+&lt;p&gt;What is EC2&lt;/p&gt;
+&lt;p&gt;EC2 is a web service that provide resizable 
       
     
     </summary>
@@ -353,165 +508,6 @@
       
         &lt;h1 id=&quot;pi&quot;&gt;PI&lt;/h1&gt;
 
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2020_opensource_trend</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Opensource/Trend/2020-opensource-trend/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Opensource/Trend/2020-opensource-trend/</id>
-    <published>2019-12-19T01:22:53.000Z</published>
-    <updated>2019-12-20T08:38:39.838Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="가트너-2020-트렌드">가트너 2020 트렌드</h1><h2 id="자율-자동화">자율, 자동화</h2><h2 id="2019-트렌드">2019 트렌드</h2><ul><li>서버리스 아키텍처</li><li>컨테이너 오케스트레이션</li><li>챗봇, 블록체인 , AI</li><li>메타클라우드, 데브옵스</li></ul><h3 id="비지니스">비지니스</h3><ul><li>챗봇, 블록체인 , AI</li></ul><h3 id="기술">기술</h3><ul><li>서버리스아키텍처, 컨테이너 오케스트레이션</li></ul><h3 id="중간-연결">중간 연결</h3><ul><li>메타클라우드, 데브옵스</li></ul><p>===================</p><p>트랜드 -&gt; 펑셔널하게 간다.</p><p>관련 트렌드 서버리스, Fass 등등</p><h2 id="클라우드">클라우드</h2><p>트랜드 -&gt; 멀티클라우드 ?</p><h3 id="클라우드-네이티브">클라우드 네이티브</h3><h3 id="scale-cube">Scale Cube</h3><p>Y축 확장 : Functional - 시스템 분산 기능별 분산</p><p>X축 확장 : 처리기 자체 확장</p><p>Z축 확장 : 데이터 파티셔닝</p><p>------&gt; MSA 서비스</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;가트너-2020-트렌드&quot;&gt;가트너 2020 트렌드&lt;/h1&gt;
-&lt;h2 id=&quot;자율-자동화&quot;&gt;자율, 자동화&lt;/h2&gt;
-&lt;h2 id=&quot;2019-트렌드&quot;&gt;2019 트렌드&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;서버리스 아키텍처&lt;/li&gt;
-&lt;li&gt;컨테이너 오케스트레이
-      
-    
-    </summary>
-    
-    
-    
-      <category term="opensource" scheme="https://gurioh.github.io/guriOH.github.io/tags/opensource/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>build location</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/build%20location/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/build location/</id>
-    <published>2019-12-17T11:54:24.555Z</published>
-    <updated>2019-12-24T00:56:49.910Z</updated>
-    
-    <content type="html"><![CDATA[<p>sudo ls -al /root/.jenkins/workspace/중랑구_스마트시티/iot-api/build/asciidoc/html5/admin</p><p>sudo ls -al /root/.jenkins/workspace/중랑구_스마트시티/iot-api/build/libs/</p><p>/root/.jenkins/workspace/중랑구_스마트시티/iot-api/build/libs</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;sudo ls -al /root/.jenkins/workspace/중랑구_스마트시티/iot-api/build/asciidoc/html5/admin&lt;/p&gt;
-&lt;p&gt;sudo ls -al /root/.jenkins/workspace/중랑구_스마트시티/i
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Java/Spring/JWT_authenticate_process</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Java/Spring/JWT_authenticate_process/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Java/Spring/JWT_authenticate_process/</id>
-    <published>2019-12-16T04:33:21.743Z</published>
-    <updated>2019-12-18T14:11:45.276Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="spring-security">Spring Security</h1><h3 id="필요개념">필요개념</h3><ul><li>접근주체(Principal) : 접근 사용자</li><li>인증(Authenticate) : 접근 주체 확인</li><li>인가(Authorize) : 접근 주체의 권한 검사</li></ul><img src="/Users/hoonoh/Desktop/Summary_arc.jpg" alt="Summary_arc" style="zoom:50%;"/><p>스프링의 구조는 필터와 필터된 Authentication객체를 가지고 실질적인 Validation을 하는 Provider로 나뉜다.</p><h3 id="filter-chain">Filter chain</h3><p>스프링 시큐리티 역시 Filter가 구성이 되어있다.</p><p>기본적으로 11개의 Filter로 구성이 되어있고, Filter를 커스터마이징 하여 추가 확장 시킬수 있다.</p><p>이때 중요한것은 필터간의 순서가 중요하다.</p><h3 id="provider">Provider</h3><p>프로바이더는 실질적인 검증을 하는 클래스로 AuthenticationProvider를 구현하고</p><p>AuthenticationManagerBuilder에 커스터마이징하여 등록이 가능하다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">configure</span><span class="params">(AuthenticationManagerBuilder auth)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line"></span><br><span class="line">  auth.authenticationProvider(authenticationProvider);</span><br><span class="line">  auth.authenticationProvider(jwtAutenticationTokenProvider);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;spring-security&quot;&gt;Spring Security&lt;/h1&gt;
-&lt;h3 id=&quot;필요개념&quot;&gt;필요개념&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;접근주체(Principal) : 접근 사용자&lt;/li&gt;
-&lt;li&gt;인증(Authenticate) : 접근 주체 확인
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Seminar/GCP_SEMINAR</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Seminar/GCP_SEMINAR/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Seminar/GCP_SEMINAR/</id>
-    <published>2019-12-12T02:14:33.295Z</published>
-    <updated>2019-12-18T14:15:46.143Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="google-cloud-seminar">Google Cloud seminar</h1><p>Google vs AWS</p><ul><li>가격모델<ul><li>더 합리적인듯 (할인(?))</li><li>자체 머신러닝으로 사용 리소스 분석 -&gt; 합리적인 스팩 추천</li></ul></li><li>커스텀 머신 타입<ul><li>GPU 등등</li></ul></li><li>네트워크<ul><li>A사의 경우 전통적인 모델 Each Region vpn set</li><li>하나의 VPC로 관리 -&gt; 모든 리전 접근 가능</li></ul></li></ul><h2 id="데이터베이스">데이터베이스</h2><ul><li>Nosql , cansandra</li></ul><p>bigtable  : 분산저장처리 시작된 이유 -&gt; 논문 한번 보자.</p><h2 id="보안">보안</h2><ul><li>Forrester</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;google-cloud-seminar&quot;&gt;Google Cloud seminar&lt;/h1&gt;
-&lt;p&gt;Google vs AWS&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;가격모델
-&lt;ul&gt;
-&lt;li&gt;더 합리적인듯 (할인(?))&lt;/li&gt;
-&lt;li&gt;자체 머신러닝으로 사용 리소
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>tip</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Linux/tip/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Linux/tip/</id>
-    <published>2019-12-12T00:12:12.000Z</published>
-    <updated>2019-12-18T14:13:43.550Z</updated>
-    
-    <content type="html"><![CDATA[<p>특정 포트를 사용하는 프로세스 검사</p><ul><li>lsof -i :[port]</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;특정 포트를 사용하는 프로세스 검사&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;lsof -i :[port]&lt;/li&gt;
-&lt;/ul&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>menu</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/menu/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/menu/</id>
-    <published>2019-12-10T13:23:12.971Z</published>
-    <updated>2020-01-07T02:22:03.085Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li><a href="AWS_Study.md">Home</a></li><li>Toy-project<ul><li><a href="/guriOH.github.io/Project/Backup-program">마이그레이션</a></li></ul></li><li>Category<ul><li>Linux<ul><li><a href="/guriOH.github.io/Linux/Shell/shellscript">Shell</a></li><li><a href="/guriOH.github.io/Linux/Shell/Configuration_env_with_intellij">스크립트 개발환경 만들기</a></li></ul></li><li>AWS</li><li>BigData<ul><li>Kafka<ul><li><a href="/guriOH.github.io/BigData/Kafka/What_is_kafka">Kafka(카프카)</a></li><li><a href="/guriOH.github.io/BigData/Kafka/How_to_build_kafka_source_intellij">Kafka(카프카) 실행</a></li><li><a href="/guriOH.github.io/BigData/Kafka/How_to_build_kafka_with_intellij">Kafka(카프카) 인텔리제이 빌드 디버깅환경 구성</a></li></ul></li></ul></li><li>hexo<ul><li><a href="/guriOH.github.io/hexo/hexo-command">명령어</a></li></ul></li><li>Database<ul><li>Mysql<ul><li><a href="/guriOH.github.io/Database/Mysql/sql_tunning">SQL 튜닝</a></li></ul></li></ul></li><li>Spring<ul><li>AOP<ul><li><a href="/guriOH.github.io/Java/Spring/Spring-AOP">개념 및 원리</a></li></ul></li><li>Security<ul><li><a href="/guriOH.github.io/Java/Spring/JWT_authenticate_process">JWT 토큰</a></li></ul></li></ul></li></ul></li></ul><!-- * Test  * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)    * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)    * [Elements](/hexo-theme-book-demo/test/hexo-unit-test/elements)    * [Excerpts](/hexo-theme-book-demo/test/hexo-unit-test/excerpts)    * [Gallery Post](/hexo-theme-book-demo/test/hexo-unit-test/gallery-post)    * [Hello World](/hexo-theme-book-demo/test/hexo-unit-test/hello-world)    * [Images](/hexo-theme-book-demo/test/hexo-unit-test/images)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title)    * [Link Post](/hexo-theme-book-demo/test/hexo-unit-test/link-post)    * [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.](/hexo-theme-book-demo/test/hexo-unit-test/long-title)    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/no-title)    * [Tag Plugins](/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins)    * [Tags](/hexo-theme-book-demo/test/hexo-unit-test/tags)    * [Videos](/hexo-theme-book-demo/test/hexo-unit-test/videos)    * [中文測試](/hexo-theme-book-demo/test/hexo-unit-test/中文測試)    * [日本語テスト](/hexo-theme-book-demo/test/hexo-unit-test/日本語テスト)  * [list test](/hexo-theme-book-demo/test/list-test) --><!-- * Demo  * [markdown-it demo](/hexo-theme-book-demo/demo/markdown-it-demo)  * [katex demo](/hexo-theme-book-demo/demo/katex-demo)  * [footnotes demo](/hexo-theme-book-demo/demo/footnotes-demo)  * [繁體中文測試](/hexo-theme-book-demo/demo/tc-demo)  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo) -->]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;AWS_Study.md&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Toy-project
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/guriOH.github.io/Project/Backup-program&quot;&gt;마이그레이션&lt;/a&gt;&lt;/li&gt;
-&lt;/
       
     
     </summary>
