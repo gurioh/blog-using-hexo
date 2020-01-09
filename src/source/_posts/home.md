@@ -3,25 +3,21 @@
   * [마이그레이션](/guriOH.github.io/Project/Backup-program)
 * Category
   * Linux
-    * [Shell](/guriOH.github.io/Linux/Shell/shellscript)
-    * [스크립트 개발환경 만들기](/guriOH.github.io/Linux/Shell/Configuration_env_with_intellij)
+    * [Shell](/guriOH.github.io/Shell/shellscript)
   * AWS
   * BigData
     * Kafka
-      * [Kafka(카프카)](/guriOH.github.io/BigData/Kafka/What_is_kafka)
-      * [Kafka(카프카) 실행](/guriOH.github.io/BigData/Kafka/How_to_build_kafka_source_intellij)
-      * [Kafka(카프카) 인텔리제이 빌드 디버깅환경 구성](/guriOH.github.io/BigData/Kafka/How_to_build_kafka_with_intellij)
+      * [Kafka(카프카)](/guriOH.github.io/Kafka/What_is_kafka)
+      * [Kafka(카프카) 실행](/guriOH.github.io/Kafka/How_to_build_kafka_source_intellij)
+      * [Kafka(카프카) 인텔리제이 빌드 디버깅환경 구성](/guriOH.github.io/Kafka/How_to_build_kafka_with_intellij)
   * hexo   
     * [명령어](/guriOH.github.io/hexo/hexo-command)
   * Database
     * Mysql
       * [SQL 튜닝](/guriOH.github.io/Database/Mysql/sql_tunning)
   * Spring
-    * AOP
-      * [개념 및 원리](/guriOH.github.io/Java/Spring/Spring-AOP)
     * Security
-      * [JWT 토큰](/guriOH.github.io/Java/Spring/JWT_authenticate_process)
-      
+      * [JWT 토큰](/guriOH.github.io/Spring/JWT_authenticate_process)
 <!-- * Test
   * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)
     * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)
