@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/guriOH.github.io/favicon.ico" />
+    
+
+    <title>
+        
+          Framework/Spring/Spring-AOP - Henry 기술블로그
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <!-- Noto Sans SC -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
+    <!-- Noto Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+    <!-- theme css & js -->
+    <link rel="stylesheet" href="/guriOH.github.io/css/book.css">
+    <script src="/guriOH.github.io/js/book.js"></script>
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('img')
+})
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="book-container">
+    <div class="columns">
+      <div class="column col-2 hide-lg">
+        <div class="book-sidebar">
+  <h4 class="site-meta">
+    <a href="/guriOH.github.io/">Henry 기술블로그</a>
+  </h4>
+  <div class="sidebar-content">
+    <ul>
+<li><a href="AWS_Study.md">Home</a></li>
+<li>Toy-project
+<ul>
+<li><a href="/guriOH.github.io/Project/Backup-program">마이그레이션</a></li>
+</ul>
+</li>
+<li>Category
+<ul>
+<li>Linux
+<ul>
+<li><a href="/guriOH.github.io/Linux/Shell/shellscript">Shell</a></li>
+<li><a href="/guriOH.github.io/Linux/Shell/Configuration_env_with_intellij">스크립트 개발환경 만들기</a></li>
+</ul>
+</li>
+<li>AWS</li>
+<li>BigData
+<ul>
+<li>Kafka
+<ul>
+<li><a href="/guriOH.github.io/BigData/Kafka/What_is_kafka">Kafka(카프카)</a></li>
+<li><a href="/guriOH.github.io/BigData/Kafka/How_to_build_kafka_source_intellij">Kafka(카프카) 실행</a></li>
+<li><a href="/guriOH.github.io/BigData/Kafka/How_to_build_kafka_with_intellij">Kafka(카프카) 인텔리제이 빌드 디버깅환경 구성</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>hexo
+<ul>
+<li><a href="/guriOH.github.io/hexo/hexo-command">명령어</a></li>
+</ul>
+</li>
+<li>Database
+<ul>
+<li>Mysql
+<ul>
+<li><a href="/guriOH.github.io/Database/Mysql/sql_tunning">SQL 튜닝</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Spring
+<ul>
+<li>AOP
+<ul>
+<li><a href="/guriOH.github.io/Java/Spring/Spring-AOP">개념 및 원리</a></li>
+</ul>
+</li>
+<li>Security
+<ul>
+<li><a href="/guriOH.github.io/Java/Spring/JWT_authenticate_process">JWT 토큰</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- * Test
+  * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)
+    * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)
+    * [Elements](/hexo-theme-book-demo/test/hexo-unit-test/elements)
+    * [Excerpts](/hexo-theme-book-demo/test/hexo-unit-test/excerpts)
+    * [Gallery Post](/hexo-theme-book-demo/test/hexo-unit-test/gallery-post)
+    * [Hello World](/hexo-theme-book-demo/test/hexo-unit-test/hello-world)
+    * [Images](/hexo-theme-book-demo/test/hexo-unit-test/images)
+    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title)
+    * [Link Post](/hexo-theme-book-demo/test/hexo-unit-test/link-post)
+    * [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.](/hexo-theme-book-demo/test/hexo-unit-test/long-title)
+    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/no-title)
+    * [Tag Plugins](/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins)
+    * [Tags](/hexo-theme-book-demo/test/hexo-unit-test/tags)
+    * [Videos](/hexo-theme-book-demo/test/hexo-unit-test/videos)
+    * [中文測試](/hexo-theme-book-demo/test/hexo-unit-test/中文測試)
+    * [日本語テスト](/hexo-theme-book-demo/test/hexo-unit-test/日本語テスト)
+  * [list test](/hexo-theme-book-demo/test/list-test) -->
+<!-- * Demo
+  * [markdown-it demo](/hexo-theme-book-demo/demo/markdown-it-demo)
+  * [katex demo](/hexo-theme-book-demo/demo/katex-demo)
+  * [footnotes demo](/hexo-theme-book-demo/demo/footnotes-demo)
+  * [繁體中文測試](/hexo-theme-book-demo/demo/tc-demo)
+  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo) -->
+  </div>
+</div>
+
+<script src="/guriOH.github.io/js/book-sidebar.js"></script>
+
+<script>
+collapse_sidebar(2)
+highlight_tab()
+show_sidebar()
+</script>
+      </div>
+
+      <div class="column col-8 col-lg-12">
+        <div class="book-content">
+          <div class="book-navbar">
+  <header class="navbar">
+  <section class="navbar-section">
+    <img class="navbar-icon" src="/guriOH.github.io/favicon.ico">
+  </section>
+  <section class="navbar-center">
+    Henry 기술블로그
+  </section>
+  <section class="navbar-section">
+    <label class="accordion-header c-hand" for="accordion-sidebar">
+      <i class="icon icon-menu"></i>
+    </label>
+  </section>
+</header>
+
+<div class="accordion">
+  <input type="checkbox" id="accordion-sidebar" name="accordion-checkbox" hidden>
+  <div class="accordion-body">
+    <ul>
+<li><a href="AWS_Study.md">Home</a></li>
+<li>Toy-project
+<ul>
+<li><a href="/guriOH.github.io/Project/Backup-program">마이그레이션</a></li>
+</ul>
+</li>
+<li>Category
+<ul>
+<li>Linux
+<ul>
+<li><a href="/guriOH.github.io/Linux/Shell/shellscript">Shell</a></li>
+<li><a href="/guriOH.github.io/Linux/Shell/Configuration_env_with_intellij">스크립트 개발환경 만들기</a></li>
+</ul>
+</li>
+<li>AWS</li>
+<li>BigData
+<ul>
+<li>Kafka
+<ul>
+<li><a href="/guriOH.github.io/BigData/Kafka/What_is_kafka">Kafka(카프카)</a></li>
+<li><a href="/guriOH.github.io/BigData/Kafka/How_to_build_kafka_source_intellij">Kafka(카프카) 실행</a></li>
+<li><a href="/guriOH.github.io/BigData/Kafka/How_to_build_kafka_with_intellij">Kafka(카프카) 인텔리제이 빌드 디버깅환경 구성</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>hexo
+<ul>
+<li><a href="/guriOH.github.io/hexo/hexo-command">명령어</a></li>
+</ul>
+</li>
+<li>Database
+<ul>
+<li>Mysql
+<ul>
+<li><a href="/guriOH.github.io/Database/Mysql/sql_tunning">SQL 튜닝</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Spring
+<ul>
+<li>AOP
+<ul>
+<li><a href="/guriOH.github.io/Java/Spring/Spring-AOP">개념 및 원리</a></li>
+</ul>
+</li>
+<li>Security
+<ul>
+<li><a href="/guriOH.github.io/Java/Spring/JWT_authenticate_process">JWT 토큰</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- * Test
+  * [hexo-unit-test](https://github.com/hexojs/hexo-theme-unit-test)
+    * [Categories](/hexo-theme-book-demo/test/hexo-unit-test/categories)
+    * [Elements](/hexo-theme-book-demo/test/hexo-unit-test/elements)
+    * [Excerpts](/hexo-theme-book-demo/test/hexo-unit-test/excerpts)
+    * [Gallery Post](/hexo-theme-book-demo/test/hexo-unit-test/gallery-post)
+    * [Hello World](/hexo-theme-book-demo/test/hexo-unit-test/hello-world)
+    * [Images](/hexo-theme-book-demo/test/hexo-unit-test/images)
+    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title)
+    * [Link Post](/hexo-theme-book-demo/test/hexo-unit-test/link-post)
+    * [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.](/hexo-theme-book-demo/test/hexo-unit-test/long-title)
+    * [Untitled](/hexo-theme-book-demo/test/hexo-unit-test/no-title)
+    * [Tag Plugins](/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins)
+    * [Tags](/hexo-theme-book-demo/test/hexo-unit-test/tags)
+    * [Videos](/hexo-theme-book-demo/test/hexo-unit-test/videos)
+    * [中文測試](/hexo-theme-book-demo/test/hexo-unit-test/中文測試)
+    * [日本語テスト](/hexo-theme-book-demo/test/hexo-unit-test/日本語テスト)
+  * [list test](/hexo-theme-book-demo/test/list-test) -->
+<!-- * Demo
+  * [markdown-it demo](/hexo-theme-book-demo/demo/markdown-it-demo)
+  * [katex demo](/hexo-theme-book-demo/demo/katex-demo)
+  * [footnotes demo](/hexo-theme-book-demo/demo/footnotes-demo)
+  * [繁體中文測試](/hexo-theme-book-demo/demo/tc-demo)
+  * [简体中文测试](/hexo-theme-book-demo/demo/sc-demo) -->
+  </div>
+</div>
+</div>
+
+<div class="book-post">
+  <h1 id="스프링-aop를-구현하는-방법-기술">스프링 AOP를 구현하는 방법 기술.</h1>
+<p>AOP 개념</p>
+<p>Aspect : 공통 기능을 말합니다.</p>
+<p>Advice : Aspect의 기능 자체를 말합니다.</p>
+<p>Jointpoint : Advice를 적용해야 하는 부분입니다. 필드나 메소드이고, 스프링에서는 메소드만</p>
+<p>해당됩니다.</p>
+<p>Pointcut : Jointpoint의 부분,  실제로 Advice가 적용된 부분</p>
+<p>Weaving : Advice를 핵심 기능에 적용하는 행위를 말합니다.</p>
+<ul>
+<li>
+<p>RTW (Runtime Weaving)<br>
+스프링 AOP에서 사용하는 위빙 방식. Proxy를 생성하여 실제 타깃 오브젝트의 변형없이 위빙을 수행.<br>
+실제 런타임 시, 메소드 호출과 동시에 위빙이 이루어 지는 방식이다.</p>
+<p>장점 : 소스파일, 클래스파일의 변형이 없다.<br>
+단점 : 포인트 컷에 대한 어드바이스 적용 갯수가 늘어 날수록 성능이 떨어진다.</p>
+</li>
+<li>
+<p>CTW (Compile time Weaving)<br>
+AspectJ에는 AJC (AspectJ Compiler)라는 컴파일러가 있는데 Java Compiler를 확장한 형태의 컴파일러이다. AJC를 통해 java파일을 컴파일 하며, 컴파일 과정에서 바이트 코드 조작을 통해 Advisor 코드를 직접 삽입하여 위빙을 수행</p>
+<p>장점 : 위빙중 가장 빠른 퍼포먼스 (JVM상에 올라 갈때 메소드 내에 이미 advice 코드가 삽입 되어있기 때문에…)<br>
+단점 : 컴파일 과정에서 lombok과 같이 컴파일 과정에서 코드를 조작하는 플러그인과 충돌이 발생할 가능성이 아주 높다. (거의 같이 사용 불가)</p>
+</li>
+<li>
+<p>LTW (Load time Weaving)<br>
+ClassLoader를 통해 JVM에 로드 될 때 바이트 코드 조작을 통해 위빙이 되는 방식<br>
+RTW와 마찬가지로 소스코드와 클래스파일에 조작이 없다.<br>
+하지만 오브젝트가 메모리에 올라가는 과정에서 위빙이 일어나기 때문에 런타임 시, 시간은 CTW보다 상대적으로 느리다</p>
+<p>장점 : 소스파일, 클래스파일의 변형이 없다.<br>
+단점 : performance가 저하, 설정의 복잡.</p>
+</li>
+</ul>
+<p>스프링 프레임워크에서 지원하는 3가지 AOP 기술</p>
+<ul>
+<li>JDK dynamic proxy, CGLIB, AspectJ</li>
+</ul>
+<p>AOP 적용 방식에 따른 분류</p>
+<ul>
+<li>프록시 기반 : JDK dynamic proxy, CGLIB</li>
+<li>타깃 오브젝트 조작 : AspectJ</li>
+</ul>
+<p><strong>JDK Dynamic Proxy &amp; CGLIB</strong></p>
+<p>Aspect 프레임워크와는 달리 스프링에서는 간단한 설정만으로 JDK Dynamic Proxy와 CGLIB 방식을 사용할 수 있도록 되어 있습니다. 두 방식의 차이는 인터페이스의 유무로서, AOP의 타깃이 되는 클래스가 인터페이스를 구현했다면 JDK Dynamic Proxy를 사용하고, 구현하지 않았다면 CGLIB 방식을 사용합니다</p>
+<p><strong>[출처]</strong> [Spring AOP에 관하여 - <a href="http://blog.naver.com/tmondev/220558804255" target="_blank" rel="noopener">2] JDK Dynamic Proxy &amp; CGLIB</a></p>
+<p>Aspect란?</p>
+<p>도메인 로직에 필요한 다양한 부가기능을 추상화 시킨것.</p>
+<p>어노테이션 기반으로 AOP를 구현은 런타임이 아닌 <code>Compile</code> 시점에 Aspect를 적용하는 것이다.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Aspect</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestAspect</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger logger = LoggerFactory.getLogger(TestAspect<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Before</span>(<span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onBeforeHandler</span><span class="params">(JoinPoint joinPoint)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"=============== onBeforeThing"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@After</span>(<span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onAfterHandler</span><span class="params">(JoinPoint joinPoint)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"=============== onAfterHandler"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@AfterReturning</span>(pointcut = <span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>,</span><br><span class="line">      returning = <span class="string">"str"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onAfterReturningHandler</span><span class="params">(JoinPoint joinPoint, Object str)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"@AfterReturning : "</span> + str);</span><br><span class="line">    logger.info(<span class="string">"=============== onAfterReturningHandler"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Pointcut</span>(<span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onPointcut</span><span class="params">(JoinPoint joinPoint)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"=============== onPointcut"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div>
+
+
+  <div class="book-comments">
+    
+
+
+
+
+  </div>
+
+
+<script src="/guriOH.github.io/js/book-post.js"></script>
+        </div>
+      </div>
+
+      <div class="column col-2 hide-lg">
+        <div class="book-toc">
+  <div class="book-tocbot">
+  </div>
+  <div class="book-tocbot-menu">
+    <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+    <a onclick="go_top()">Back to top</a>
+    <a onclick="go_bottom()">Go to bottom</a>
+  </div>
+</div>
+
+<script>
+tocbot.init({
+  tocSelector: '.book-tocbot',
+  contentSelector: '.book-post',
+  headingSelector: 'h1, h2, h3, h4, h5',
+  collapseDepth: 2,
+  orderedList: false,
+  scrollSmooth: false,
+});
+
+function expand_toc(){
+  var b = document.querySelector(".book-toc-expand");
+  tocbot.init({
+    tocSelector: '.book-tocbot',
+    contentSelector: '.book-post',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    collapseDepth: 6,
+    orderedList: false,
+    scrollSmooth: false,
+  });
+  b.setAttribute("onclick", "collapse_toc()");
+  b.innerHTML = "Collapse all"
+}
+
+function collapse_toc(){
+  var b = document.querySelector(".book-toc-expand");
+  tocbot.init({
+    tocSelector: '.book-tocbot',
+    contentSelector: '.book-post',
+    headingSelector: 'h1, h2, h3, h4, h5',
+    collapseDepth: 2,
+    orderedList: false,
+    scrollSmooth: false,
+  });
+  b.setAttribute("onclick", "expand_toc()");
+  b.innerHTML = "Expand all"
+}
+
+function go_top() {
+  window.scrollTo(0, 0);
+}
+
+function go_bottom() {
+  window.scrollTo(0, document.body.scrollHeight);
+}
+
+</script>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

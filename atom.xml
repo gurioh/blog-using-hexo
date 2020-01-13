@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2020-01-13T12:54:43.615Z</updated>
+  <updated>2020-01-13T13:34:57.557Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -17,9 +17,63 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>AWS/EC2/Summary</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/Summary/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/Summary/</id>
+    <title>Cloud/AWS/IAM/Summary</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/Summary/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/Summary/</id>
+    <published>2020-01-13T13:32:27.424Z</published>
+    <updated>2020-01-13T13:34:57.557Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="s3-iam">S3 &amp; IAM</h1><p>Identiti Access Management Consists of the follwing;</p><ul><li>Users</li><li>Groups</li><li>Roles</li><li>Policies</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;s3-iam&quot;&gt;S3 &amp;amp; IAM&lt;/h1&gt;
+&lt;p&gt;Identiti Access Management Consists of the follwing;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Users&lt;/li&gt;
+&lt;li&gt;Groups&lt;/li&gt;
+&lt;li&gt;Roles&lt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Cloud/AWS/IAM/chapter03</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/chapter03/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/chapter03/</id>
+    <published>2020-01-13T13:04:01.147Z</published>
+    <updated>2020-01-13T13:32:26.142Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="s3">S3</h1><p>What is S3?</p><ul><li>S3 is a safe place to store your files.</li><li>It is Object-based storage.</li><li>The data is spread across multiple devices and facilities.</li></ul><p>Basic of S3</p><ul><li>S3 is Object-based - i.e. allows you to upload files.</li><li>Files can be from 0 Bytes to 5 TB.</li><li>There is unlimited storage.</li><li>Files are stored in Buckets.</li><li>S3 is a universal namespace That is names must be unique globally.<br>ex&gt; httpL//s3-eu-west-1.amazoneaws.com/aaaa</li><li>When you upload a file to S3, you will receive a Http 200 code if the upload was sucessful.</li></ul><p>Object</p><ul><li>Key</li><li>Value</li><li>Version ID</li><li>Metadata</li><li>Subresources;<ul><li>Access Control lists</li></ul></li></ul><p>How does data consistency work for S3?</p><ul><li>Read after Write consistency for PUTs of new Objects</li><li>Eventual Consistency for overwrite PUTS and DELETES (can take some time to propagate)</li></ul><p>In other words;</p><ul><li>If you write a new file and read if immediately afterward, you will be able to view that data.</li><li>If you update AN EXISTING file or delete a file and read it immediately, you may get the older version, or you may not, Basically changes to objects can take a little bit of time to propagate.</li></ul><p>S3 features;</p><ul><li>Tiered Storage Available</li><li>Lifecycle Management</li><li>Versioning</li><li>Encryption</li><li>MFA delete</li><li>Secure your data using Access Control lists and Bucket Policies</li></ul><p>S3 Storage classes</p><ol><li>S3 Standard</li><li>S3 - IA(Infrequently Accessed)</li><li>S3 One Zone - IA</li><li>S3 - Intelligent Tiering</li><li>S3 Glacier</li><li>S3 Glacier Deep Achive</li></ol><p>S3 Transfer Acceleration</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;s3&quot;&gt;S3&lt;/h1&gt;
+&lt;p&gt;What is S3?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;S3 is a safe place to store your files.&lt;/li&gt;
+&lt;li&gt;It is Object-based storage.&lt;/li&gt;
+&lt;li&gt;The da
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Cloud/AWS/EC2/Summary</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/Summary/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/Summary/</id>
     <published>2020-01-13T05:44:31.875Z</published>
     <updated>2020-01-13T12:54:43.615Z</updated>
     
@@ -47,9 +101,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper15</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper15/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper15/</id>
+    <title>Cloud/AWS/EC2/chaper15</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper15/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper15/</id>
     <published>2020-01-13T05:32:20.364Z</published>
     <updated>2020-01-13T05:44:29.793Z</updated>
     
@@ -74,9 +128,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper14</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper14/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper14/</id>
+    <title>Cloud/AWS/EC2/chaper14</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper14/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper14/</id>
     <published>2020-01-13T05:05:59.589Z</published>
     <updated>2020-01-13T05:32:17.785Z</updated>
     
@@ -99,9 +153,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper13</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper13/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper13/</id>
+    <title>Cloud/AWS/EC2/chaper13</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper13/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper13/</id>
     <published>2020-01-13T04:59:22.865Z</published>
     <updated>2020-01-13T05:05:41.364Z</updated>
     
@@ -125,9 +179,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper12</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper12/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper12/</id>
+    <title>Cloud/AWS/EC2/chaper12</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper12/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper12/</id>
     <published>2020-01-13T02:27:52.211Z</published>
     <updated>2020-01-13T04:40:44.992Z</updated>
     
@@ -150,9 +204,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper11</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper11/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper11/</id>
+    <title>Cloud/AWS/EC2/chaper11</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper11/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper11/</id>
     <published>2020-01-09T14:27:33.675Z</published>
     <updated>2020-01-13T02:27:48.431Z</updated>
     
@@ -175,9 +229,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper10</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper10/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper10/</id>
+    <title>Cloud/AWS/EC2/chaper10</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper10/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper10/</id>
     <published>2020-01-09T14:07:04.224Z</published>
     <updated>2020-01-09T14:26:11.420Z</updated>
     
@@ -202,9 +256,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper09</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper09/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper09/</id>
+    <title>Cloud/AWS/EC2/chaper09</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper09/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper09/</id>
     <published>2020-01-09T13:58:38.542Z</published>
     <updated>2020-01-09T14:07:02.908Z</updated>
     
@@ -229,9 +283,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper08</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper08/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper08/</id>
+    <title>Cloud/AWS/EC2/chaper08</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper08/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper08/</id>
     <published>2020-01-09T13:46:19.471Z</published>
     <updated>2020-01-09T13:58:37.026Z</updated>
     
@@ -253,9 +307,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper07</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper07/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper07/</id>
+    <title>Cloud/AWS/EC2/chaper07</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper07/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper07/</id>
     <published>2020-01-09T08:48:10.690Z</published>
     <updated>2020-01-09T13:46:03.933Z</updated>
     
@@ -280,9 +334,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper06</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper06/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper06/</id>
+    <title>Cloud/AWS/EC2/chaper06</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper06/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper06/</id>
     <published>2020-01-09T08:12:37.991Z</published>
     <updated>2020-01-09T08:47:53.851Z</updated>
     
@@ -306,9 +360,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper05</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper05/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper05/</id>
+    <title>Cloud/AWS/EC2/chaper05</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper05/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper05/</id>
     <published>2020-01-09T08:03:47.634Z</published>
     <updated>2020-01-09T08:12:14.503Z</updated>
     
@@ -333,9 +387,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper04</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper04/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper04/</id>
+    <title>Cloud/AWS/EC2/chaper04</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper04/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper04/</id>
     <published>2020-01-09T07:55:43.013Z</published>
     <updated>2020-01-09T08:03:38.036Z</updated>
     
@@ -362,9 +416,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper03</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper03/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper03/</id>
+    <title>Cloud/AWS/EC2/chaper03</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper03/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper03/</id>
     <published>2020-01-09T06:23:06.423Z</published>
     <updated>2020-01-09T07:33:07.597Z</updated>
     
@@ -388,9 +442,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper02</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper02/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper02/</id>
+    <title>Cloud/AWS/EC2/chaper02</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper02/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper02/</id>
     <published>2020-01-09T05:42:36.679Z</published>
     <updated>2020-01-09T14:32:26.178Z</updated>
     
@@ -411,9 +465,9 @@
   </entry>
   
   <entry>
-    <title>AWS/EC2/chaper01</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper01/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper01/</id>
+    <title>Cloud/AWS/EC2/chaper01</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper01/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper01/</id>
     <published>2020-01-08T07:48:57.441Z</published>
     <updated>2020-01-09T07:32:33.294Z</updated>
     
@@ -435,35 +489,9 @@
   </entry>
   
   <entry>
-    <title>Tips/Markdown_env</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Tips/Markdown_env/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Tips/Markdown_env/</id>
-    <published>2020-01-08T04:19:19.181Z</published>
-    <updated>2020-01-08T06:10:42.401Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="마크다운-작성-환경-만들기">마크다운 작성 환경 만들기</h1><ul><li>사용플러그인</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;마크다운-작성-환경-만들기&quot;&gt;마크다운 작성 환경 만들기&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;사용플러그인&lt;/li&gt;
-&lt;/ul&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>AWS/IAM/chapter01</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/IAM/chapter01/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/IAM/chapter01/</id>
+    <title>Cloud/AWS/IAM/chapter01</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/chapter01/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/chapter01/</id>
     <published>2020-01-08T00:29:16.539Z</published>
     <updated>2020-01-08T07:48:39.638Z</updated>
     
@@ -495,9 +523,9 @@
   </entry>
   
   <entry>
-    <title>mybatis/mybatis-문자열 해결</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/mybatis/mybatis-%EB%AC%B8%EC%9E%90%EC%97%B4%20%ED%95%B4%EA%B2%B0/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/mybatis/mybatis-문자열 해결/</id>
+    <title>Framework/Mybatis/mybatis-문자열 해결</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Framework/Mybatis/mybatis-%EB%AC%B8%EC%9E%90%EC%97%B4%20%ED%95%B4%EA%B2%B0/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Framework/Mybatis/mybatis-문자열 해결/</id>
     <published>2020-01-07T06:35:55.073Z</published>
     <updated>2020-01-07T06:48:59.935Z</updated>
     
@@ -511,21 +539,6 @@
 &lt;p&gt;select * from user where salary &amp;gt; 100;&lt;/p&gt;
 &lt;p&gt;일때 &#39;&amp;gt;&#39;와 같은 기호가 괄호인지 비교연산자인지 모르는데,
       
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Java/Spring/java-reflection</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Java/Spring/java-reflection/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Java/Spring/java-reflection/</id>
-    <published>2019-12-30T06:34:33.221Z</published>
-    <updated>2019-12-30T06:34:37.022Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
