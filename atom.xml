@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2020-01-09T14:26:11.420Z</updated>
+  <updated>2020-01-13T12:54:43.615Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -15,6 +15,164 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AWS/EC2/Summary</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/Summary/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/Summary/</id>
+    <published>2020-01-13T05:44:31.875Z</published>
+    <updated>2020-01-13T12:54:43.615Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="summary">Summary</h1><p>Tips</p><h2 id="pricing-model">Pricing model</h2><ol><li>on Demand</li><li>Reserved</li><li>Spot<ul><li>If the Spot instance is terminated by EC2, you will not be charged for a partial hour of usage, However if you terminate the instance yourself, you will be charged for any hour in which the instance ran</li></ul></li><li>Dedicated Hosts</li></ol><h2 id="instance-type">Instance Type</h2><h2 id="ebs">EBS</h2><ul><li>Terminatin Protection is turned off by default, you must turn it omn</li><li>On an EBS-backed instance, the default action is for the root EBS volume to be deleted whe the instance is termicated.</li><li>EBS Root Volumes of your DEFAULT AMI’s can be encrypted. You can also use a third party tool(such as bit locker etc) to encrypt the root volume, or this can be done when creating AMI’s (remember the lab) in the AWS console or using the API.</li><li>Additional volumes can be encrypted.</li></ul><h2 id="security-groups">Security Groups</h2><ul><li>All inbound traffic is blocked by defailt.</li><li>All Outbound traffic is allowed.</li><li>Changes to Security Groups take effect immediately.</li><li>You can have any number of EC2 instances within a security group.</li><li>You can have multiple security groups attached to EC2 instances.</li><li>Security Groups are STATEFUL.</li><li>If you create an inbound rule allowing traffic in, that traffic is automatically allowed back out again.</li><li>You cannot block specific IP address using Security Groups, instead use Network Access Control Lists.</li><li>You can specify allow rules, but not deny rules.</li></ul><h2 id="compare-ebs-types">Compare EBS Types</h2><ol><li>SSD<ul><li>General Purpose SSD</li><li>Provisioned IOPS SSD</li></ul></li><li>HDD<ul><li>Throughput Optimized HDD</li><li>Cold HDD</li><li>EBS Magnetic</li></ul></li></ol><h2 id="ebs-snapshots">EBS snapshots</h2><ul><li>Volumes exist on EBS, Think of EBS as a virtual hard disk.</li><li>Snapshots exist on S3. Think of snapshots as a photograph of the disk.</li><li>Snapshots are point in time copies of Volumes.</li><li>Snapshots are incremental : this mean that only the blocks that have changed since your last snapshot are moved to S3</li><li>If this is your first snapshots, it may take some time to create.</li><li>To create a snapshots for amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot.</li><li>However you can take a snap while the instance is running.</li><li>You can create AMI’s from both volumes and snapshots</li><li>You can change EBS volume sizes on the fly, including changing the size and storage type.</li><li>Volumes will ALWAYS be in the same availability zone as EC2 instance</li></ul><h2 id="migrating-ebs">Migrating EBS</h2><ul><li>To move an ev2 volume from one AZ to another, take a snapshot of it, create an AMI from the snapshot and then use AMI to launch the EC2 instance in a new AZ.</li><li>To move an EC2 volume from one region to another, take a snapshot of it, create an AMI from the snapshot and then copy the AMI from one region to the other. Then use the copied AMI to launch the new EC2 instance in the new region.</li></ul><h2 id="ebs-encryption">EBS Encryption</h2><ul><li><p>Snapshots of encrypted volumes are encrypted automatically.</p></li><li><p>Volumes restored from encrypted snapshots are encrypted automatically.</p></li><li><p>You can share snapshots, but only if they are unencrypted.</p></li><li><p>These snapshots can be shared with other AWS accounts or made public.</p></li><li><p>Q1<br>Root Device Volumes can now be encrypted. If you have an unencrypted root device volume that needs to be encrypted do th follwing;</p><ul><li>Create a Snapshot of the unencrypted root device volume</li><li>Create a copy of the snapshot and select the encrypt option</li><li>Create an AMI from the encrypted Snapshot</li><li>Use that AMI to launch new encrypted instances</li></ul></li><li><p>EBS vs Instance Store</p><ul><li>Instance Store Volumes are sometimes called Ephemeral Storage.</li><li>Instance store volumes cannot be stoppted. If the underlying host fails, you will lose your data.</li><li>EBS backed instances can be stopped. You will not lose the data on this instance if it is stopped.</li><li>You can reboot both, you will not lose your data.</li><li>By default, both ROOT volumes will be deleted on termincation. However, with EBS volumes, you can tell AWS to keep the root device volume.</li></ul></li></ul><h2 id="encrypting-root-device-volumes">Encrypting Root Device Volumes</h2><ul><li>Create a Snapshot of the unencrypted root device volume.</li><li>Create a copy of the Snapshot and select the encrypt option.</li><li>Create an AMI from encypted Snapshot</li><li>Use that AMI to launch new encypted instances.</li></ul><h2 id="cloudwatch">CloudWatch</h2><ul><li><p>CloudWatch is used for monitoring performance</p></li><li><p>CloudWatch can monitor most of AWS as well as your applications that run on AWS.</p></li><li><p>CloudWatch with EC2 will monitor events every 5minutes by default.</p></li><li><p>You can have 1 minute intervals by turning on detailed monitoring.</p></li><li><p>You can create CloudWatch alarms which trigger notifications.</p></li><li><p>CloudWatch is all about performance, CloudTrail is all about auditing.</p></li><li><p>What can i do with CloudWatch?</p><ul><li>Dashboards - creates awsome dashboards to see what is happening with your AWS environment.</li><li>Alarms - Allows you to set Alarms that notify you when particular thresholds are hit.</li><li>Events - CloudWatch Events helps you to respond to state changes in your AWS resources.</li><li>Logs - CloudWatch Logs helps you to aggregate, monitor, and store logs.</li></ul></li><li><p>CloudWatch vs CloudTrail</p><ul><li>CloudWatch monitors performance</li><li>CloudTrail monitors API calls in the AWS platform.</li></ul></li></ul><h2 id="cli">CLI</h2><ul><li>You can interact with AWS from anywhere in the world just by using ther command line(CLI)</li><li>You will need to set up access in IAM</li><li>Commands themselves are not in the exam, but some basic commands will be useful to know for real life.</li></ul><h2 id="roles">Roles</h2><ul><li>Roles are more secure than storing your access key and secret access key on individual EC2 instances.</li><li>Roles are easier to manage.</li><li>Roles can be assigned to an EC2 instance after it is created using both the console &amp; command line.</li><li>Roles are universal - you can use then in any region.</li></ul><h2 id="bootstrap-scripts">Bootstrap scripts</h2><ul><li>Bootstrap scrips run when an EC2 isntance first boots.</li><li>Can be powerful way of automating software installs and updates.</li></ul><h2 id="instance-meta-data-user-data">Instance meta data &amp; User data</h2><ul><li>Used to get information about an instance (Such as public IP)</li><li>curl <a href="http://123.123.123.123/latest/meta-data/" target="_blank" rel="noopener">http://123.123.123.123/latest/meta-data/</a></li><li>curl <a href="http://123.123.123.123/latest/user-data/" target="_blank" rel="noopener">http://123.123.123.123/latest/user-data/</a></li></ul><h2 id="efs">EFS</h2><ul><li>Supprots the Network FIle System version 4 (NFSv4) Protocol</li><li>You only pay for the storage you use (no pre-provisioning required)</li><li>Can scale up to the petabytes</li><li>Can support thousands of concurrent NFS connections</li><li>Data is stored across multiple AZ’s within a region</li><li>Read After Write Consistency</li></ul><h2 id="ec2-placement-groups">EC2 Placement Groups</h2><p>Three types placement groups</p><ol><li>Clusterd Placement Group<ul><li>Low Network Latency / High Network Throughput</li></ul></li><li>Spread Placement Group<ul><li>Individual Critical EC2 instances</li></ul></li><li>Partitioned<ul><li>Multiple EC2 instances HDFS, HBase, and Cassandra</li></ul></li></ol><ul><li>Tips<ul><li>A clusted placement group can’t span multiple Availabilty zones.</li><li>A spread placement and partitioned group can.</li><li>The name you specify for a placement group must be unique within your AWS accout</li><li>Only certain types of instances can be launched in a placement group(Compute Optimized, GPU, Memory Optimized, Storage Optimized)</li><li>AWS recommend homogenous instances within clustered placement groups.</li><li>You can’t merge placement groups.</li><li>You can’t move an exising instance into a placement group. You can create an AMI from your exiting instance, and then launch a new intance from the AMI into a placement group</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;Tips&lt;/p&gt;
+&lt;h2 id=&quot;pricing-model&quot;&gt;Pricing model&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;on Demand&lt;/li&gt;
+&lt;li&gt;Reserved&lt;/li&gt;
+&lt;li&gt;Spot
+&lt;ul&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper15</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper15/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper15/</id>
+    <published>2020-01-13T05:32:20.364Z</published>
+    <updated>2020-01-13T05:44:29.793Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ec2-placement-groups">EC2 Placement Groups</h1><p>Three Types of placement Groups;</p><ol><li>Clustered Placement Group<ul><li>Low Network Latency / High Network Throughput</li></ul></li><li>Spread Placement Group<ul><li>Individual Critical EC2 instances</li></ul></li><li>Partitioned<ul><li>Multiple EC2 instances HDFS, HBase, and Cassandra</li></ul></li></ol><p>Tips</p><ul><li>A clustered placement group can’t span multiple Avilability Zones.</li><li>A spread placement and partitioned group can</li><li>The name you specify for a placement group must be unique within your AWS account.</li><li>Only certain types of instances can be launched in a placement group(Compute Optimized, GPU, Memory Optimized, Storage Optimized)</li><li>AWS recomment homogenous instances within clustered placement groups.</li><li>You can’t merge placement groups</li><li>You can’t move a existing instance into a placement group. You can create an AMI from your exisiing instance, and then launch a new instance from the AMI into a placement group.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;ec2-placement-groups&quot;&gt;EC2 Placement Groups&lt;/h1&gt;
+&lt;p&gt;Three Types of placement Groups;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Clustered Placement Group
+&lt;ul&gt;
+&lt;li&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper14</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper14/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper14/</id>
+    <published>2020-01-13T05:05:59.589Z</published>
+    <updated>2020-01-13T05:32:17.785Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="efs-elastic-file-system">EFS (Elastic File System)</h1><p>What is EFS</p><p>File storage service for ec2 instances.</p><p>It is easy to use and provides a simple interface that allows you to create and configure file systems quickly and easily.</p><p>Tips</p><ul><li>Supports the Network File System version 4 (NFSv4) protocol</li><li>You only pay for the storage you use(no pre-provisioning required)</li><li>Can scale up to the petabytes</li><li>Can support thousands of concurrent NFS connections</li><li>Data is stored across multiple AZ’s within a region</li><li>Read After Write Consistency</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;efs-elastic-file-system&quot;&gt;EFS (Elastic File System)&lt;/h1&gt;
+&lt;p&gt;What is EFS&lt;/p&gt;
+&lt;p&gt;File storage service for ec2 instances.&lt;/p&gt;
+&lt;p&gt;It is e
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper13</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper13/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper13/</id>
+    <published>2020-01-13T04:59:22.865Z</published>
+    <updated>2020-01-13T05:05:41.364Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="instancde-metadata">Instancde Metadata</h1><p>Tips</p><ul><li>Used to get information about an instance (such as public ip)</li><li>curl http://(ip_address)/latest/meta-data/</li><li>curl http://(ip_address)/latest/user-data/</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;instancde-metadata&quot;&gt;Instancde Metadata&lt;/h1&gt;
+&lt;p&gt;Tips&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Used to get information about an instance (such as public ip)&lt;/li&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper12</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper12/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper12/</id>
+    <published>2020-01-13T02:27:52.211Z</published>
+    <updated>2020-01-13T04:40:44.992Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="identity-access-management-roles">Identity Access Management Roles</h1><p>Tips</p><ul><li>Roles are more secure than storing your access key and secret access key on individual EC2 instances.</li><li>Roles are easier to manager.</li><li>Roles can ve assigned to an EC2 intance after it is created using both the console &amp; command line.</li><li>Roles are universal - you can use them in any region.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;identity-access-management-roles&quot;&gt;Identity Access Management Roles&lt;/h1&gt;
+&lt;p&gt;Tips&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Roles are more secure than storing your
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>AWS/EC2/chaper11</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper11/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper11/</id>
+    <published>2020-01-09T14:27:33.675Z</published>
+    <updated>2020-01-13T02:27:48.431Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="aws-command-line-cli">AWS Command Line (CLI)</h1><p>Tips</p><ul><li>You can interact with AWS from anywhere in the world just by using command line(CLI)</li><li>You will need to set up access in IAM</li><li>Commands themselves are not in the exam but some bacis command will be useful to know for real life</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;aws-command-line-cli&quot;&gt;AWS Command Line (CLI)&lt;/h1&gt;
+&lt;p&gt;Tips&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can interact with AWS from anywhere in the world just by 
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>AWS/EC2/chaper10</title>
@@ -234,7 +392,7 @@
     <link href="https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper02/"/>
     <id>https://gurioh.github.io/guriOH.github.io/AWS/EC2/chaper02/</id>
     <published>2020-01-09T05:42:36.679Z</published>
-    <updated>2020-01-09T05:44:41.492Z</updated>
+    <updated>2020-01-09T14:32:26.178Z</updated>
     
     <content type="html"><![CDATA[<h1 id="lanuch-ec2-instance-lab1">Lanuch EC2 Instance lab1</h1>]]></content>
     
@@ -368,156 +526,6 @@
     <updated>2019-12-30T06:34:37.022Z</updated>
     
     <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Java/Spring/Spring-AOP</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Java/Spring/Spring-AOP/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Java/Spring/Spring-AOP/</id>
-    <published>2019-12-30T05:46:59.739Z</published>
-    <updated>2019-12-30T06:38:32.479Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="스프링-aop를-구현하는-방법-기술">스프링 AOP를 구현하는 방법 기술.</h1><p>AOP 개념</p><p>Aspect : 공통 기능을 말합니다.</p><p>Advice : Aspect의 기능 자체를 말합니다.</p><p>Jointpoint : Advice를 적용해야 하는 부분입니다. 필드나 메소드이고, 스프링에서는 메소드만</p><p>해당됩니다.</p><p>Pointcut : Jointpoint의 부분,  실제로 Advice가 적용된 부분</p><p>Weaving : Advice를 핵심 기능에 적용하는 행위를 말합니다.</p><ul><li><p>RTW (Runtime Weaving)<br>스프링 AOP에서 사용하는 위빙 방식. Proxy를 생성하여 실제 타깃 오브젝트의 변형없이 위빙을 수행.<br>실제 런타임 시, 메소드 호출과 동시에 위빙이 이루어 지는 방식이다.</p><p>장점 : 소스파일, 클래스파일의 변형이 없다.<br>단점 : 포인트 컷에 대한 어드바이스 적용 갯수가 늘어 날수록 성능이 떨어진다.</p></li><li><p>CTW (Compile time Weaving)<br>AspectJ에는 AJC (AspectJ Compiler)라는 컴파일러가 있는데 Java Compiler를 확장한 형태의 컴파일러이다. AJC를 통해 java파일을 컴파일 하며, 컴파일 과정에서 바이트 코드 조작을 통해 Advisor 코드를 직접 삽입하여 위빙을 수행</p><p>장점 : 위빙중 가장 빠른 퍼포먼스 (JVM상에 올라 갈때 메소드 내에 이미 advice 코드가 삽입 되어있기 때문에…)<br>단점 : 컴파일 과정에서 lombok과 같이 컴파일 과정에서 코드를 조작하는 플러그인과 충돌이 발생할 가능성이 아주 높다. (거의 같이 사용 불가)</p></li><li><p>LTW (Load time Weaving)<br>ClassLoader를 통해 JVM에 로드 될 때 바이트 코드 조작을 통해 위빙이 되는 방식<br>RTW와 마찬가지로 소스코드와 클래스파일에 조작이 없다.<br>하지만 오브젝트가 메모리에 올라가는 과정에서 위빙이 일어나기 때문에 런타임 시, 시간은 CTW보다 상대적으로 느리다</p><p>장점 : 소스파일, 클래스파일의 변형이 없다.<br>단점 : performance가 저하, 설정의 복잡.</p></li></ul><p>스프링 프레임워크에서 지원하는 3가지 AOP 기술</p><ul><li>JDK dynamic proxy, CGLIB, AspectJ</li></ul><p>AOP 적용 방식에 따른 분류</p><ul><li>프록시 기반 : JDK dynamic proxy, CGLIB</li><li>타깃 오브젝트 조작 : AspectJ</li></ul><p><strong>JDK Dynamic Proxy &amp; CGLIB</strong></p><p>Aspect 프레임워크와는 달리 스프링에서는 간단한 설정만으로 JDK Dynamic Proxy와 CGLIB 방식을 사용할 수 있도록 되어 있습니다. 두 방식의 차이는 인터페이스의 유무로서, AOP의 타깃이 되는 클래스가 인터페이스를 구현했다면 JDK Dynamic Proxy를 사용하고, 구현하지 않았다면 CGLIB 방식을 사용합니다</p><p><strong>[출처]</strong> [Spring AOP에 관하여 - <a href="http://blog.naver.com/tmondev/220558804255" target="_blank" rel="noopener">2] JDK Dynamic Proxy &amp; CGLIB</a></p><p>Aspect란?</p><p>도메인 로직에 필요한 다양한 부가기능을 추상화 시킨것.</p><p>어노테이션 기반으로 AOP를 구현은 런타임이 아닌 <code>Compile</code> 시점에 Aspect를 적용하는 것이다.</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Aspect</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestAspect</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger logger = LoggerFactory.getLogger(TestAspect<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Before</span>(<span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onBeforeHandler</span><span class="params">(JoinPoint joinPoint)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"=============== onBeforeThing"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@After</span>(<span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onAfterHandler</span><span class="params">(JoinPoint joinPoint)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"=============== onAfterHandler"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@AfterReturning</span>(pointcut = <span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>,</span><br><span class="line">      returning = <span class="string">"str"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onAfterReturningHandler</span><span class="params">(JoinPoint joinPoint, Object str)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"@AfterReturning : "</span> + str);</span><br><span class="line">    logger.info(<span class="string">"=============== onAfterReturningHandler"</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Pointcut</span>(<span class="string">"execution(* com.example.aop_example.service.*.test(..))"</span>)</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onPointcut</span><span class="params">(JoinPoint joinPoint)</span> </span>&#123;</span><br><span class="line">    logger.info(<span class="string">"=============== onPointcut"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;스프링-aop를-구현하는-방법-기술&quot;&gt;스프링 AOP를 구현하는 방법 기술.&lt;/h1&gt;
-&lt;p&gt;AOP 개념&lt;/p&gt;
-&lt;p&gt;Aspect : 공통 기능을 말합니다.&lt;/p&gt;
-&lt;p&gt;Advice : Aspect의 기능 자체를 말합니다.&lt;/p&gt;
-&lt;p&gt;Jo
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Java/Spring/Spring_basic</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Java/Spring/Spring_basic/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Java/Spring/Spring_basic/</id>
-    <published>2019-12-30T04:13:03.963Z</published>
-    <updated>2019-12-30T06:00:42.394Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="anotation">Anotation</h1><h4 id="어노테이셔-소스코드에-메타데이터를-표현하는것">어노테이셔 : 소스코드에 메타데이터를 표현하는것</h4><h2 id="built-in-annotation">Built-in Annotation</h2><p>@Override - 메소드 오버라이드 검증</p><p>@Deprecated - 메소드를 사용하지 않도록 유도.</p><p>@SuppressWarnings - 컴파일 경고를 무시하도록 함.</p><p>@SafeVarargs - 제너릴 같은 가변인자 매개변수를 사용할 때 경고 무시 (자바 7 이상)</p><p>@FunctionalInterface - 람다 함수등을 위한 인터페이스를 지정. 메소드가 두개 이상 되면 컴파일 오류 (자바 8 이상)</p><h2 id="meta-annotations">Meta Annotations</h2><p>@Retention - 어노테이션 영향 범위 결정.</p><p>@Documented - 어노테이션 정보 출력.</p><p>@Target - 어노테이션 적용 위치 결정.</p><p>@Inherited - 자식클래스 어노테이션 상속 여부 결정.</p><p>@Repeatable - 반복적으로 어노테이션을 선언</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;anotation&quot;&gt;Anotation&lt;/h1&gt;
-&lt;h4 id=&quot;어노테이셔-소스코드에-메타데이터를-표현하는것&quot;&gt;어노테이셔 : 소스코드에 메타데이터를 표현하는것&lt;/h4&gt;
-&lt;h2 id=&quot;built-in-annotation&quot;&gt;Built-in An
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Linux/Shell/Configuration_env_with_intellij</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Linux/Shell/Configuration_env_with_intellij/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Linux/Shell/Configuration_env_with_intellij/</id>
-    <published>2019-12-21T13:05:08.280Z</published>
-    <updated>2019-12-22T06:54:21.360Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="인텔리제이-쉘스크립트-개발환경-구성">인텔리제이 쉘스크립트 개발환경 구성</h1><p>Linux/Mac라면 굳이 쉘스크립트 작성을 위한 개발환경이 필요하지 않아도 되지만,</p><p>제품 빌드 스크립트등을 작성 할 시, 각종 환경변수와 컨피그 파일 로드를 포함하여 복잡한 스크립트를 작성해야 할 수도 있다.</p><p>이 때, 조금이라도 더 편하게 스크립트를 작성 할 수 있을 것 같다…ㅎㅎ</p><h2 id="empty-project-생성">Empty project 생성</h2><p>단지 쉘스크립트를 위한 환경이니 빈프로젝트를 생성.<br><img src="../../image/shell/1.png" alt=""></p><p>개인 취향에 맡게 개발 환경을 만들자. 나는 아래와 같은 폴더구조를 만들었다.</p><p><img src="../../image/shell/2.png" alt=""></p><h2 id="테스트-프로그램-실행">테스트 프로그램 실행.</h2><p>아래의 코드를 실행해보자 .<br><img src="../../image/shell/3.png" alt=""></p><p>인텔리제이에서는 아래에서 보이듯이 여러가지 언어 또는 프레임워크를 지원한다.<br><img src="../../image/shell/4.png" alt=""></p><p>쉘스크립트 실행 환경을 선택하자.</p><p>그리고 실행할 script path를 입력하고</p><p>아래와 같이 인터프리터를 설정하면 실행 준비 끝.</p><p>일단 기본 Bash쉘로 설정하였다.</p><p><img src="../../image/shell/5.png" alt=""></p><p>Mac 기준 Ctrl + R 로  그때그때 실행하며 편하게 개발시작.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;인텔리제이-쉘스크립트-개발환경-구성&quot;&gt;인텔리제이 쉘스크립트 개발환경 구성&lt;/h1&gt;
-&lt;p&gt;Linux/Mac라면 굳이 쉘스크립트 작성을 위한 개발환경이 필요하지 않아도 되지만,&lt;/p&gt;
-&lt;p&gt;제품 빌드 스크립트등을 작성 할 시, 각종 환경변수
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>AWS/Lambda</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/Lambda/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/Lambda/</id>
-    <published>2019-12-21T11:07:00.872Z</published>
-    <updated>2019-12-21T12:03:42.121Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="lambda">Lambda</h1><p>Lambda is the ultimate abstraction layer</p><p>Lambda scales out ( not up ) automatically</p><h1 id="alexa">Alexa</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;lambda&quot;&gt;Lambda&lt;/h1&gt;
-&lt;p&gt;Lambda is the ultimate abstraction layer&lt;/p&gt;
-&lt;p&gt;Lambda scales out ( not up ) automatically&lt;/p&gt;
-&lt;h1 id=&quot;alexa&quot;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>AWS/VPC</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/VPC/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/VPC/</id>
-    <published>2019-12-21T11:06:29.993Z</published>
-    <updated>2019-12-21T12:03:47.359Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="vpc">VPC</h1><p>5~10 question</p><h2 id="what-can-we-do-with-a-vpc">What can we do with a VPC?</h2><ul><li>Launch instance into a subnet of your choosing</li><li>Assign custom IP address ranges in each subnet</li><li>Configure route tables between subnets</li><li>Create internet gateway and attach in to our VPC</li><li>Much better security control over your AWS resources</li><li>Instance security groups</li><li>Subnet network access control lists(ACLS)</li></ul><h2 id="vpc-peering">VPC Peering</h2><ul><li>Allows you to connect on VPC with another via a direct network route using private IP address</li><li>Instance behave as if they other AWS accounts as well as with other</li><li>You can peer VPC’s with other AWS accounts as well as with other VPCs in the same account</li><li>Peering is in a star configuration: ie 1central VPC peers with 4 others</li><li>You can peer between regions.</li></ul><h2 id="nat-gatway">NAT Gatway</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;vpc&quot;&gt;VPC&lt;/h1&gt;
-&lt;p&gt;5~10 question&lt;/p&gt;
-&lt;h2 id=&quot;what-can-we-do-with-a-vpc&quot;&gt;What can we do with a VPC?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Launch instance into 
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>AWS/Route53</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/AWS/Route53/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/AWS/Route53/</id>
-    <published>2019-12-21T09:52:30.163Z</published>
-    <updated>2019-12-21T09:52:30.163Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="dns-101">DNS 101</h1><h2 id="route-53">Route 53</h2><h3 id="register-a-domain-name-lab">Register A Domain Name - LAB</h3><h2 id="routing-policy">Routing policy</h2><p>One recode - mule IP address</p><h2 id="weighted-routing-policy">Weighted Routing Policy</h2><p>health checks</p><h2 id="latency-based-routing">Latency-Based Routing</h2><h2 id="failover-routing-policy">Failover Routing policy</h2><h2 id="geolocation-routing-policy">Geolocation Routing policy</h2><h2 id="geoproximity-routing-traffic-flow-only">Geoproximity Routing(Traffic Flow Only)</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;dns-101&quot;&gt;DNS 101&lt;/h1&gt;
-&lt;h2 id=&quot;route-53&quot;&gt;Route 53&lt;/h2&gt;
-&lt;h3 id=&quot;register-a-domain-name-lab&quot;&gt;Register A Domain Name - LAB&lt;/h3&gt;
-&lt;h2 id=&quot;
-      
     
     </summary>
     
