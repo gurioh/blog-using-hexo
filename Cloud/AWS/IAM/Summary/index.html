@@ -270,6 +270,137 @@ show_sidebar()
 <li>Roles</li>
 <li>Policies</li>
 </ul>
+<p>IAM summary</p>
+<ul>
+<li>IAM is universal. if does not apply to regions at this time.</li>
+<li>The “root account” is simply the account created when first setup your AWS account. It has complete Admin access.</li>
+<li>New Users have NO permissions when first created.</li>
+<li>New Users are assigned Access Key ID &amp; Secret Access Keys when first created.</li>
+<li>These are not the same as a password. You cannot use the Access Key ID &amp; Secret Access Key to Login in to the console. You can use this to access AWS via the APIs and CLI</li>
+<li>You only get to view these once. If you lose them, you have to regenerate them, so save them in a secure location.</li>
+<li>Always setup Multifactor Authentication on your root account.</li>
+<li>You can create and customise your own password rotation policies.</li>
+</ul>
+<p>S3 summary</p>
+<ul>
+<li>
+<p>Rememver that S3 is Object-based; i.e.allows you to upload files.</p>
+</li>
+<li>
+<p>Files can be from 0 Bytes to 5 TB.</p>
+</li>
+<li>
+<p>There is unlimited storage.</p>
+</li>
+<li>
+<p>Files are stored in Buckets.</p>
+</li>
+<li>
+<p>S3 is a universal namespace. That is, names must be unique globally.</p>
+</li>
+<li>
+<p>Not suitable to install an operating system on.</p>
+</li>
+<li>
+<p>By default, all newly created buckets are PRIVATE. You can setup access control to your buckets using;</p>
+<ul>
+<li>Bucket Policies</li>
+<li>Access Control Lists</li>
+</ul>
+</li>
+<li>
+<p>S3 buckets can be configured to create access logs which log all requests made to the S3 bucket. This can be sent to another bucket and even another bucket in another account.</p>
+</li>
+</ul>
+<p>The Key fundamentals of S3</p>
+<ul>
+<li>Key</li>
+<li>Value</li>
+<li>Version ID</li>
+<li>Metadata</li>
+<li>Subresources</li>
+<li>Read after consistency for PUTS of new Objects</li>
+<li>Eventual Consistency for overwrite PUTS and DELETES (can take some time to propagate)</li>
+</ul>
+<p>Exam Tips</p>
+<ul>
+<li>S3 standard</li>
+<li>S3 - IA</li>
+<li>S3 One zone - IA</li>
+<li>S3 - intelligent Tiering</li>
+<li>S3 Glacier</li>
+<li>S3 Glacier Deep Archive</li>
+</ul>
+<p>Encryption In Transit is achieved by</p>
+<ul>
+<li>SSL/TLS<br>
+Encryption At Rest (Server Side) is achieved by</li>
+<li>S3 managed Keys - SSE-S3</li>
+<li>AWS Key Management Service, Managed Keys - SSE-KMS</li>
+<li>Server Side Encryption With Customer Provided Keys SSE-C<br>
+Client Side Encryption</li>
+</ul>
+<p>Cross Region Replication</p>
+<ul>
+<li>Versioning must be enabled on both the source and destination buckets.</li>
+<li>Regions must be unique.</li>
+<li>Files in an existing bucket are not replicated automatically</li>
+<li>All subsequent updated files will be replicated automatically.</li>
+<li>Delete markers are not replicated.</li>
+<li>Deleting individual versions or delete markers will not be replicated.</li>
+<li>Understand what Cross Region Replication is at a high level.</li>
+</ul>
+<p>Lifecycle Policies</p>
+<ul>
+<li>Automates moving your objects between the different storage tiers.</li>
+<li>Can be used in conjunction with versioning.</li>
+<li>Can be applied to current versions and previous versions.</li>
+</ul>
+<p>CloudFront</p>
+<ul>
+<li>Edge Location : This is the location where content will be cached. This is separate to an AWS Region/AZ.
+<ul>
+<li>Edge location are not just READ only – you can write to them too.(ie. put an object on to them)</li>
+<li>Objects are cached for the life of the life of the TTL (Time To Live)</li>
+<li>You can clear cached objects, but you will be charged.</li>
+</ul>
+</li>
+<li>Origin : This is the origin of all the files that the CDN will distribute. This can be either an S3 Bucket, an EC2 instance, an Elastic Load Balancer, or Route53</li>
+<li>Distribution : This is the name given the CDN which consists of a collection of Edge Locations.</li>
+<li>Web Distribution : Typically used for Websites.</li>
+<li>RTMP : Used for Media Streaming.</li>
+</ul>
+<p>Snowball</p>
+<ul>
+<li>Understand what snowball is</li>
+<li>Snowball can</li>
+<li>Import to S3</li>
+<li>Export from S3</li>
+</ul>
+<p>Storage Gateway</p>
+<ol>
+<li>File Gateway</li>
+</ol>
+<ul>
+<li>For flat files, stored directly on S3.</li>
+</ul>
+<ol start="2">
+<li>Volume Gateway</li>
+</ol>
+<ul>
+<li>Stored Volumes - Entire Dataset is stored on site and is asynchronuly backed up to S3.</li>
+<li>Cached Volumes - Entire Dataset is stored on S3 and the most frequently accesed data is cached on site</li>
+</ul>
+<ol start="3">
+<li>Gateway Virtual Tape Libary</li>
+</ol>
+<ul>
+<li>Used for backup and uses popular backup applications like NetBackup, Backup Exec, Veem etc.</li>
+</ul>
+<p>Tips</p>
+<ul>
+<li>Read the S3 FAOs before taking the exam, It comes up a LOT !!!</li>
+</ul>
 
 </div>
 

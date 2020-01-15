@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2020-01-13T13:34:57.557Z</updated>
+  <updated>2020-01-14T09:53:44.325Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -17,13 +17,140 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Cloud/AWS/Database/chapter5</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter5/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter5/</id>
+    <published>2020-01-14T07:37:33.217Z</published>
+    <updated>2020-01-14T09:53:44.325Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="redshift">Redshift</h1><p>OLTP vs OLAP</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;redshift&quot;&gt;Redshift&lt;/h1&gt;
+&lt;p&gt;OLTP vs OLAP&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Cloud/AWS/Database/chapter04</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter04/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter04/</id>
+    <published>2020-01-14T06:36:22.466Z</published>
+    <updated>2020-01-14T06:43:03.412Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="dynamodb">DynamoDB</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;dynamodb&quot;&gt;DynamoDB&lt;/h1&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Cloud/AWS/Database/chapter03</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter03/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter03/</id>
+    <published>2020-01-14T06:26:00.781Z</published>
+    <updated>2020-01-14T06:33:51.050Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="rds-backups-multi-az-read-replicas">RDS backups, Multi-AZ &amp; Read Replicas</h1><h1 id="multi-az-support">Multi-AZ Support</h1><ul><li>SQL Server</li><li>Oracle</li><li>MySql Server</li><li>PostgreSQL</li><li>MariaDB</li></ul><h1 id="read-replicas">Read Replicas</h1><ul><li>Oracle</li><li>MySql Server</li><li>PostgreSQL</li><li>MariaDB</li><li>Aurora</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;rds-backups-multi-az-read-replicas&quot;&gt;RDS backups, Multi-AZ &amp;amp; Read Replicas&lt;/h1&gt;
+&lt;h1 id=&quot;multi-az-support&quot;&gt;Multi-AZ Support&lt;/h1&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Cloud/AWS/Database/summary</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/summary/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/summary/</id>
+    <published>2020-01-14T05:42:45.621Z</published>
+    <updated>2020-01-14T09:53:33.434Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="databases-summary">Databases Summary</h1><h1 id="rds-oltp">RDS (OLTP)</h1><ul><li>SQL</li><li>MySQL</li><li>PostgreSQL</li><li>Oracle</li><li>Aurora</li><li>MariaDB</li></ul><h1 id="dynamodb-nosql">DynamoDB (NoSQL)</h1><h1 id="red-shift-olap">Red Shift OLAP</h1><h1 id="elasticache">Elasticache</h1><ul><li><p>Memcached</p></li><li><p>Redis</p></li></ul><h1 id="remember">Remember</h1><ul><li>RDS runs on virtual machines</li><li>You cannot log in to these operating systems however.</li><li>Patching of the RDS Operating System and DB is Amazon’s responsiblilty</li><li>RDS is NOT Serverless</li><li>Aurora Serverless IS Serverless</li></ul><h1 id="two-different-types-of-backups-for-rds">Two different types of Backups for RDS</h1><ul><li>Automated Backups</li><li>Databases Snapshots</li></ul><h1 id="read-replicas">Read Replicas</h1><ul><li>Can be multi-az</li><li>Used to increase performance.</li><li>Must have backups turned on.</li><li>Can be in different regions.</li><li>Can be MySQL, PostgreSQL, MariaDB, Oracle, Aurora</li><li>Can be promoted to master, this will break the Read Replica</li></ul><h1 id="multiaz">MultiAZ</h1><ul><li>Used For DR.</li><li>You can force a failover from one AZ to another by rebooting the RDS instance.</li></ul><h1 id="dynamodb">DynamoDB</h1><ul><li>Storead on SSD storage</li><li>Spread Across 3 geographically distinct data centres</li><li>Eventual Consistent Reads (Default)</li><li>Strongly Consistent Reads</li></ul><h1 id="redshift-backups">Redshift Backups</h1><ul><li>Enabled by default with a 1 day retnetion period.</li><li>Maximun retention period is 35 days.</li><li>Redshift always attempts to maintain at least three copies of your data (the original and replica on the compute nodes and a backup in amazon S3)</li><li>Redshift can also asynchronously replicate your snapshots to S3 in another region for disaster recovery</li></ul><h1 id="aurora">Aurora</h1><ul><li>2 copies of your data is contained in each availablity zone. with minu</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;databases-summary&quot;&gt;Databases Summary&lt;/h1&gt;
+&lt;h1 id=&quot;rds-oltp&quot;&gt;RDS (OLTP)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;SQL&lt;/li&gt;
+&lt;li&gt;MySQL&lt;/li&gt;
+&lt;li&gt;PostgreSQL&lt;/li&gt;
+&lt;li
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Cloud/AWS/Database/chapter01</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter01/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter01/</id>
+    <published>2020-01-14T04:35:01.816Z</published>
+    <updated>2020-01-14T05:41:39.616Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="databases-101">Databases 101</h1><p>Relational databases on AWS</p><ul><li>SQL Server</li><li>Oracle</li><li>MySql</li><li>PostgreSql</li><li>Aurora</li><li>MariaDB</li></ul><p>Multi-AZ vs Read Replicas</p><ul><li>Multi-AZ - For Disaster Recovery</li><li>Read Replicas - For Performance</li></ul><p>Non Relational databases on AWS</p><ul><li>Collection  = Table</li><li>Document = Row</li><li>Key Value Pairs = Fields</li></ul><p>OLTP vs OLAP</p><p>ElasticCache</p><ul><li>web service that makes it easy to deploy, operate, and scale an in memory cache in the cloud.</li></ul><p>ElasticCache supports two open-source in memory caching engines:</p><ul><li>Memcached</li><li>Redis</li></ul><p>Tips</p><ol><li>RDS (OLTP)<ul><li>SQL</li><li>MySQL</li><li>PostgreSQL</li><li>Oracle</li><li>Aurora</li><li>MariaDB</li></ul></li><li>DynamoDB (NoSQL)</li><li>Red Shift OLAP</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;databases-101&quot;&gt;Databases 101&lt;/h1&gt;
+&lt;p&gt;Relational databases on AWS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SQL Server&lt;/li&gt;
+&lt;li&gt;Oracle&lt;/li&gt;
+&lt;li&gt;MySql&lt;/li&gt;
+&lt;li&gt;Pos
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Cloud/AWS/IAM/Summary</title>
     <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/Summary/"/>
     <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/Summary/</id>
     <published>2020-01-13T13:32:27.424Z</published>
-    <updated>2020-01-13T13:34:57.557Z</updated>
+    <updated>2020-01-14T04:34:39.480Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="s3-iam">S3 &amp; IAM</h1><p>Identiti Access Management Consists of the follwing;</p><ul><li>Users</li><li>Groups</li><li>Roles</li><li>Policies</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="s3-iam">S3 &amp; IAM</h1><p>Identiti Access Management Consists of the follwing;</p><ul><li>Users</li><li>Groups</li><li>Roles</li><li>Policies</li></ul><p>IAM summary</p><ul><li>IAM is universal. if does not apply to regions at this time.</li><li>The “root account” is simply the account created when first setup your AWS account. It has complete Admin access.</li><li>New Users have NO permissions when first created.</li><li>New Users are assigned Access Key ID &amp; Secret Access Keys when first created.</li><li>These are not the same as a password. You cannot use the Access Key ID &amp; Secret Access Key to Login in to the console. You can use this to access AWS via the APIs and CLI</li><li>You only get to view these once. If you lose them, you have to regenerate them, so save them in a secure location.</li><li>Always setup Multifactor Authentication on your root account.</li><li>You can create and customise your own password rotation policies.</li></ul><p>S3 summary</p><ul><li><p>Rememver that S3 is Object-based; i.e.allows you to upload files.</p></li><li><p>Files can be from 0 Bytes to 5 TB.</p></li><li><p>There is unlimited storage.</p></li><li><p>Files are stored in Buckets.</p></li><li><p>S3 is a universal namespace. That is, names must be unique globally.</p></li><li><p>Not suitable to install an operating system on.</p></li><li><p>By default, all newly created buckets are PRIVATE. You can setup access control to your buckets using;</p><ul><li>Bucket Policies</li><li>Access Control Lists</li></ul></li><li><p>S3 buckets can be configured to create access logs which log all requests made to the S3 bucket. This can be sent to another bucket and even another bucket in another account.</p></li></ul><p>The Key fundamentals of S3</p><ul><li>Key</li><li>Value</li><li>Version ID</li><li>Metadata</li><li>Subresources</li><li>Read after consistency for PUTS of new Objects</li><li>Eventual Consistency for overwrite PUTS and DELETES (can take some time to propagate)</li></ul><p>Exam Tips</p><ul><li>S3 standard</li><li>S3 - IA</li><li>S3 One zone - IA</li><li>S3 - intelligent Tiering</li><li>S3 Glacier</li><li>S3 Glacier Deep Archive</li></ul><p>Encryption In Transit is achieved by</p><ul><li>SSL/TLS<br>Encryption At Rest (Server Side) is achieved by</li><li>S3 managed Keys - SSE-S3</li><li>AWS Key Management Service, Managed Keys - SSE-KMS</li><li>Server Side Encryption With Customer Provided Keys SSE-C<br>Client Side Encryption</li></ul><p>Cross Region Replication</p><ul><li>Versioning must be enabled on both the source and destination buckets.</li><li>Regions must be unique.</li><li>Files in an existing bucket are not replicated automatically</li><li>All subsequent updated files will be replicated automatically.</li><li>Delete markers are not replicated.</li><li>Deleting individual versions or delete markers will not be replicated.</li><li>Understand what Cross Region Replication is at a high level.</li></ul><p>Lifecycle Policies</p><ul><li>Automates moving your objects between the different storage tiers.</li><li>Can be used in conjunction with versioning.</li><li>Can be applied to current versions and previous versions.</li></ul><p>CloudFront</p><ul><li>Edge Location : This is the location where content will be cached. This is separate to an AWS Region/AZ.<ul><li>Edge location are not just READ only – you can write to them too.(ie. put an object on to them)</li><li>Objects are cached for the life of the life of the TTL (Time To Live)</li><li>You can clear cached objects, but you will be charged.</li></ul></li><li>Origin : This is the origin of all the files that the CDN will distribute. This can be either an S3 Bucket, an EC2 instance, an Elastic Load Balancer, or Route53</li><li>Distribution : This is the name given the CDN which consists of a collection of Edge Locations.</li><li>Web Distribution : Typically used for Websites.</li><li>RTMP : Used for Media Streaming.</li></ul><p>Snowball</p><ul><li>Understand what snowball is</li><li>Snowball can</li><li>Import to S3</li><li>Export from S3</li></ul><p>Storage Gateway</p><ol><li>File Gateway</li></ol><ul><li>For flat files, stored directly on S3.</li></ul><ol start="2"><li>Volume Gateway</li></ol><ul><li>Stored Volumes - Entire Dataset is stored on site and is asynchronuly backed up to S3.</li><li>Cached Volumes - Entire Dataset is stored on S3 and the most frequently accesed data is cached on site</li></ul><ol start="3"><li>Gateway Virtual Tape Libary</li></ol><ul><li>Used for backup and uses popular backup applications like NetBackup, Backup Exec, Veem etc.</li></ul><p>Tips</p><ul><li>Read the S3 FAOs before taking the exam, It comes up a LOT !!!</li></ul>]]></content>
     
     <summary type="html">
     
@@ -407,137 +534,6 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;All Outboun
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper03</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper03/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper03/</id>
-    <published>2020-01-09T06:23:06.423Z</published>
-    <updated>2020-01-09T07:33:07.597Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="lanuch-ec2-instance-lab2">Lanuch EC2 Instance lab2</h1><p>Tips</p><ul><li>Terminate Protection Turned off by default</li><li>On an EBS-backed instance, the default action is for the root EBS volume to be deleted when the instance is terminated.</li><li>EBS Root Volumes of your DEFAULT AMI’s can be encrypted</li><li>Additional volumnes can be encypted.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;lanuch-ec2-instance-lab2&quot;&gt;Lanuch EC2 Instance lab2&lt;/h1&gt;
-&lt;p&gt;Tips&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Terminate Protection Turned off by default&lt;/li&gt;
-&lt;li&gt;On 
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper02</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper02/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper02/</id>
-    <published>2020-01-09T05:42:36.679Z</published>
-    <updated>2020-01-09T14:32:26.178Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="lanuch-ec2-instance-lab1">Lanuch EC2 Instance lab1</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;lanuch-ec2-instance-lab1&quot;&gt;Lanuch EC2 Instance lab1&lt;/h1&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper01</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper01/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper01/</id>
-    <published>2020-01-08T07:48:57.441Z</published>
-    <updated>2020-01-09T07:32:33.294Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="ec2-101-elastic-compute-cloud">EC2 101 Elastic compute cloud</h1><p>What is EC2</p><p>EC2 is a web service that provide resizable compute capacity in the cloud.</p><p>장점 : EC2는 서버 인스턴스 구성시 간편하고, 스케일 업/다운 방식에 상관없이 빠르게 변경 가능하다.</p><p>Pricing Models</p><ol><li>On Demand</li><li>Reserved<ul><li>Standard Reserved instances</li><li>Convertible Reserved Instances</li><li>Scheduled Reserved Instances</li></ul></li><li>spot<ul><li>etc</li></ul></li><li>Dedicated Hosts<ul><li>etc</li></ul></li></ol><p>EC2 Instance Types</p><ul><li>F1, I3, G3, H1, T3…</li><li>tips [Fight <a href="http://DR.MC" target="_blank" rel="noopener">DR.MC</a> PXZ AU]</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;ec2-101-elastic-compute-cloud&quot;&gt;EC2 101 Elastic compute cloud&lt;/h1&gt;
-&lt;p&gt;What is EC2&lt;/p&gt;
-&lt;p&gt;EC2 is a web service that provide resizable 
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/IAM/chapter01</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/chapter01/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/chapter01/</id>
-    <published>2020-01-08T00:29:16.539Z</published>
-    <updated>2020-01-08T07:48:39.638Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="iam-정리">IAM 정리</h1><ul><li>IAM</li></ul><ul><li>Users</li><li>Groups</li><li>Policies</li><li>Roles</li></ul><ul><li><p>Root account is simply the account created when first setup your aws account it has complete admin access</p></li><li><p>Always setup MFA on your root account.</p></li><li><p>password customise.</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;iam-정리&quot;&gt;IAM 정리&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;IAM&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;Users&lt;/li&gt;
-&lt;li&gt;Groups&lt;/li&gt;
-&lt;li&gt;Policies&lt;/li&gt;
-&lt;li&gt;Roles&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Framework/Mybatis/mybatis-문자열 해결</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Framework/Mybatis/mybatis-%EB%AC%B8%EC%9E%90%EC%97%B4%20%ED%95%B4%EA%B2%B0/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Framework/Mybatis/mybatis-문자열 해결/</id>
-    <published>2020-01-07T06:35:55.073Z</published>
-    <updated>2020-01-07T06:48:59.935Z</updated>
-    
-    <content type="html"><![CDATA[<p>Mybatis 사용시 쿼리문에 문자열 비교연사자나 부등호를 사용할 때 가 있다.</p><p>select * from user where salary &gt; 100;</p><p>일때 '&gt;'와 같은 기호가 괄호인지 비교연산자인지 모르는데,</p><p>이럴때 ‘&lt;![CDATA[’ 을 사용하면 CDATA 안에 들어가는 문장을 문자열로 인식하게 된다.</p><![CDATA[select * from user where salary > 100]]> 이렇게 사용하면 특수문자가 들어가도 문자열로 인식한다.]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Mybatis 사용시 쿼리문에 문자열 비교연사자나 부등호를 사용할 때 가 있다.&lt;/p&gt;
-&lt;p&gt;select * from user where salary &amp;gt; 100;&lt;/p&gt;
-&lt;p&gt;일때 &#39;&amp;gt;&#39;와 같은 기호가 괄호인지 비교연산자인지 모르는데,
       
     
     </summary>

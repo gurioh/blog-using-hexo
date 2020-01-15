@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter5/</loc>
+    
+    <lastmod>2020-01-14T09:53:44.325Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/summary/</loc>
+    
+    <lastmod>2020-01-14T09:53:33.434Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter04/</loc>
+    
+    <lastmod>2020-01-14T06:43:03.412Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter03/</loc>
+    
+    <lastmod>2020-01-14T06:33:51.050Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter01/</loc>
+    
+    <lastmod>2020-01-14T05:41:39.616Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/Summary/</loc>
+    
+    <lastmod>2020-01-14T04:34:39.480Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Seminar/Google/GCP_SEMINAR/</loc>
     
     <lastmod>2020-01-13T13:42:26.384Z</lastmod>
@@ -12,13 +54,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/Seminar/Agile/Agile_daily_scrum/</loc>
     
     <lastmod>2020-01-13T13:42:14.188Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/IAM/Summary/</loc>
-    
-    <lastmod>2020-01-13T13:34:57.557Z</lastmod>
     
   </url>
   
@@ -310,7 +345,7 @@
   </url>
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Versioning/Git/git/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/SourceCode/Git/git/</loc>
     
     <lastmod>2019-12-18T14:12:42.703Z</lastmod>
     
