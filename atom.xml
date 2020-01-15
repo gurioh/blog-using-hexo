@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2020-01-14T09:53:44.325Z</updated>
+  <updated>2020-01-15T08:30:02.695Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -15,6 +15,207 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ElasticTranscoder</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T08:30:02.695Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="elastictranscoder">ElasticTranscoder</h1><ul><li>Media Transcoder in the cloud</li><li>Convert media files from their original source format in to different formats that will play on smartphones, tablets, PCs, stc</li><li>Provides transcoding presets for popular output formats, which means that you don’t need to guess about which settings work best on particular devices</li><li>Pay based on the minutes that you transcode and the resolution at which you transcode.</li></ul><h1 id="how-we-use-elastic-transcoder">How we use Elastic Transcoder</h1><ul><li>S3 bucket -&gt; Lamda -&gt; Elastic Tanscoder -&gt; S3 bucket</li></ul><h1 id="tips">Tips</h1><p>Just remember Elastic Transcoder is a media transcoder in the cloud. It convert media files from their original source format in to different formats that will play on multi device</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;elastictranscoder&quot;&gt;ElasticTranscoder&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Media Transcoder in the cloud&lt;/li&gt;
+&lt;li&gt;Convert media files from their original so
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Kinesis 101</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Kinesis101/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Kinesis101/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T08:42:46.869Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="streaming-data">Streaming data</h1><ul><li>Puchases from online stores</li><li>Stock prices</li><li>Game data</li><li>Social network data</li><li>Geospatial data (uber)</li><li>IOT sensor data</li></ul><h1 id="kinesis">Kinesis</h1><ul><li>Kinesis is a platform on aws to send your streaming data to.<br>Kinesis makes it easy to load and analze streaming data, and also providing the abilirty for you to build your own custom applications for you business needs.</li></ul><h1 id="3-different-types">3 different types</h1><ul><li>Kinesis Streams</li><li>Kinesis Firehose</li><li>Kinesis Analytics</li></ul><h1 id="shard">shard</h1><ul><li>5 transactions per second for reads, up to a maxium total data read rate of 2MB per second and up to 1000 records per second for writes, up to a maximum total data write rate of 1 MB per second (including partition keys)</li></ul><h1 id="tips">Tips</h1><ul><li>Kinesis Streams</li><li>Kinesis Firehose</li><li>Kinesis Analytics</li><li>shard</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;streaming-data&quot;&gt;Streaming data&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Puchases from online stores&lt;/li&gt;
+&lt;li&gt;Stock prices&lt;/li&gt;
+&lt;li&gt;Game data&lt;/li&gt;
+&lt;li&gt;Social ne
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>API Gateway</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/APIGateway/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/APIGateway/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T08:30:30.628Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="api-gateway">API Gateway</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;api-gateway&quot;&gt;API Gateway&lt;/h1&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Simple Work Flow Service</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SWF/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SWF/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T08:14:31.098Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="swf">SWF</h1><p>SWF is a web service that makes it easy to coordinate work across distributed application components.<br>SWF enables applications for a range of use cases, including media processing, web application back-ends, business process workflows, and analytics pipeliens, to be designed as a coordination of tasks.</p><h1 id="swf-vs-sqs">SWF vs SQS</h1><ul><li>SQS has a retention period of up to 14days, with SWF, workflow executions can last up to 1 year.</li><li>Amozon SWF ensures that a task is assigned only once and is never duplicated. With amazon SQS, you need to handle duplicated message and may also need to ensure that a message is processed only once.</li><li>Amozon SWF keeps track of all the tasks and events in an application. With amazon SQS, you need to implement your own application-level tracking, especially if your application uses multiple queues.</li></ul><h1 id="swf-actors">SWF Actors</h1><ul><li>Workflow Starters</li><li>Deciders : control the flow of activity tasks in a workflow execution.</li><li>Acitivity Workers - Carry out the activity tasks.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;swf&quot;&gt;SWF&lt;/h1&gt;
+&lt;p&gt;SWF is a web service that makes it easy to coordinate work across distributed application components.&lt;br&gt;
+SWF enabl
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Simple Notification Service</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SNS/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SNS/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T08:23:52.550Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="sns">SNS</h1><p>SNS is web service that makes easy to set up, operate, and send notification from the cloud.<br>It provides developers with a highly scaleable, flexible, and cost-effective capability to publish message from an application and immediately deliver them to subscribers or other applications.</p><h1 id="sns-benefits">SNS Benefits</h1><ul><li>Instantaneous, push-based delivery (no polling)</li><li>Simple APIs and easy integration with applications</li><li>Flexible message delivery over multiple transport protocols</li><li>Inexpensive, pay-as-you-go model with no up-front costs</li><li>Web-based AWS management Console offers the simplicity of a point-and-click-interface</li></ul><h1 id="sns-vs-sqs">SNS vs SQS</h1><ul><li>Both Messaging Service in AWS</li><li>SNS - Push</li><li>SQS - Polls(Pulls)</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;sns&quot;&gt;SNS&lt;/h1&gt;
+&lt;p&gt;SNS is web service that makes easy to set up, operate, and send notification from the cloud.&lt;br&gt;
+It provides develo
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SQS</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SQS/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SQS/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T08:01:07.641Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="sqs">SQS</h1><p>SQS is web service that gices you access to a message queue that can be used to store message while waiting for a computer to process them.2</p><h1 id="two-type-queue">Two type queue</h1><ul><li>Standard Queues (default)</li><li>Fifo Queues (Complemet Standard queue)</li></ul><p>Tips</p><ul><li><p>SQS is pull baed, not pushed baed.</p></li><li><p>Messages are 256 kb in size.</p></li><li><p>Message can be kept in the queue from 1 minute to 14 days; the default retnetion period is 4 days.</p></li><li><p>Visibility Time out is the amount of time that the message is invisible in the SQS queue after a reader picks up that message. Provided the job is processed before the visibility time out expires, the message wil then be deleted from the queue.</p></li><li><p>SQS guarantees that your message will be processed at least once.</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;sqs&quot;&gt;SQS&lt;/h1&gt;
+&lt;p&gt;SQS is web service that gices you access to a message queue that can be used to store message while waiting for a c
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Route53 summary</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Route53/Summary/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Route53/Summary/</id>
+    <published>2020-01-15T03:55:35.000Z</published>
+    <updated>2020-01-15T07:41:44.390Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="dns-summary">DNS Summary</h1><ul><li>ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name.</li><li>Understand the difference between an Alias Record and a CNAME</li><li>Given the choice, always choose an Alias Record over a CNAME</li></ul><h1 id="common-dns-types">Common DNS Types</h1><ul><li>SOA Records</li><li>NS Records</li><li>A Records</li><li>CNAMES</li><li>MX Records</li><li>PTR Records</li></ul><h1 id="routing-rolicies-that-available-with-route53">Routing Rolicies that available with Route53</h1><ul><li>Simple Routing</li><li>Weighted Routing</li><li>Latency-based Routing</li><li>Failover Routing</li><li>Geolocation Routing</li><li>Geoproximity Routing (Traffic Flow Only)</li><li>Multivalue Answer Routing</li></ul><h1 id="health-checks">Health Checks</h1><ul><li>You can set health checks on individual record sets.</li><li>If a record set fails a health check it will be removed from Route53 until it passes the health check.</li><li>You can set SNS notifications to alert you if a health check is failed.</li></ul><h1 id="simple-routing-policy">Simple Routing Policy</h1><ul><li>If you choose the simple routing policy you can only have one record with multiple IP address.</li><li>If you specify muliple values in a record, Route 53 returns all values to the user in random order.</li></ul><h1 id="weighted-routing-policy">Weighted Routing Policy</h1><h1 id="latency-routing-policy">Latency Routing Policy</h1><h1 id="failover-routing-policy">Failover Routing Policy</h1><h1 id="geolocation-routing-policy">Geolocation Routing Policy</h1><h1 id="geoproximity-routing-traffic-flow-only">Geoproximity Routing (Traffic Flow Only)</h1><ul><li>To use geoproximity routing, you must use Route 53 traffic flow.</li></ul><h1 id="multivalue-answer-policy">Multivalue Answer Policy</h1><ul><li>Essentially the same as with Simple based routing, except you get Health Checks.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;dns-summary&quot;&gt;DNS Summary&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name.&lt;/li&gt;
+&lt;li&gt;U
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Spring bean life cycle</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring_bean_understanding/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring_bean_understanding/</id>
+    <published>2020-01-15T01:32:09.000Z</published>
+    <updated>2020-01-15T03:55:01.436Z</updated>
+    
+    <content type="html"><![CDATA[<p>스프링에서는 빈의 생명주기 관리를 위한 방법을 몇가지를 제공하고 있다.<br>본 문서에서는 스프링 빈의 생명주기를 알아보고 관련 인터페이스 몇가지를 알아보자.</p><h3 id="spring-bean-life-cycle-overview">Spring bean life cycle overview</h3><p><img src="../../../image/2020-01-15-11-08-05.png" alt=""></p><p><img src="../../../image/2020-01-15-10-39-16.png" alt=""></p><ul><li>Part 1 - 빈 생성이후 사용전까지 각 단계, 전 처리 단계, 각 생성자 호출하여 생성.</li><li>Part 2 - 빈 삭제 단계</li></ul><h3 id="aware-interfaces">Aware Interfaces</h3><p>많이 사용되는 인터페이스.</p><ul><li><code>BeanFactoryAware</code> : setBeanFactory() 제공</li><li><code>BeanNameAware</code> : ThesetVeanName() 빈의 이름을 생성하는 인터페이스 제공</li><li><code>ApplicationContextAware</code> : ThesetApplicationContext() 해당 빈의 ApplicationContext 객체 제공.</li></ul> <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exmaple <span class="number">1</span></span><br></pre></td></tr></table></figure><h3 id="bean-post-processor">Bean Post Processor</h3><p>BeanPostProcessor 인터페이스는 개발자가 원하는 로직 의존성 처리로직 등을 구현 할 수 있는 콜백 메소드를 정의</p><ul><li><code>BeanPostProcessor</code><ul><li>postProcessBeforeInitialization: 빈의 초기화 전 수행<blockquote><p>InitializingBean’s afterPropertiesSet or a custom init-method.<br>- postProcessAfterInitialization: 빈 초기화 후 수행<br>&gt; Spring calls this method after any bean initialization callbacks.</p></blockquote></li></ul></li></ul><h3 id="initializingbean-and-disposablebean-callback-interfaces">InitializingBean and DisposableBean Callback Interfaces</h3><ul><li><code>InitializingBean</code><ul><li>afterPropertiesSet 메소드 선언 , 초기화 로직 작성 가능.</li></ul></li><li><code>DisposableBean</code><ul><li>destroy 메서드 선언, 빈의 삭제와 관련 코드 클린업</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;스프링에서는 빈의 생명주기 관리를 위한 방법을 몇가지를 제공하고 있다.&lt;br&gt;
+본 문서에서는 스프링 빈의 생명주기를 알아보고 관련 인터페이스 몇가지를 알아보자.&lt;/p&gt;
+&lt;h3 id=&quot;spring-bean-life-cycle-overview&quot;&gt;Sp
+      
+    
+    </summary>
+    
+    
+    
+      <category term="spring" scheme="https://gurioh.github.io/guriOH.github.io/tags/spring/"/>
+    
+      <category term="bean" scheme="https://gurioh.github.io/guriOH.github.io/tags/bean/"/>
+    
+      <category term="IoC" scheme="https://gurioh.github.io/guriOH.github.io/tags/IoC/"/>
+    
+  </entry>
   
   <entry>
     <title>Cloud/AWS/Database/chapter5</title>
@@ -92,7 +293,7 @@
     <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/summary/"/>
     <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/summary/</id>
     <published>2020-01-14T05:42:45.621Z</published>
-    <updated>2020-01-14T09:53:33.434Z</updated>
+    <updated>2020-01-15T00:20:54.736Z</updated>
     
     <content type="html"><![CDATA[<h1 id="databases-summary">Databases Summary</h1><h1 id="rds-oltp">RDS (OLTP)</h1><ul><li>SQL</li><li>MySQL</li><li>PostgreSQL</li><li>Oracle</li><li>Aurora</li><li>MariaDB</li></ul><h1 id="dynamodb-nosql">DynamoDB (NoSQL)</h1><h1 id="red-shift-olap">Red Shift OLAP</h1><h1 id="elasticache">Elasticache</h1><ul><li><p>Memcached</p></li><li><p>Redis</p></li></ul><h1 id="remember">Remember</h1><ul><li>RDS runs on virtual machines</li><li>You cannot log in to these operating systems however.</li><li>Patching of the RDS Operating System and DB is Amazon’s responsiblilty</li><li>RDS is NOT Serverless</li><li>Aurora Serverless IS Serverless</li></ul><h1 id="two-different-types-of-backups-for-rds">Two different types of Backups for RDS</h1><ul><li>Automated Backups</li><li>Databases Snapshots</li></ul><h1 id="read-replicas">Read Replicas</h1><ul><li>Can be multi-az</li><li>Used to increase performance.</li><li>Must have backups turned on.</li><li>Can be in different regions.</li><li>Can be MySQL, PostgreSQL, MariaDB, Oracle, Aurora</li><li>Can be promoted to master, this will break the Read Replica</li></ul><h1 id="multiaz">MultiAZ</h1><ul><li>Used For DR.</li><li>You can force a failover from one AZ to another by rebooting the RDS instance.</li></ul><h1 id="dynamodb">DynamoDB</h1><ul><li>Storead on SSD storage</li><li>Spread Across 3 geographically distinct data centres</li><li>Eventual Consistent Reads (Default)</li><li>Strongly Consistent Reads</li></ul><h1 id="redshift-backups">Redshift Backups</h1><ul><li>Enabled by default with a 1 day retnetion period.</li><li>Maximun retention period is 35 days.</li><li>Redshift always attempts to maintain at least three copies of your data (the original and replica on the compute nodes and a backup in amazon S3)</li><li>Redshift can also asynchronously replicate your snapshots to S3 in another region for disaster recovery</li></ul><h1 id="aurora">Aurora</h1><ul><li>2 copies of your data is contained in each availablity zone. with minu</li></ul>]]></content>
     
@@ -322,218 +523,6 @@
 &lt;p&gt;Tips&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Roles are more secure than storing your
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper11</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper11/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper11/</id>
-    <published>2020-01-09T14:27:33.675Z</published>
-    <updated>2020-01-13T02:27:48.431Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="aws-command-line-cli">AWS Command Line (CLI)</h1><p>Tips</p><ul><li>You can interact with AWS from anywhere in the world just by using command line(CLI)</li><li>You will need to set up access in IAM</li><li>Commands themselves are not in the exam but some bacis command will be useful to know for real life</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;aws-command-line-cli&quot;&gt;AWS Command Line (CLI)&lt;/h1&gt;
-&lt;p&gt;Tips&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You can interact with AWS from anywhere in the world just by 
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper10</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper10/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper10/</id>
-    <published>2020-01-09T14:07:04.224Z</published>
-    <updated>2020-01-09T14:26:11.420Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="cloudwatch-101">CloudWatch 101</h1><p>Tips</p><ul><li>Standard Monitoring = 5 min</li><li>Detailed Monitoring = 1 min</li></ul><p>What can i do with CloudWatch</p><ol><li><p>Dashboard - Creates awesome dashboards to see what is happening with your AWS env</p></li><li><p>Alarms - Allows you to set Alarms that norify you when particular threshold are hit.</p></li><li><p>Events - CloudWatch Events helps you to respond to state changes in your AWS resources.</p></li><li><p>Logs - CloudWatch Logs helps you to aggregate, monitor, and store logs.</p></li></ol><ul><li>CloudWatch monitors performance</li><li>CloudTrail monitors API calls in AWS platform.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;cloudwatch-101&quot;&gt;CloudWatch 101&lt;/h1&gt;
-&lt;p&gt;Tips&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Standard Monitoring = 5 min&lt;/li&gt;
-&lt;li&gt;Detailed Monitoring = 1 min&lt;/li&gt;
-&lt;/ul&gt;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper09</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper09/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper09/</id>
-    <published>2020-01-09T13:58:38.542Z</published>
-    <updated>2020-01-09T14:07:02.908Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="cloudwatch-101">CloudWatch 101</h1><p>What is Cloud watch</p><ul><li>monitoring service</li></ul><p>cloudWatch monitors performance</p><ul><li>Compute<ul><li>EC2</li><li>Autoscaling Groups</li><li>Elastic Load Balancers</li><li>Route53 Health Checks</li></ul></li><li>Storage &amp; Content Delivery<ul><li>EBS Volumes</li><li>Storage Gateways</li><li>CloudFront</li></ul></li></ul><p>Host Level Metrics Consist of</p><ul><li>CPU</li><li>Network</li><li>Disk</li><li>Status Check</li></ul><p>Cloud Trail compare with CloudWatch</p><p>Cloud Trail like CCTV</p><ul><li>CloudWatch monitors performance.</li><li>CloudTrail monitors API calls in the AWS platform.</li></ul><p>Remember;</p><ul><li>CW is used for monitoring performance</li><li>CW can monitor most of AWS as well as your applications that run on AWS.</li><li>CW with ec2 will monitor events every 5 minutes by default.</li><li>You can have 1 minute intervals by turning on detailed monitoring.</li><li>You can create CW alarms whi<br>ch trigger norification.</li><li>CW is all about performance. CloudTrail is all about auditing.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;cloudwatch-101&quot;&gt;CloudWatch 101&lt;/h1&gt;
-&lt;p&gt;What is Cloud watch&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;monitoring service&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;cloudWatch monitors perform
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper08</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper08/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper08/</id>
-    <published>2020-01-09T13:46:19.471Z</published>
-    <updated>2020-01-09T13:58:37.026Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="encryped-root-device-volumes-snapshots">Encryped Root Device Volumes &amp; Snapshots</h1><ul><li>Snapshots of encrypted volumes are encrypted automatically</li><li>Volumes restored from encrypted snapshots are encrypted automatically</li><li>You can share snapshots, but only if they are unencrypted.</li><li>These snapshots can be shared with other AWS accounts or made public</li></ul><p>Process</p><ol><li>Create a Snapshot of the unencrypted root device volume</li><li>Create a copy of the Snapshot and select encrypt option</li><li>Create an AMI from the encrypted Snapshot</li><li>Use that AMI to launch new encryted instances</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;encryped-root-device-volumes-snapshots&quot;&gt;Encryped Root Device Volumes &amp;amp; Snapshots&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Snapshots of encrypted volumes ar
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper07</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper07/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper07/</id>
-    <published>2020-01-09T08:48:10.690Z</published>
-    <updated>2020-01-09T13:46:03.933Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="ami-types-ebs-vs-instance-store">AMI types (EBS vs Instance store)</h1><ul><li>Select AMI based on:</li></ul><ol><li>Region</li><li>Operating system.</li><li>Architecture (32-bit or 64-bit)</li><li>Launch Permissions</li><li>Storage for Root device</li></ol><h2 id="all-amis-are-categorized-as-either-backed-by-ebs-or-instance-store">All AMIs are categorized as either backed by EBS or Instance store</h2><ul><li><p>For EBD Volume : The root device for an instance launched from the AMI is an Amazon EBS volume created from an Amazon EBS snapshot</p></li><li><p>For Instance Store Volumes : The root device for an instance launched from the AMI is an instance store volume created from a template stored in Amazon S3.</p></li></ul><p>tips</p><ul><li>Instance Store Volume are somethimes called Ephemeral Storage</li><li>Instance store volume cannot be stopped If the underlying host fails, you will lose your data.</li><li>EBS backed instances can be stopped. You will not lose the data on this instance if it is stopped.</li><li>You can reboot both, you will not lose your data.</li><li>By default, both ROOT volumes will be deleted on termination. However, with EBS volumes, you can tell aws to keep the root device volume</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;ami-types-ebs-vs-instance-store&quot;&gt;AMI types (EBS vs Instance store)&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Select AMI based on:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Region&lt;/li
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper06</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper06/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper06/</id>
-    <published>2020-01-09T08:12:37.991Z</published>
-    <updated>2020-01-09T08:47:53.851Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="ebs1-volumne">EBS1 Volumne</h1><p>EBS 스토리지는 ec2 인스턴스와 같은 가용공간에 있어야함.</p><p>추가적인 볼륨들은 Ec2인스턴스 삭제를 해도 지워지지 않는다.</p><p>Tips</p><ul><li><p>EBS : virtual hard disk</p></li><li><p>Snapshots exist on S3. Think of snapshots as a photograph of the disk</p></li><li><p>Snapshots are point in time copies of Volumes.</p></li><li><p>Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3.</p></li><li><p>To create a snapshot for Amazone EBS volumes that serve as root devices, you should stop the instance before taking the snapshot.</p></li><li><p>however you can snap while instance running.</p></li><li><p>You can create AMI’s from both Volumes and Snapshots</p></li><li><p>You can change EBS volume size on the fly, including changing the size the type.</p></li><li><p>Volume will ALWAYS be in the same availability zone as the EC2 instance.</p></li><li><p>To move an EC2 volume from one AZ to another, take a snapshot of it, create an AMI from the snapshot and then use the AMI to launch the EC2 instance in a new AZ.</p></li><li><p>To move an EC2 volume from one region to another.<br>EC2 -&gt; snapshot -&gt; AMI -&gt; copy AMI to another zone.</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;ebs1-volumne&quot;&gt;EBS1 Volumne&lt;/h1&gt;
-&lt;p&gt;EBS 스토리지는 ec2 인스턴스와 같은 가용공간에 있어야함.&lt;/p&gt;
-&lt;p&gt;추가적인 볼륨들은 Ec2인스턴스 삭제를 해도 지워지지 않는다.&lt;/p&gt;
-&lt;p&gt;Tips&lt;/p&gt;
-&lt;ul&gt;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper05</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper05/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper05/</id>
-    <published>2020-01-09T08:03:47.634Z</published>
-    <updated>2020-01-09T08:12:14.503Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="ebs101">EBS101</h1><p>What is EBS</p><p>Elastic Block Store</p><p>5 diff type of EBS storage;</p><ol><li>General Purpose (SSD)</li><li>Provisioned IOPS (SSD)</li><li>Throughput Optimized HDD</li><li>Cold HDD</li><li>EBS Magnetic</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;ebs101&quot;&gt;EBS101&lt;/h1&gt;
-&lt;p&gt;What is EBS&lt;/p&gt;
-&lt;p&gt;Elastic Block Store&lt;/p&gt;
-&lt;p&gt;5 diff type of EBS storage;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;General Purpose (SSD)&lt;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper04</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper04/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper04/</id>
-    <published>2020-01-09T07:55:43.013Z</published>
-    <updated>2020-01-09T08:03:38.036Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="security-group">Security Group</h1><p>Tips</p><ul><li><p>All inbound traffic is blocked by default</p></li><li><p>All Outbountd traffic is allowed.</p></li><li><p>Change to Security groups take effect immediatly.</p></li><li><p>You can have any number of EC2 instances within a security group</p></li><li><p>You can have multiple security groups attached to Ec2 instances.</p></li><li><p>Security Groups are STATEFUL.</p></li><li><p>If you create an inbound rule allowing traffic in, that traffic is automatically allowed back out again</p></li><li><p>You cannot block specific IP address using security groups, instead use Network Access Control Lists.</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;security-group&quot;&gt;Security Group&lt;/h1&gt;
-&lt;p&gt;Tips&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;All inbound traffic is blocked by default&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;All Outboun
       
     
     </summary>

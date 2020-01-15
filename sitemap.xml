@@ -2,16 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter5/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Kinesis101/</loc>
     
-    <lastmod>2020-01-14T09:53:44.325Z</lastmod>
+    <lastmod>2020-01-15T08:42:46.869Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/APIGateway/</loc>
+    
+    <lastmod>2020-01-15T08:30:30.628Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/</loc>
+    
+    <lastmod>2020-01-15T08:30:02.695Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SNS/</loc>
+    
+    <lastmod>2020-01-15T08:23:52.550Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SWF/</loc>
+    
+    <lastmod>2020-01-15T08:14:31.098Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SQS/</loc>
+    
+    <lastmod>2020-01-15T08:01:07.641Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Route53/Summary/</loc>
+    
+    <lastmod>2020-01-15T07:41:44.390Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Database/Mysql/sql-20191208/</loc>
+    
+    <lastmod>2020-01-15T07:19:32.233Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring_bean_understanding/</loc>
+    
+    <lastmod>2020-01-15T03:55:01.436Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/summary/</loc>
     
-    <lastmod>2020-01-14T09:53:33.434Z</lastmod>
+    <lastmod>2020-01-15T00:20:54.736Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter5/</loc>
+    
+    <lastmod>2020-01-14T09:53:44.325Z</lastmod>
     
   </url>
   
@@ -299,13 +362,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/Database/Mysql/sql_tunning/</loc>
     
     <lastmod>2019-12-18T14:15:39.431Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Database/Mysql/sql-20191208/</loc>
-    
-    <lastmod>2019-12-18T14:15:30.297Z</lastmod>
     
   </url>
   

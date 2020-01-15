@@ -320,10 +320,10 @@ pre {
     border: 0; }
 
 pre .deletion {
-  background: if false, #fdd, #800000; }
+  background: if true, #fdd, #800000; }
 
 pre .addition {
-  background: if false, #dfd, #008000; }
+  background: if true, #dfd, #008000; }
 
 pre .meta {
   color: #eab700; }
