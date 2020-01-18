@@ -73,16 +73,17 @@
     <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/APIGateway/"/>
     <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/APIGateway/</id>
     <published>2020-01-15T07:42:29.000Z</published>
-    <updated>2020-01-15T08:30:30.628Z</updated>
+    <updated>2020-01-18T07:36:04.897Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="api-gateway">API Gateway</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="api-gateway">API Gateway</h1><ul><li>It is a fully managed service that makes it easy for developers to publish, maintain, monitor, and secure APIs at any scale.</li></ul><h1 id="what-can-api-gateway-do">What can api gateway do?</h1><ul><li>Expose HTTPS endpoints to define RESTful API</li><li>Serverless-ly connect to service like lamda &amp; DynamoDB</li><li>Send each API endpoint to a different target</li><li>Run efficiently with low cost</li><li>Scale effortlessly</li><li>Track and control usage by API key</li><li>Throttle requests to prevent attacks</li><li>Connect to CloudWatch to log all requests for monitorinng</li><li>Maintain multiple versions of your API</li></ul><h1 id="tips">Tips</h1><ul><li>Remeber what api gatway is at a high level</li><li>API gateway has caching capabilities to increase performance</li><li>APi gateway is log cost and scales automatically</li><li>You can throttle API Gateway to prevent attacks</li><li>You can log results to CloudWatch</li><li>If you are using Javascript/AJAX that uses multiple domains with API Gateway, ensure that you have enabled CORS on API Gateway</li></ul>]]></content>
     
     <summary type="html">
     
       
       
         &lt;h1 id=&quot;api-gateway&quot;&gt;API Gateway&lt;/h1&gt;
-
+&lt;ul&gt;
+&lt;li&gt;It is a fully managed service that makes it easy for developers to publish, maintain, monitor
       
     
     </summary>
@@ -154,6 +155,56 @@ It provides develo
       
         &lt;h1 id=&quot;sqs&quot;&gt;SQS&lt;/h1&gt;
 &lt;p&gt;SQS is web service that gices you access to a message queue that can be used to store message while waiting for a c
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Cognito &amp; Web Identity Federation)</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Cognito/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Cognito/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T13:01:45.036Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="web-identity-federation">Web Identity Federation</h1><ul><li>Web Identity Federation lets you give your users access to AWS resources after they have successfully authenticated with a web-based identify provider like Amazon, Facebook, or Google. Following successful authentication, ther user receives an authentication code from the Web ID provider, which they can trade for temporary AWS security credentials.</li></ul><h1 id="amazon-gognito">Amazon Gognito</h1><ul><li>Amazon Gognito providers Web Identify Federation<ul><li>Sign-up and sign-in to your apps</li><li>Access for guest users</li><li>Acts as an Identify Broker between your application and Web ID providers, so you don’t need to write any additional code.</li><li>Syncronizes user data for multiple devices</li><li>Recommanded for all mobile applications AWS services.</li></ul></li></ul><h1 id="user-pool-identify-pool">User pool &amp; Identify pool</h1><h1 id="tips">Tips</h1><ul><li></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;web-identity-federation&quot;&gt;Web Identity Federation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Web Identity Federation lets you give your users access to AWS resour
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Application Summary</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Summary/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Summary/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-18T07:54:33.412Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="sqs">SQS</h1><ul><li>SQS is a way to decouple hour infrastructure</li><li>SQS is pull based, not pushed based.</li><li>Messages are 256 KB in size.</li><li>Messages can be kept in the queue from 1 minute to 14 days; the default retention period is 4 days.</li><li>Standard SQS and FIFO SQS</li><li>Standard order is not quaranteed and messages can be delivered more than once.</li><li>FIFO order is strictly maintained and messages are delivered only once.</li><li>SQS guarantees that your messages will be processed at least once.</li></ul><h1 id="swf-vs-sqs">SWF vs SQS</h1><ul><li>SQS has retention period of up to 14 days; with SWF, workflow executions can last up to 1 year.</li><li>Amazon SWF presents a task-oriented APi, whereas Amazon SQS offers a message-oriented API.</li><li>Amazon SWF ensures that a task is assigned only once and is never duplicated. With Amazon SQS, you need to handle duplicated messages and may also need to ensure that a message is processed only once.</li><li>Amazon SWF keeps track of all the tasks and events in an application. With Amazon SQS, need to implement your own application-level tracking, especially if your application uses multiple queues.</li></ul><h1 id="swf-actors">SWF actors</h1><ul><li>Workflow starters</li><li>Deciders</li><li>Activity workers</li></ul><h1 id="sns-benefits">SNS Benefits</h1><ul><li>Instantaneous, push-based delivery (no polling)</li><li>Simple APIs and easy integration with applications</li><li>Flexble message delivery over multiple transport protocols</li><li>Inexpensive, pay-as-you-go model with no up-front costs</li><li>Web-based AWS Management Console offers the simplicithy of a point-and-click interface</li></ul><h1 id="sns-vs-sqs">SNS vs SQS</h1><ul><li>Both Messaging service</li><li>SNS - push</li><li>SQS - polls(Pulls)</li></ul><h1 id="elastic-transcoder">Elastic Transcoder</h1><ul><li>Just rememver that elastic transcoder is a media transcoder in the cloud. It converts media files from their original source format in to different formats that will play on smartphones, tablets, PCs etc</li></ul><h1 id="api-gateway">API Gateway</h1><ul><li>Remeber what api gatway is at a high level</li><li>API gateway has caching capabilities to increase performance</li><li>APi gateway is log cost and scales automatically</li><li>You can throttle API Gateway to prevent attacks</li><li>You can log results to CloudWatch</li><li>If you are using Javascript/AJAX that uses multiple domains with API Gateway, ensure that you have enabled CORS on API Gateway</li></ul><h1 id="kinesis">Kinesis</h1><ul><li>Know the difference between kinesis streams and kinesis firehose. you will be geiven scenario quesions and you must choose the most relevant service.</li><li>Understand what kineis Analytic is.</li></ul><h1 id="cognito">Cognito</h1><ul><li>Federation allows users to authenticate with a Web Identity Provider (Google, Facebook, Amazon)</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;sqs&quot;&gt;SQS&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;SQS is a way to decouple hour infrastructure&lt;/li&gt;
+&lt;li&gt;SQS is pull based, not pushed based.&lt;/li&gt;
+&lt;li&gt;Messages 
       
     
     </summary>
@@ -472,57 +523,6 @@ It provides develo
 &lt;p&gt;What is EFS&lt;/p&gt;
 &lt;p&gt;File storage service for ec2 instances.&lt;/p&gt;
 &lt;p&gt;It is e
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper13</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper13/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper13/</id>
-    <published>2020-01-13T04:59:22.865Z</published>
-    <updated>2020-01-13T05:05:41.364Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="instancde-metadata">Instancde Metadata</h1><p>Tips</p><ul><li>Used to get information about an instance (such as public ip)</li><li>curl http://(ip_address)/latest/meta-data/</li><li>curl http://(ip_address)/latest/user-data/</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;instancde-metadata&quot;&gt;Instancde Metadata&lt;/h1&gt;
-&lt;p&gt;Tips&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Used to get information about an instance (such as public ip)&lt;/li&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/EC2/chaper12</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper12/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper12/</id>
-    <published>2020-01-13T02:27:52.211Z</published>
-    <updated>2020-01-13T04:40:44.992Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="identity-access-management-roles">Identity Access Management Roles</h1><p>Tips</p><ul><li>Roles are more secure than storing your access key and secret access key on individual EC2 instances.</li><li>Roles are easier to manager.</li><li>Roles can ve assigned to an EC2 intance after it is created using both the console &amp; command line.</li><li>Roles are universal - you can use them in any region.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;identity-access-management-roles&quot;&gt;Identity Access Management Roles&lt;/h1&gt;
-&lt;p&gt;Tips&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Roles are more secure than storing your
       
     
     </summary>

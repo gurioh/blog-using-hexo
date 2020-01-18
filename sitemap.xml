@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Kinesis101/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Summary/</loc>
     
-    <lastmod>2020-01-15T08:42:46.869Z</lastmod>
+    <lastmod>2020-01-18T07:54:33.412Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/APIGateway/</loc>
     
-    <lastmod>2020-01-15T08:30:30.628Z</lastmod>
+    <lastmod>2020-01-18T07:36:04.897Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Cognito/</loc>
+    
+    <lastmod>2020-01-15T13:01:45.036Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Kinesis101/</loc>
+    
+    <lastmod>2020-01-15T08:42:46.869Z</lastmod>
     
   </url>
   
