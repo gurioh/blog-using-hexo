@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/OS/Common/tip/</loc>
+    
+    <lastmod>2020-01-20T09:00:10.636Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/OS/Linux/tip/</loc>
+    
+    <lastmod>2020-01-20T08:46:49.576Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%2520Architecture/chapter02/</loc>
     
     <lastmod>2020-01-20T07:57:16.129Z</lastmod>
@@ -446,13 +460,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/Project/Backup-program/</loc>
     
     <lastmod>2019-12-18T14:14:02.358Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/OS/Linux/tip/</loc>
-    
-    <lastmod>2019-12-18T14:13:43.550Z</lastmod>
     
   </url>
   
