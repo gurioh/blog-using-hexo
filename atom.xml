@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2020-01-18T07:36:04.897Z</updated>
+  <updated>2020-01-15T08:30:02.695Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ElasticTranscoder</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T08:30:02.695Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="elastictranscoder">ElasticTranscoder</h1><ul><li>Media Transcoder in the cloud</li><li>Convert media files from their original source format in to different formats that will play on smartphones, tablets, PCs, stc</li><li>Provides transcoding presets for popular output formats, which means that you don’t need to guess about which settings work best on particular devices</li><li>Pay based on the minutes that you transcode and the resolution at which you transcode.</li></ul><h1 id="how-we-use-elastic-transcoder">How we use Elastic Transcoder</h1><ul><li>S3 bucket -&gt; Lamda -&gt; Elastic Tanscoder -&gt; S3 bucket</li></ul><h1 id="tips">Tips</h1><p>Just remember Elastic Transcoder is a media transcoder in the cloud. It convert media files from their original source format in to different formats that will play on multi device</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;elastictranscoder&quot;&gt;ElasticTranscoder&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Media Transcoder in the cloud&lt;/li&gt;
+&lt;li&gt;Convert media files from their original so
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>API Gateway</title>
@@ -32,6 +57,33 @@
         &lt;h1 id=&quot;api-gateway&quot;&gt;API Gateway&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;It is a fully managed service that makes it easy for developers to publish, maintain, monitor
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Kinesis 101</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Kinesis101/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Kinesis101/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T08:58:59.300Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="streaming-data">Streaming data</h1><ul><li>Puchases from online stores</li><li>Stock prices</li><li>Game data</li><li>Social network data</li><li>Geospatial data (uber)</li><li>IOT sensor data</li></ul><h1 id="kinesis">Kinesis</h1><ul><li>Kinesis is a platform on aws to send your streaming data to.<br>Kinesis makes it easy to load and analze streaming data, and also providing the abilirty for you to build your own custom applications for you business needs.</li></ul><h1 id="3-different-types">3 different types</h1><ul><li>Kinesis Streams</li><li>Kinesis Firehose</li><li>Kinesis Analytics</li></ul><h1 id="shard">shard</h1><ul><li>5 transactions per second for reads, up to a maxium total data read rate of 2MB per second and up to 1000 records per second for writes, up to a maximum total data write rate of 1 MB per second (including partition keys)</li></ul><h1 id="tips">Tips</h1><ul><li>Kinesis Streams</li><li>Kinesis Firehose</li><li>Kinesis Analytics</li><li>shard</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;streaming-data&quot;&gt;Streaming data&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Puchases from online stores&lt;/li&gt;
+&lt;li&gt;Stock prices&lt;/li&gt;
+&lt;li&gt;Game data&lt;/li&gt;
+&lt;li&gt;Social ne
       
     
     </summary>
@@ -65,31 +117,6 @@ It provides develo
   </entry>
   
   <entry>
-    <title>ElasticTranscoder</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/</id>
-    <published>2020-01-15T07:42:29.000Z</published>
-    <updated>2020-01-15T08:30:02.695Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="elastictranscoder">ElasticTranscoder</h1><ul><li>Media Transcoder in the cloud</li><li>Convert media files from their original source format in to different formats that will play on smartphones, tablets, PCs, stc</li><li>Provides transcoding presets for popular output formats, which means that you don’t need to guess about which settings work best on particular devices</li><li>Pay based on the minutes that you transcode and the resolution at which you transcode.</li></ul><h1 id="how-we-use-elastic-transcoder">How we use Elastic Transcoder</h1><ul><li>S3 bucket -&gt; Lamda -&gt; Elastic Tanscoder -&gt; S3 bucket</li></ul><h1 id="tips">Tips</h1><p>Just remember Elastic Transcoder is a media transcoder in the cloud. It convert media files from their original source format in to different formats that will play on multi device</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;elastictranscoder&quot;&gt;ElasticTranscoder&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Media Transcoder in the cloud&lt;/li&gt;
-&lt;li&gt;Convert media files from their original so
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Cognito &amp; Web Identity Federation)</title>
     <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Cognito/"/>
     <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Cognito/</id>
@@ -105,33 +132,6 @@ It provides develo
         &lt;h1 id=&quot;web-identity-federation&quot;&gt;Web Identity Federation&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Web Identity Federation lets you give your users access to AWS resour
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Kinesis 101</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Kinesis101/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Kinesis101/</id>
-    <published>2020-01-15T07:42:29.000Z</published>
-    <updated>2020-01-15T08:58:59.300Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="streaming-data">Streaming data</h1><ul><li>Puchases from online stores</li><li>Stock prices</li><li>Game data</li><li>Social network data</li><li>Geospatial data (uber)</li><li>IOT sensor data</li></ul><h1 id="kinesis">Kinesis</h1><ul><li>Kinesis is a platform on aws to send your streaming data to.<br>Kinesis makes it easy to load and analze streaming data, and also providing the abilirty for you to build your own custom applications for you business needs.</li></ul><h1 id="3-different-types">3 different types</h1><ul><li>Kinesis Streams</li><li>Kinesis Firehose</li><li>Kinesis Analytics</li></ul><h1 id="shard">shard</h1><ul><li>5 transactions per second for reads, up to a maxium total data read rate of 2MB per second and up to 1000 records per second for writes, up to a maximum total data write rate of 1 MB per second (including partition keys)</li></ul><h1 id="tips">Tips</h1><ul><li>Kinesis Streams</li><li>Kinesis Firehose</li><li>Kinesis Analytics</li><li>shard</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;streaming-data&quot;&gt;Streaming data&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Puchases from online stores&lt;/li&gt;
-&lt;li&gt;Stock prices&lt;/li&gt;
-&lt;li&gt;Game data&lt;/li&gt;
-&lt;li&gt;Social ne
       
     
     </summary>
@@ -214,23 +214,24 @@ SWF enabl
   </entry>
   
   <entry>
-    <title>Advanced Load Balancers Theory</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%20Architecture/chapter02/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA Architecture/chapter02/</id>
+    <title>HA Architecture</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%20Architecture/chapter04/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA Architecture/chapter04/</id>
     <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-20T07:57:16.129Z</updated>
+    <updated>2020-01-22T04:27:42.801Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>Sticky Sessions</li></ul><ul><li>Classic Load Balancer routes each request independently to the registered EC2 instance with the smallest load.<br>Sticky sessions allow you to bind a user’s session to a specific EC2 instance. This ensures that all requests from the user during the session are sent to the same instance.</li><li>You can enable Sticky Sessions for application load balancers as well, but the traffic will be sent at the target group level.</li></ul><ul><li><p>Cross Zone Load Balancing</p></li><li><p>Path Patterns</p></li></ul><ul><li>You can create a listener with rules to forward requests based on the URL path.<br>This is known as path-based routing. IF you are running microservices, you can route traffic to multiple back-end services using path-based routing. For example, you can route general requests to one target group and requests to render images to another target group.</li></ul><ul><li>Tips</li></ul><ul><li>Sticky Sessions enable your users to stick to the same EC2 instance. Can be useful if you are storing information locally to that instance.</li><li>Cross Zone Load Balancing enables you to load balance across multiple availibility zones.</li><li>Path patterns allow you to direct traffic to different EC2 instances based on the URL contained in the request</li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li>HA Sample question.</li></ul><ul><li><p>You have a website that requires a minumum of 6 instances and it must be highly available. You must also be able to tolerate the failure of 1 Availablity Zone.</p></li><li><p>Always Design for failure</p></li><li><p>Use Multiple AZ’s and Multiple Regions where ever you can.</p></li><li><p>Know the difference between Multi-AZ and Read Replicas for RDS.</p></li><li><p>Know the difference scailing out and scailing up.</p></li><li><p>Read the question carefully and always consider the code element.</p></li><li><p>Know the different S3 storage classes.</p></li></ul>]]></content>
     
     <summary type="html">
     
       
       
         &lt;ul&gt;
-&lt;li&gt;Sticky Sessions&lt;/li&gt;
+&lt;li&gt;HA Sample question.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
-&lt;li&gt;Classic Load Balancer routes each request independently to the registered EC2 instance with the
+&lt;li&gt;
+&lt;p&gt;You have a website that requires a minumum of 6 instances and it must be highly availab
       
     
     </summary>
@@ -266,6 +267,82 @@ SWF enabl
 &lt;/li&gt;
 &lt;li&gt;Network
 &lt;u
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Advanced Load Balancers Theory</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%20Architecture/chapter02/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA Architecture/chapter02/</id>
+    <published>2020-01-15T03:55:35.000Z</published>
+    <updated>2020-01-21T04:17:33.919Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>Sticky Sessions</li></ul><ul><li>Classic Load Balancer routes each request independently to the registered EC2 instance with the smallest load.<br>Sticky sessions allow you to bind a user’s session to a specific EC2 instance. This ensures that all requests from the user during the session are sent to the same instance.</li><li>You can enable Sticky Sessions for application load balancers as well, but the traffic will be sent at the target group level.</li></ul><ul><li><p>Cross Zone Load Balancing</p></li><li><p>Path Patterns</p></li></ul><ul><li>You can create a listener with rules to forward requests based on the URL path.<br>This is known as path-based routing. IF you are running microservices, you can route traffic to multiple back-end services using path-based routing. For example, you can route general requests to one target group and requests to render images to another target group.</li></ul><ul><li>Tips</li></ul><ul><li>Sticky Sessions enable your users to stick to the same EC2 instance. Can be useful if you are storing information locally to that instance.</li><li>Cross Zone Load Balancing enables you to load balance across multiple availibility zones.</li><li>Path patterns allow you to direct traffic to different EC2 instances based on the URL contained in the request</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;Sticky Sessions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Classic Load Balancer routes each request independently to the registered EC2 instance with the
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Auto Scaling Groups</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%20Architecture/chapter03/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA Architecture/chapter03/</id>
+    <published>2020-01-15T03:55:35.000Z</published>
+    <updated>2020-01-22T01:52:58.077Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Route53 summary</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Route53/Summary/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Route53/Summary/</id>
+    <published>2020-01-15T03:55:35.000Z</published>
+    <updated>2020-01-15T07:41:44.390Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="dns-summary">DNS Summary</h1><ul><li>ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name.</li><li>Understand the difference between an Alias Record and a CNAME</li><li>Given the choice, always choose an Alias Record over a CNAME</li></ul><h1 id="common-dns-types">Common DNS Types</h1><ul><li>SOA Records</li><li>NS Records</li><li>A Records</li><li>CNAMES</li><li>MX Records</li><li>PTR Records</li></ul><h1 id="routing-rolicies-that-available-with-route53">Routing Rolicies that available with Route53</h1><ul><li>Simple Routing</li><li>Weighted Routing</li><li>Latency-based Routing</li><li>Failover Routing</li><li>Geolocation Routing</li><li>Geoproximity Routing (Traffic Flow Only)</li><li>Multivalue Answer Routing</li></ul><h1 id="health-checks">Health Checks</h1><ul><li>You can set health checks on individual record sets.</li><li>If a record set fails a health check it will be removed from Route53 until it passes the health check.</li><li>You can set SNS notifications to alert you if a health check is failed.</li></ul><h1 id="simple-routing-policy">Simple Routing Policy</h1><ul><li>If you choose the simple routing policy you can only have one record with multiple IP address.</li><li>If you specify muliple values in a record, Route 53 returns all values to the user in random order.</li></ul><h1 id="weighted-routing-policy">Weighted Routing Policy</h1><h1 id="latency-routing-policy">Latency Routing Policy</h1><h1 id="failover-routing-policy">Failover Routing Policy</h1><h1 id="geolocation-routing-policy">Geolocation Routing Policy</h1><h1 id="geoproximity-routing-traffic-flow-only">Geoproximity Routing (Traffic Flow Only)</h1><ul><li>To use geoproximity routing, you must use Route 53 traffic flow.</li></ul><h1 id="multivalue-answer-policy">Multivalue Answer Policy</h1><ul><li>Essentially the same as with Simple based routing, except you get Health Checks.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;dns-summary&quot;&gt;DNS Summary&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name.&lt;/li&gt;
+&lt;li&gt;U
       
     
     </summary>
@@ -325,82 +402,6 @@ SWF enabl
   </entry>
   
   <entry>
-    <title>VPC Flow logs</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper03/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper03/</id>
-    <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-20T05:16:26.094Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="custom-vpcs-and-elbs">Custom VPCs and ELBs</h1><h1 id="vpc-flow-logs-levels">VPC Flow logs levels</h1><ul><li>VPC</li><li>Subnet</li><li>Network Interface Level</li></ul><h1 id="not-all-ip-traffic-is-monitored">Not all IP Traffic is monitored.</h1><ul><li>Traffic generated by instances when they contact the Amazon DNS server. If you use your own DNS server, then all traffic to that DNS server is logged.</li><li>Traffic generated by a Windows instance for Amazon Windows license activation.</li><li>DHCP traffic.</li><li>Traffic to the reserved IP address for the default VPC router.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;custom-vpcs-and-elbs&quot;&gt;Custom VPCs and ELBs&lt;/h1&gt;
-&lt;h1 id=&quot;vpc-flow-logs-levels&quot;&gt;VPC Flow logs levels&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;VPC&lt;/li&gt;
-&lt;li&gt;Subnet
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Route53 summary</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Route53/Summary/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Route53/Summary/</id>
-    <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-15T07:41:44.390Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="dns-summary">DNS Summary</h1><ul><li>ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name.</li><li>Understand the difference between an Alias Record and a CNAME</li><li>Given the choice, always choose an Alias Record over a CNAME</li></ul><h1 id="common-dns-types">Common DNS Types</h1><ul><li>SOA Records</li><li>NS Records</li><li>A Records</li><li>CNAMES</li><li>MX Records</li><li>PTR Records</li></ul><h1 id="routing-rolicies-that-available-with-route53">Routing Rolicies that available with Route53</h1><ul><li>Simple Routing</li><li>Weighted Routing</li><li>Latency-based Routing</li><li>Failover Routing</li><li>Geolocation Routing</li><li>Geoproximity Routing (Traffic Flow Only)</li><li>Multivalue Answer Routing</li></ul><h1 id="health-checks">Health Checks</h1><ul><li>You can set health checks on individual record sets.</li><li>If a record set fails a health check it will be removed from Route53 until it passes the health check.</li><li>You can set SNS notifications to alert you if a health check is failed.</li></ul><h1 id="simple-routing-policy">Simple Routing Policy</h1><ul><li>If you choose the simple routing policy you can only have one record with multiple IP address.</li><li>If you specify muliple values in a record, Route 53 returns all values to the user in random order.</li></ul><h1 id="weighted-routing-policy">Weighted Routing Policy</h1><h1 id="latency-routing-policy">Latency Routing Policy</h1><h1 id="failover-routing-policy">Failover Routing Policy</h1><h1 id="geolocation-routing-policy">Geolocation Routing Policy</h1><h1 id="geoproximity-routing-traffic-flow-only">Geoproximity Routing (Traffic Flow Only)</h1><ul><li>To use geoproximity routing, you must use Route 53 traffic flow.</li></ul><h1 id="multivalue-answer-policy">Multivalue Answer Policy</h1><ul><li>Essentially the same as with Simple based routing, except you get Health Checks.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;dns-summary&quot;&gt;DNS Summary&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;ELBs do not have pre-defined IPv4 addresses; you resolve to them using a DNS name.&lt;/li&gt;
-&lt;li&gt;U
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Bastions</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper04/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper04/</id>
-    <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-20T06:34:24.951Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="bastion-host">Bastion host</h1><ul><li><p>A bastion host is a special purpose computer on a network specifically designed and configured to withstand attacks.</p></li><li><p>A NAT Gateway or NAT instance is used to provide internet traffic to EC2 instances in a private subnets.</p></li><li><p>A Bastion is used to securely adminster EC2 instances(Using SSH or RDP). Bastions are called Jump Boxes in Australia.</p></li><li><p>You cannot use a NAT Gateway as a Bastion host.</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;bastion-host&quot;&gt;Bastion host&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;A bastion host is a special purpose computer on a network specifically designed and con
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Direct Connect</title>
     <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper05/"/>
     <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper05/</id>
@@ -451,6 +452,57 @@ SWF enabl
   </entry>
   
   <entry>
+    <title>Bastions</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper04/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper04/</id>
+    <published>2020-01-15T03:55:35.000Z</published>
+    <updated>2020-01-20T06:34:24.951Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="bastion-host">Bastion host</h1><ul><li><p>A bastion host is a special purpose computer on a network specifically designed and configured to withstand attacks.</p></li><li><p>A NAT Gateway or NAT instance is used to provide internet traffic to EC2 instances in a private subnets.</p></li><li><p>A Bastion is used to securely adminster EC2 instances(Using SSH or RDP). Bastions are called Jump Boxes in Australia.</p></li><li><p>You cannot use a NAT Gateway as a Bastion host.</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;bastion-host&quot;&gt;Bastion host&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A bastion host is a special purpose computer on a network specifically designed and con
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>VPC Flow logs</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper03/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper03/</id>
+    <published>2020-01-15T03:55:35.000Z</published>
+    <updated>2020-01-20T05:16:26.094Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="custom-vpcs-and-elbs">Custom VPCs and ELBs</h1><h1 id="vpc-flow-logs-levels">VPC Flow logs levels</h1><ul><li>VPC</li><li>Subnet</li><li>Network Interface Level</li></ul><h1 id="not-all-ip-traffic-is-monitored">Not all IP Traffic is monitored.</h1><ul><li>Traffic generated by instances when they contact the Amazon DNS server. If you use your own DNS server, then all traffic to that DNS server is logged.</li><li>Traffic generated by a Windows instance for Amazon Windows license activation.</li><li>DHCP traffic.</li><li>Traffic to the reserved IP address for the default VPC router.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;custom-vpcs-and-elbs&quot;&gt;Custom VPCs and ELBs&lt;/h1&gt;
+&lt;h1 id=&quot;vpc-flow-logs-levels&quot;&gt;VPC Flow logs levels&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;VPC&lt;/li&gt;
+&lt;li&gt;Subnet
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Spring bean life cycle</title>
     <link href="https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring_bean_understanding/"/>
     <id>https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring_bean_understanding/</id>
@@ -477,53 +529,6 @@ SWF enabl
       <category term="bean" scheme="https://gurioh.github.io/guriOH.github.io/tags/bean/"/>
     
       <category term="IoC" scheme="https://gurioh.github.io/guriOH.github.io/tags/IoC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/Database/chapter5</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter5/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter5/</id>
-    <published>2020-01-14T07:37:33.217Z</published>
-    <updated>2020-01-14T09:53:44.325Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="redshift">Redshift</h1><p>OLTP vs OLAP</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;redshift&quot;&gt;Redshift&lt;/h1&gt;
-&lt;p&gt;OLTP vs OLAP&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Cloud/AWS/Database/chapter04</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter04/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter04/</id>
-    <published>2020-01-14T06:36:22.466Z</published>
-    <updated>2020-01-14T06:43:03.412Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="dynamodb">DynamoDB</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;dynamodb&quot;&gt;DynamoDB&lt;/h1&gt;
-
-      
-    
-    </summary>
-    
-    
     
   </entry>
   

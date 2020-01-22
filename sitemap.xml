@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/OS/Common/tip/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Database/Common/ACID/</loc>
     
-    <lastmod>2020-01-20T09:09:13.001Z</lastmod>
+    <lastmod>2020-01-22T04:35:25.884Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%2520Architecture/chapter04/</loc>
+    
+    <lastmod>2020-01-22T04:27:42.801Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%2520Architecture/chapter03/</loc>
+    
+    <lastmod>2020-01-22T01:52:58.077Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%2520Architecture/chapter02/</loc>
+    
+    <lastmod>2020-01-21T04:17:33.919Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/language/Shell/shellscript/</loc>
+    
+    <lastmod>2020-01-21T03:56:11.253Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/OS/Common/Posix/</loc>
+    
+    <lastmod>2020-01-21T03:55:23.323Z</lastmod>
     
   </url>
   
@@ -12,13 +47,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/OS/Linux/tip/</loc>
     
     <lastmod>2020-01-20T08:46:49.576Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%2520Architecture/chapter02/</loc>
-    
-    <lastmod>2020-01-20T07:57:16.129Z</lastmod>
     
   </url>
   
@@ -481,13 +509,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/SourceCode/Git/git/</loc>
     
     <lastmod>2019-12-18T14:12:42.703Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/language/Shell/shellscript/</loc>
-    
-    <lastmod>2019-12-18T14:12:09.528Z</lastmod>
     
   </url>
   
