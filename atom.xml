@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2020-01-15T08:30:02.695Z</updated>
+  <updated>2020-01-23T03:49:38.072Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -17,46 +17,102 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ElasticTranscoder</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/</id>
-    <published>2020-01-15T07:42:29.000Z</published>
-    <updated>2020-01-15T08:30:02.695Z</updated>
+    <title>SvelteJS</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Framework/Svelte/SvelteJS/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Framework/Svelte/SvelteJS/</id>
+    <published>2020-01-23T03:45:02.000Z</published>
+    <updated>2020-01-23T03:49:38.072Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="elastictranscoder">ElasticTranscoder</h1><ul><li>Media Transcoder in the cloud</li><li>Convert media files from their original source format in to different formats that will play on smartphones, tablets, PCs, stc</li><li>Provides transcoding presets for popular output formats, which means that you don’t need to guess about which settings work best on particular devices</li><li>Pay based on the minutes that you transcode and the resolution at which you transcode.</li></ul><h1 id="how-we-use-elastic-transcoder">How we use Elastic Transcoder</h1><ul><li>S3 bucket -&gt; Lamda -&gt; Elastic Tanscoder -&gt; S3 bucket</li></ul><h1 id="tips">Tips</h1><p>Just remember Elastic Transcoder is a media transcoder in the cloud. It convert media files from their original source format in to different formats that will play on multi device</p>]]></content>
+    <content type="html"><![CDATA[<p>기초시작</p><h1 id="컴포넌트-포멧">컴포넌트 포멧</h1><h1 id="템플릿">템플릿</h1><h1 id="attributes-and-props">Attributes and props</h1><h1 id="text-expressions">Text expressions</h1><h1 id="명령어">명령어</h1><h1 id="element-directives">Element directives</h1><h1 id="컴포넌트-이벤트">컴포넌트 이벤트</h1><h1 id="run-time">Run time</h1><h1 id="compile-time">Compile time</h1>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;elastictranscoder&quot;&gt;ElasticTranscoder&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Media Transcoder in the cloud&lt;/li&gt;
-&lt;li&gt;Convert media files from their original so
+        &lt;p&gt;기초시작&lt;/p&gt;
+&lt;h1 id=&quot;컴포넌트-포멧&quot;&gt;컴포넌트 포멧&lt;/h1&gt;
+&lt;h1 id=&quot;템플릿&quot;&gt;템플릿&lt;/h1&gt;
+&lt;h1 id=&quot;attributes-and-props&quot;&gt;Attributes and props&lt;/h1&gt;
+&lt;h1 id=&quot;text-express
       
     
     </summary>
     
     
     
+      <category term="Front" scheme="https://gurioh.github.io/guriOH.github.io/tags/Front/"/>
+    
+      <category term="Framework" scheme="https://gurioh.github.io/guriOH.github.io/tags/Framework/"/>
+    
+      <category term="JavaScript" scheme="https://gurioh.github.io/guriOH.github.io/tags/JavaScript/"/>
+    
   </entry>
   
   <entry>
-    <title>API Gateway</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/APIGateway/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/APIGateway/</id>
+    <title>타입스크립트로 리액트 사용하기</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/language/JavaScript/TypeScript_01/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/language/JavaScript/TypeScript_01/</id>
     <published>2020-01-15T07:42:29.000Z</published>
-    <updated>2020-01-18T07:36:04.897Z</updated>
+    <updated>2020-01-26T06:48:37.620Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="api-gateway">API Gateway</h1><ul><li>It is a fully managed service that makes it easy for developers to publish, maintain, monitor, and secure APIs at any scale.</li></ul><h1 id="what-can-api-gateway-do">What can api gateway do?</h1><ul><li>Expose HTTPS endpoints to define RESTful API</li><li>Serverless-ly connect to service like lamda &amp; DynamoDB</li><li>Send each API endpoint to a different target</li><li>Run efficiently with low cost</li><li>Scale effortlessly</li><li>Track and control usage by API key</li><li>Throttle requests to prevent attacks</li><li>Connect to CloudWatch to log all requests for monitorinng</li><li>Maintain multiple versions of your API</li></ul><h1 id="tips">Tips</h1><ul><li>Remeber what api gatway is at a high level</li><li>API gateway has caching capabilities to increase performance</li><li>APi gateway is log cost and scales automatically</li><li>You can throttle API Gateway to prevent attacks</li><li>You can log results to CloudWatch</li><li>If you are using Javascript/AJAX that uses multiple domains with API Gateway, ensure that you have enabled CORS on API Gateway</li></ul>]]></content>
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+      <category term="JavaScript" scheme="https://gurioh.github.io/guriOH.github.io/tags/JavaScript/"/>
+    
+      <category term="TypsScript" scheme="https://gurioh.github.io/guriOH.github.io/tags/TypsScript/"/>
+    
+      <category term="React" scheme="https://gurioh.github.io/guriOH.github.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>리액트 훅(hook)!</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/language/JavaScript/React_hook/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/language/JavaScript/React_hook/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-27T05:43:16.026Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="hooks">Hooks</h1><p>리액트 훅은 함수형 컴포넌트에서도 상태관리를 할 수 있는 useState, 렌더링 직후 작업을 설정하는<br>useEffect 등의 기능을 제공하여 기존의 함수형 컴포넌트에서 할 수 없었던 다양한 작업을 할 수 있게 한다.</p><h2 id="usestate">useState</h2><ul><li>함수형 컴포넌트가 가변적인 상태를 갖게 한다.</li></ul><p><img src="../../../image/2020-01-26-15-57-48.png" alt=""></p><ul><li>useState를 Import 하여 사용한다.</li><li>이러한 문법을 배열 비구조화 할당 문법이라고 하나보다… ㅎㅎ</li></ul><h2 id="useeffect">useEffect</h2><ul><li>리액트 컴포넌트가 렌더링 될 떄마다 특정 작업을 수해하도록 설정할 수 있는 Hook이다.</li></ul><p><img src="../../../image/2020-01-26-16-04-24.png" alt=""></p><ul><li>가장 처음 렌더링 됬을때만 실행하고 업데이트 할때는 필요없을 때</li></ul> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">useEffect(() =&gt; &#123;</span><br><span class="line">   console.log(&#123;</span><br><span class="line">       value,</span><br><span class="line">   &#125;);</span><br><span class="line"> &#125;, []);</span><br></pre></td></tr></table></figure><ul><li>특정 값이 업데이트 됬을 때만 수행. [] 안에 검사할 값을 넣어준다.</li></ul> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">useEffect(() =&gt; &#123;</span><br><span class="line">   console.log(&#123;</span><br><span class="line">       value,</span><br><span class="line">   &#125;);</span><br><span class="line"> &#125;, [value]);</span><br></pre></td></tr></table></figure><ul><li>컴포넌트가 언마운트 되기 직전 어떤 동작을 수행하고자 할떄</li></ul> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">useEffect(() =&gt; &#123;</span><br><span class="line">   console.log(&#123;</span><br><span class="line">       value,</span><br><span class="line">   &#125;);</span><br><span class="line">   return () =&gt; &#123;</span><br><span class="line">     console.log(&apos;cleanup&apos;);</span><br><span class="line">     console.log(value</span><br><span class="line">     );</span><br><span class="line">   &#125;;</span><br><span class="line"> &#125;);</span><br></pre></td></tr></table></figure><h2 id="usecontext">useContext</h2><ul><li>함수형 컴포넌트에서 Context를 더 쉽게 사용.</li></ul><h2 id="usereducer">useReducer</h2><ul><li>useState 보다 컴포넌트에서 더 다양한 상황에 따라 다양한 상태를 다른 값으로 업데이트해주고 싶을 때 사용하는 Hook</li></ul><h2 id="usememo">useMemo</h2><ul><li>useMemo 를 사용하면 함수형 컴포넌트 내부에서 발생하는 연산을 최적화</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;api-gateway&quot;&gt;API Gateway&lt;/h1&gt;
+        &lt;h1 id=&quot;hooks&quot;&gt;Hooks&lt;/h1&gt;
+&lt;p&gt;리액트 훅은 함수형 컴포넌트에서도 상태관리를 할 수 있는 useState, 렌더링 직후 작업을 설정하는&lt;br&gt;
+useEffect 등의 기능을 제공하여 기존의 함수형 컴포넌트에서 할 수 없었던 다양한 
+      
+    
+    </summary>
+    
+    
+    
+      <category term="JavaScript" scheme="https://gurioh.github.io/guriOH.github.io/tags/JavaScript/"/>
+    
+      <category term="React" scheme="https://gurioh.github.io/guriOH.github.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cognito &amp; Web Identity Federation)</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Cognito/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Cognito/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T13:01:45.036Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="web-identity-federation">Web Identity Federation</h1><ul><li>Web Identity Federation lets you give your users access to AWS resources after they have successfully authenticated with a web-based identify provider like Amazon, Facebook, or Google. Following successful authentication, ther user receives an authentication code from the Web ID provider, which they can trade for temporary AWS security credentials.</li></ul><h1 id="amazon-gognito">Amazon Gognito</h1><ul><li>Amazon Gognito providers Web Identify Federation<ul><li>Sign-up and sign-in to your apps</li><li>Access for guest users</li><li>Acts as an Identify Broker between your application and Web ID providers, so you don’t need to write any additional code.</li><li>Syncronizes user data for multiple devices</li><li>Recommanded for all mobile applications AWS services.</li></ul></li></ul><h1 id="user-pool-identify-pool">User pool &amp; Identify pool</h1><h1 id="tips">Tips</h1><ul><li></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;web-identity-federation&quot;&gt;Web Identity Federation&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;It is a fully managed service that makes it easy for developers to publish, maintain, monitor
+&lt;li&gt;Web Identity Federation lets you give your users access to AWS resour
       
     
     </summary>
@@ -117,21 +173,21 @@ It provides develo
   </entry>
   
   <entry>
-    <title>Cognito &amp; Web Identity Federation)</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Cognito/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/Cognito/</id>
+    <title>Simple Work Flow Service</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SWF/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SWF/</id>
     <published>2020-01-15T07:42:29.000Z</published>
-    <updated>2020-01-15T13:01:45.036Z</updated>
+    <updated>2020-01-15T08:14:31.098Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="web-identity-federation">Web Identity Federation</h1><ul><li>Web Identity Federation lets you give your users access to AWS resources after they have successfully authenticated with a web-based identify provider like Amazon, Facebook, or Google. Following successful authentication, ther user receives an authentication code from the Web ID provider, which they can trade for temporary AWS security credentials.</li></ul><h1 id="amazon-gognito">Amazon Gognito</h1><ul><li>Amazon Gognito providers Web Identify Federation<ul><li>Sign-up and sign-in to your apps</li><li>Access for guest users</li><li>Acts as an Identify Broker between your application and Web ID providers, so you don’t need to write any additional code.</li><li>Syncronizes user data for multiple devices</li><li>Recommanded for all mobile applications AWS services.</li></ul></li></ul><h1 id="user-pool-identify-pool">User pool &amp; Identify pool</h1><h1 id="tips">Tips</h1><ul><li></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="swf">SWF</h1><p>SWF is a web service that makes it easy to coordinate work across distributed application components.<br>SWF enables applications for a range of use cases, including media processing, web application back-ends, business process workflows, and analytics pipeliens, to be designed as a coordination of tasks.</p><h1 id="swf-vs-sqs">SWF vs SQS</h1><ul><li>SQS has a retention period of up to 14days, with SWF, workflow executions can last up to 1 year.</li><li>Amozon SWF ensures that a task is assigned only once and is never duplicated. With amazon SQS, you need to handle duplicated message and may also need to ensure that a message is processed only once.</li><li>Amozon SWF keeps track of all the tasks and events in an application. With amazon SQS, you need to implement your own application-level tracking, especially if your application uses multiple queues.</li></ul><h1 id="swf-actors">SWF Actors</h1><ul><li>Workflow Starters</li><li>Deciders : control the flow of activity tasks in a workflow execution.</li><li>Acitivity Workers - Carry out the activity tasks.</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;web-identity-federation&quot;&gt;Web Identity Federation&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Web Identity Federation lets you give your users access to AWS resour
+        &lt;h1 id=&quot;swf&quot;&gt;SWF&lt;/h1&gt;
+&lt;p&gt;SWF is a web service that makes it easy to coordinate work across distributed application components.&lt;br&gt;
+SWF enabl
       
     
     </summary>
@@ -155,30 +211,6 @@ It provides develo
       
         &lt;h1 id=&quot;sqs&quot;&gt;SQS&lt;/h1&gt;
 &lt;p&gt;SQS is web service that gices you access to a message queue that can be used to store message while waiting for a c
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Simple Work Flow Service</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SWF/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/SWF/</id>
-    <published>2020-01-15T07:42:29.000Z</published>
-    <updated>2020-01-15T08:14:31.098Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="swf">SWF</h1><p>SWF is a web service that makes it easy to coordinate work across distributed application components.<br>SWF enables applications for a range of use cases, including media processing, web application back-ends, business process workflows, and analytics pipeliens, to be designed as a coordination of tasks.</p><h1 id="swf-vs-sqs">SWF vs SQS</h1><ul><li>SQS has a retention period of up to 14days, with SWF, workflow executions can last up to 1 year.</li><li>Amozon SWF ensures that a task is assigned only once and is never duplicated. With amazon SQS, you need to handle duplicated message and may also need to ensure that a message is processed only once.</li><li>Amozon SWF keeps track of all the tasks and events in an application. With amazon SQS, you need to implement your own application-level tracking, especially if your application uses multiple queues.</li></ul><h1 id="swf-actors">SWF Actors</h1><ul><li>Workflow Starters</li><li>Deciders : control the flow of activity tasks in a workflow execution.</li><li>Acitivity Workers - Carry out the activity tasks.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;swf&quot;&gt;SWF&lt;/h1&gt;
-&lt;p&gt;SWF is a web service that makes it easy to coordinate work across distributed application components.&lt;br&gt;
-SWF enabl
       
     
     </summary>
@@ -214,24 +246,72 @@ SWF enabl
   </entry>
   
   <entry>
-    <title>HA Architecture</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%20Architecture/chapter04/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA Architecture/chapter04/</id>
-    <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-22T04:27:42.801Z</updated>
+    <title>API Gateway</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/APIGateway/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/APIGateway/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-18T07:36:04.897Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>HA Sample question.</li></ul><ul><li><p>You have a website that requires a minumum of 6 instances and it must be highly available. You must also be able to tolerate the failure of 1 Availablity Zone.</p></li><li><p>Always Design for failure</p></li><li><p>Use Multiple AZ’s and Multiple Regions where ever you can.</p></li><li><p>Know the difference between Multi-AZ and Read Replicas for RDS.</p></li><li><p>Know the difference scailing out and scailing up.</p></li><li><p>Read the question carefully and always consider the code element.</p></li><li><p>Know the different S3 storage classes.</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="api-gateway">API Gateway</h1><ul><li>It is a fully managed service that makes it easy for developers to publish, maintain, monitor, and secure APIs at any scale.</li></ul><h1 id="what-can-api-gateway-do">What can api gateway do?</h1><ul><li>Expose HTTPS endpoints to define RESTful API</li><li>Serverless-ly connect to service like lamda &amp; DynamoDB</li><li>Send each API endpoint to a different target</li><li>Run efficiently with low cost</li><li>Scale effortlessly</li><li>Track and control usage by API key</li><li>Throttle requests to prevent attacks</li><li>Connect to CloudWatch to log all requests for monitorinng</li><li>Maintain multiple versions of your API</li></ul><h1 id="tips">Tips</h1><ul><li>Remeber what api gatway is at a high level</li><li>API gateway has caching capabilities to increase performance</li><li>APi gateway is log cost and scales automatically</li><li>You can throttle API Gateway to prevent attacks</li><li>You can log results to CloudWatch</li><li>If you are using Javascript/AJAX that uses multiple domains with API Gateway, ensure that you have enabled CORS on API Gateway</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;api-gateway&quot;&gt;API Gateway&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;It is a fully managed service that makes it easy for developers to publish, maintain, monitor
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ElasticTranscoder</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Applications/ElasticTranscoder/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-15T08:30:02.695Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="elastictranscoder">ElasticTranscoder</h1><ul><li>Media Transcoder in the cloud</li><li>Convert media files from their original source format in to different formats that will play on smartphones, tablets, PCs, stc</li><li>Provides transcoding presets for popular output formats, which means that you don’t need to guess about which settings work best on particular devices</li><li>Pay based on the minutes that you transcode and the resolution at which you transcode.</li></ul><h1 id="how-we-use-elastic-transcoder">How we use Elastic Transcoder</h1><ul><li>S3 bucket -&gt; Lamda -&gt; Elastic Tanscoder -&gt; S3 bucket</li></ul><h1 id="tips">Tips</h1><p>Just remember Elastic Transcoder is a media transcoder in the cloud. It convert media files from their original source format in to different formats that will play on multi device</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;elastictranscoder&quot;&gt;ElasticTranscoder&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Media Transcoder in the cloud&lt;/li&gt;
+&lt;li&gt;Convert media files from their original so
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Advanced Load Balancers Theory</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%20Architecture/chapter02/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA Architecture/chapter02/</id>
+    <published>2020-01-15T03:55:35.000Z</published>
+    <updated>2020-01-21T04:17:33.919Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>Sticky Sessions</li></ul><ul><li>Classic Load Balancer routes each request independently to the registered EC2 instance with the smallest load.<br>Sticky sessions allow you to bind a user’s session to a specific EC2 instance. This ensures that all requests from the user during the session are sent to the same instance.</li><li>You can enable Sticky Sessions for application load balancers as well, but the traffic will be sent at the target group level.</li></ul><ul><li><p>Cross Zone Load Balancing</p></li><li><p>Path Patterns</p></li></ul><ul><li>You can create a listener with rules to forward requests based on the URL path.<br>This is known as path-based routing. IF you are running microservices, you can route traffic to multiple back-end services using path-based routing. For example, you can route general requests to one target group and requests to render images to another target group.</li></ul><ul><li>Tips</li></ul><ul><li>Sticky Sessions enable your users to stick to the same EC2 instance. Can be useful if you are storing information locally to that instance.</li><li>Cross Zone Load Balancing enables you to load balance across multiple availibility zones.</li><li>Path patterns allow you to direct traffic to different EC2 instances based on the URL contained in the request</li></ul>]]></content>
     
     <summary type="html">
     
       
       
         &lt;ul&gt;
-&lt;li&gt;HA Sample question.&lt;/li&gt;
+&lt;li&gt;Sticky Sessions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;You have a website that requires a minumum of 6 instances and it must be highly availab
+&lt;li&gt;Classic Load Balancer routes each request independently to the registered EC2 instance with the
       
     
     </summary>
@@ -245,9 +325,9 @@ SWF enabl
     <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%20Architecture/chapter01/"/>
     <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA Architecture/chapter01/</id>
     <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-20T07:36:42.533Z</updated>
+    <updated>2020-01-27T06:01:18.041Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>Elastic Load Balancer</li></ul><ul><li><p>Typs</p><ul><li>Application<ul><li>HTTP and HTTPS</li></ul></li><li>Network<ul><li>TCP traffic</li><li>Use for extreme performance</li></ul></li><li>Classic<ul><li>HTTP/HTTPS/TCP</li></ul></li></ul></li><li><p>504 Error means the gateway has timed out. This means that the application not responding within the idle timeout period.</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li>Elastic Load Balancer</li></ul><ul><li><p>Typs</p><ul><li>Application<ul><li>HTTP and HTTPS</li></ul></li><li>Network<ul><li>TCP traffic</li><li>Use for extreme performance</li></ul></li><li>Classic<ul><li>HTTP/HTTPS/TCP</li></ul></li></ul></li><li><p>504 Error means the gateway has timed out. This means that the application not responding within the idle timeout period.</p></li><li><p>Application Load Balancer</p><ul><li>designed to handle streaming, real-time, and WebSocket workloads in an optimized fashion. Instead of buffering requests and responses, it handles them in streaming fashion.</li></ul></li></ul>]]></content>
     
     <summary type="html">
     
@@ -276,23 +356,24 @@ SWF enabl
   </entry>
   
   <entry>
-    <title>Advanced Load Balancers Theory</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%20Architecture/chapter02/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA Architecture/chapter02/</id>
+    <title>HA Architecture</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%20Architecture/chapter04/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA Architecture/chapter04/</id>
     <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-21T04:17:33.919Z</updated>
+    <updated>2020-01-22T04:27:42.801Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>Sticky Sessions</li></ul><ul><li>Classic Load Balancer routes each request independently to the registered EC2 instance with the smallest load.<br>Sticky sessions allow you to bind a user’s session to a specific EC2 instance. This ensures that all requests from the user during the session are sent to the same instance.</li><li>You can enable Sticky Sessions for application load balancers as well, but the traffic will be sent at the target group level.</li></ul><ul><li><p>Cross Zone Load Balancing</p></li><li><p>Path Patterns</p></li></ul><ul><li>You can create a listener with rules to forward requests based on the URL path.<br>This is known as path-based routing. IF you are running microservices, you can route traffic to multiple back-end services using path-based routing. For example, you can route general requests to one target group and requests to render images to another target group.</li></ul><ul><li>Tips</li></ul><ul><li>Sticky Sessions enable your users to stick to the same EC2 instance. Can be useful if you are storing information locally to that instance.</li><li>Cross Zone Load Balancing enables you to load balance across multiple availibility zones.</li><li>Path patterns allow you to direct traffic to different EC2 instances based on the URL contained in the request</li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li>HA Sample question.</li></ul><ul><li><p>You have a website that requires a minumum of 6 instances and it must be highly available. You must also be able to tolerate the failure of 1 Availablity Zone.</p></li><li><p>Always Design for failure</p></li><li><p>Use Multiple AZ’s and Multiple Regions where ever you can.</p></li><li><p>Know the difference between Multi-AZ and Read Replicas for RDS.</p></li><li><p>Know the difference scailing out and scailing up.</p></li><li><p>Read the question carefully and always consider the code element.</p></li><li><p>Know the different S3 storage classes.</p></li></ul>]]></content>
     
     <summary type="html">
     
       
       
         &lt;ul&gt;
-&lt;li&gt;Sticky Sessions&lt;/li&gt;
+&lt;li&gt;HA Sample question.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
-&lt;li&gt;Classic Load Balancer routes each request independently to the registered EC2 instance with the
+&lt;li&gt;
+&lt;p&gt;You have a website that requires a minumum of 6 instances and it must be highly availab
       
     
     </summary>
@@ -377,47 +458,22 @@ SWF enabl
   </entry>
   
   <entry>
-    <title>VPC overview</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper01/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper01/</id>
+    <title>Bastions</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper04/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper04/</id>
     <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-19T11:48:06.181Z</updated>
+    <updated>2020-01-20T06:34:24.951Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="what-can-we-do-with-a-vpc">What can we do with a VPC</h1><ul><li>Launch instances into a subnet of your choosing</li><li>Assign custom IP address ranges in each subnet</li><li>Configure route tables between subnets</li><li>Create insternet gateway and attach it to our VPC</li><li>Much better security control over your AWS resources</li><li>Instance security groups</li><li>Subnet network access control lists (ACLS)</li></ul><h1 id="default-vpc-vs-custom-vpc">Default VPC vs Custom VPC</h1><ul><li>Default VPC is user friendly, allowing you to immediately deploy instances.</li><li>All Subnets in default VPC have a route out to the internet</li><li>Each EC2 instance has both a public and private IP address.</li></ul><h1 id="vpc-peering">VPC Peering</h1><ul><li>Allows you to connect one VPC with another via a direct network route using private IP Addresses.</li><li>Instances behave as if they were on the same private network</li><li>You can peer VPC’s with other AWS accouhnts as well as with other VPCs in the same account.</li><li>Peering is in a star configuration : ie 1 central VPC peers with 4 others.<br>NO TRANSITIVE PEERING</li></ul><h1 id="nat-instance">NAT instance</h1><ul><li>When creating a NAT instance, Disable Source/Destination Check on the instance.</li><li>NAT instances must be in a public subnet.</li><li>There must be a route out of the private subnet to the NAT instance, in order for this to work.</li><li>The amount of traffic that NAT instances can suppprot depends on the instance size. If you are bottlenecking, increase the instance size.</li><li>You can create high availability using Autoscaling Groups, multiple subnets in different AZs, and a script to automate failover.</li><li>Behind a security Group.</li></ul><h1 id="nat-gatways">NAT Gatways</h1><ul><li>Redundant inside the Availability Zone</li><li>Preferred by the enterprise</li><li>Starts at 5Gbps and scale currently to 45Gbps</li><li>No need to patch</li><li>Not associated with security groups</li><li>Automatically assigned a public ip address</li><li>Remeber to update your route tables.</li><li>No need to disable Source/Destination Checks</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="bastion-host">Bastion host</h1><ul><li><p>A bastion host is a special purpose computer on a network specifically designed and configured to withstand attacks.</p></li><li><p>A NAT Gateway or NAT instance is used to provide internet traffic to EC2 instances in a private subnets.</p></li><li><p>A Bastion is used to securely adminster EC2 instances(Using SSH or RDP). Bastions are called Jump Boxes in Australia.</p></li><li><p>You cannot use a NAT Gateway as a Bastion host.</p></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;what-can-we-do-with-a-vpc&quot;&gt;What can we do with a VPC&lt;/h1&gt;
+        &lt;h1 id=&quot;bastion-host&quot;&gt;Bastion host&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Launch instances into a subnet of your choosing&lt;/li&gt;
-&lt;li&gt;Assign c
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Direct Connect</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper05/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper05/</id>
-    <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-20T06:43:03.322Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="direct-connect">Direct Connect</h1><ul><li>Direct Connect directly connects your data center to AWS</li><li>Useful for high throughput workloads (a lots of network traffic)</li><li>Or if you need a stable reliable secure connection.</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;direct-connect&quot;&gt;Direct Connect&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Direct Connect directly connects your data center to AWS&lt;/li&gt;
-&lt;li&gt;Useful for high throu
+&lt;li&gt;
+&lt;p&gt;A bastion host is a special purpose computer on a network specifically designed and con
       
     
     </summary>
@@ -452,31 +508,6 @@ SWF enabl
   </entry>
   
   <entry>
-    <title>Bastions</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper04/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper04/</id>
-    <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-20T06:34:24.951Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="bastion-host">Bastion host</h1><ul><li><p>A bastion host is a special purpose computer on a network specifically designed and configured to withstand attacks.</p></li><li><p>A NAT Gateway or NAT instance is used to provide internet traffic to EC2 instances in a private subnets.</p></li><li><p>A Bastion is used to securely adminster EC2 instances(Using SSH or RDP). Bastions are called Jump Boxes in Australia.</p></li><li><p>You cannot use a NAT Gateway as a Bastion host.</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;bastion-host&quot;&gt;Bastion host&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;A bastion host is a special purpose computer on a network specifically designed and con
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>VPC Flow logs</title>
     <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper03/"/>
     <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper03/</id>
@@ -499,36 +530,6 @@ SWF enabl
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>Spring bean life cycle</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring_bean_understanding/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring_bean_understanding/</id>
-    <published>2020-01-15T01:32:09.000Z</published>
-    <updated>2020-01-15T03:55:01.436Z</updated>
-    
-    <content type="html"><![CDATA[<p>스프링에서는 빈의 생명주기 관리를 위한 방법을 몇가지를 제공하고 있다.<br>본 문서에서는 스프링 빈의 생명주기를 알아보고 관련 인터페이스 몇가지를 알아보자.</p><h3 id="spring-bean-life-cycle-overview">Spring bean life cycle overview</h3><p><img src="../../../image/2020-01-15-11-08-05.png" alt=""></p><p><img src="../../../image/2020-01-15-10-39-16.png" alt=""></p><ul><li>Part 1 - 빈 생성이후 사용전까지 각 단계, 전 처리 단계, 각 생성자 호출하여 생성.</li><li>Part 2 - 빈 삭제 단계</li></ul><h3 id="aware-interfaces">Aware Interfaces</h3><p>많이 사용되는 인터페이스.</p><ul><li><code>BeanFactoryAware</code> : setBeanFactory() 제공</li><li><code>BeanNameAware</code> : ThesetVeanName() 빈의 이름을 생성하는 인터페이스 제공</li><li><code>ApplicationContextAware</code> : ThesetApplicationContext() 해당 빈의 ApplicationContext 객체 제공.</li></ul> <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exmaple <span class="number">1</span></span><br></pre></td></tr></table></figure><h3 id="bean-post-processor">Bean Post Processor</h3><p>BeanPostProcessor 인터페이스는 개발자가 원하는 로직 의존성 처리로직 등을 구현 할 수 있는 콜백 메소드를 정의</p><ul><li><code>BeanPostProcessor</code><ul><li>postProcessBeforeInitialization: 빈의 초기화 전 수행<blockquote><p>InitializingBean’s afterPropertiesSet or a custom init-method.<br>- postProcessAfterInitialization: 빈 초기화 후 수행<br>&gt; Spring calls this method after any bean initialization callbacks.</p></blockquote></li></ul></li></ul><h3 id="initializingbean-and-disposablebean-callback-interfaces">InitializingBean and DisposableBean Callback Interfaces</h3><ul><li><code>InitializingBean</code><ul><li>afterPropertiesSet 메소드 선언 , 초기화 로직 작성 가능.</li></ul></li><li><code>DisposableBean</code><ul><li>destroy 메서드 선언, 빈의 삭제와 관련 코드 클린업</li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;스프링에서는 빈의 생명주기 관리를 위한 방법을 몇가지를 제공하고 있다.&lt;br&gt;
-본 문서에서는 스프링 빈의 생명주기를 알아보고 관련 인터페이스 몇가지를 알아보자.&lt;/p&gt;
-&lt;h3 id=&quot;spring-bean-life-cycle-overview&quot;&gt;Sp
-      
-    
-    </summary>
-    
-    
-    
-      <category term="spring" scheme="https://gurioh.github.io/guriOH.github.io/tags/spring/"/>
-    
-      <category term="bean" scheme="https://gurioh.github.io/guriOH.github.io/tags/bean/"/>
-    
-      <category term="IoC" scheme="https://gurioh.github.io/guriOH.github.io/tags/IoC/"/>
     
   </entry>
   

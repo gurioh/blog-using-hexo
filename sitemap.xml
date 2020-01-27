@@ -2,6 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/summary_all/</loc>
+    
+    <lastmod>2020-01-27T09:01:22.072Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/summary_word/</loc>
+    
+    <lastmod>2020-01-27T08:33:07.404Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper05/</loc>
+    
+    <lastmod>2020-01-27T06:24:45.871Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/summary/</loc>
+    
+    <lastmod>2020-01-27T06:07:01.008Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%2520Architecture/chapter01/</loc>
+    
+    <lastmod>2020-01-27T06:01:18.041Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter5/</loc>
+    
+    <lastmod>2020-01-27T05:58:35.285Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Project/AddressBook/</loc>
+    
+    <lastmod>2020-01-27T05:48:02.487Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/language/JavaScript/React_hook/</loc>
+    
+    <lastmod>2020-01-27T05:43:16.026Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/language/JavaScript/TypeScript_01/</loc>
+    
+    <lastmod>2020-01-26T06:48:37.620Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Framework/Svelte/SvelteJS/</loc>
+    
+    <lastmod>2020-01-23T03:49:38.072Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Database/Common/ACID/</loc>
     
     <lastmod>2020-01-22T04:35:25.884Z</lastmod>
@@ -47,13 +117,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/OS/Linux/tip/</loc>
     
     <lastmod>2020-01-20T08:46:49.576Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%2520Architecture/chapter01/</loc>
-    
-    <lastmod>2020-01-20T07:36:42.533Z</lastmod>
     
   </url>
   
@@ -173,20 +236,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring_bean_understanding/</loc>
     
     <lastmod>2020-01-15T03:55:01.436Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/summary/</loc>
-    
-    <lastmod>2020-01-15T00:20:54.736Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Database/chapter5/</loc>
-    
-    <lastmod>2020-01-14T09:53:44.325Z</lastmod>
     
   </url>
   
@@ -324,13 +373,6 @@
   </url>
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper05/</loc>
-    
-    <lastmod>2020-01-09T08:12:14.503Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/EC2/chaper04/</loc>
     
     <lastmod>2020-01-09T08:03:38.036Z</lastmod>
@@ -404,27 +446,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/language/Shell/Configuration_env_with_intellij/</loc>
     
     <lastmod>2019-12-22T06:54:21.360Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPC/</loc>
-    
-    <lastmod>2019-12-21T12:03:47.359Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Lambda/</loc>
-    
-    <lastmod>2019-12-21T12:03:42.121Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Route53/</loc>
-    
-    <lastmod>2019-12-21T09:52:30.163Z</lastmod>
     
   </url>
   
@@ -523,27 +544,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/Opensource/BigData/Kafka/How_to_build_kafka_with_intellij/</loc>
     
     <lastmod>2019-12-18T14:11:27.730Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/AWS_Study/</loc>
-    
-    <lastmod>2019-12-18T14:10:48.425Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/AWS_Study_2/</loc>
-    
-    <lastmod>2019-12-18T14:10:45.641Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/AddressBook/</loc>
-    
-    <lastmod>2019-12-18T14:10:43.222Z</lastmod>
     
   </url>
   
