@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/summary_all/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/batch_init/</loc>
     
-    <lastmod>2020-01-29T09:26:17.799Z</lastmod>
+    <lastmod>2020-01-31T07:36:06.104Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/language/JavaScript/React/</loc>
+    
+    <lastmod>2020-01-31T06:41:22.582Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Database/Mysql/sql_basic/</loc>
+    
+    <lastmod>2020-01-31T00:28:14.118Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/summary_word/</loc>
     
-    <lastmod>2020-01-28T06:35:29.226Z</lastmod>
+    <lastmod>2020-01-30T08:02:53.883Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/summary_all/</loc>
+    
+    <lastmod>2020-01-30T05:16:50.158Z</lastmod>
     
   </url>
   
@@ -247,7 +268,7 @@
   </url>
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring_bean_understanding/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/Spring_bean_understanding/</loc>
     
     <lastmod>2020-01-15T03:55:01.436Z</lastmod>
     
@@ -429,21 +450,21 @@
   </url>
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring-AOP/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/Spring-AOP/</loc>
     
     <lastmod>2019-12-30T06:38:32.479Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Framework/Spring/java-reflection/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/java-reflection/</loc>
     
     <lastmod>2019-12-30T06:34:37.022Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring_basic/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/Spring_basic/</loc>
     
     <lastmod>2019-12-30T06:00:42.394Z</lastmod>
     
@@ -527,21 +548,21 @@
   </url>
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Framework/Spring/Spring-20191205/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/Spring-20191205/</loc>
     
     <lastmod>2019-12-18T14:13:00.309Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Framework/Spring/SpringSecurity_#1/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/SpringSecurity_#1/</loc>
     
     <lastmod>2019-12-18T14:12:52.893Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Framework/Spring/JWT_authenticate_process/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/JWT_authenticate_process/</loc>
     
     <lastmod>2019-12-18T14:11:45.276Z</lastmod>
     

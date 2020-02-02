@@ -6,7 +6,7 @@
   <link href="/guriOH.github.io/atom.xml" rel="self"/>
   
   <link href="https://gurioh.github.io/guriOH.github.io/"/>
-  <updated>2020-01-27T10:09:19.321Z</updated>
+  <updated>2020-01-31T06:41:22.582Z</updated>
   <id>https://gurioh.github.io/guriOH.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>language/JavaScript/React</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/language/JavaScript/React/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/language/JavaScript/React/</id>
+    <published>2020-01-31T00:49:18.182Z</published>
+    <updated>2020-01-31T06:41:22.582Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="react-context">React Context</h1><p><img src="../../../image/2020-01-31-09-49-20.png" alt=""></p><h1 id="react-redux-flow">React + Redux flow</h1><p><img src="../../../image/2020-01-31-15-41-19.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;react-context&quot;&gt;React Context&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;../../../image/2020-01-31-09-49-20.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;react-redux-flow&quot;&gt;React +
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Tools/VSCode/shortcut</title>
@@ -318,6 +342,31 @@ SWF enabl
   </entry>
   
   <entry>
+    <title>스프링 부트배치 디비 설정</title>
+    <link href="https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/batch_init/"/>
+    <id>https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/batch_init/</id>
+    <published>2020-01-15T07:42:29.000Z</published>
+    <updated>2020-01-31T07:36:06.104Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>기본적으로 H2 DB를 사용할 경우엔 해당 테이블을 Boot가 실행될때 자동으로 생성해주지만, MySQL이나 Oracle과 같은 DB를 사용할때는 개발자가 직접 생성</li></ul><p>스프링 부트에서는 해당 테이블의 쿼리를 같이 배포하고 있다.</p><p><img src="../../../image/2020-01-31-16-35-04.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">schema- 검색!!</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;기본적으로 H2 DB를 사용할 경우엔 해당 테이블을 Boot가 실행될때 자동으로 생성해주지만, MySQL이나 Oracle과 같은 DB를 사용할때는 개발자가 직접 생성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;스프링 부트에서는 해당 테이블의 쿼리를 같이
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Advanced Load Balancers Theory</title>
     <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA%20Architecture/chapter02/"/>
     <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/HA Architecture/chapter02/</id>
@@ -472,56 +521,6 @@ SWF enabl
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Your VPC automatically comes with a default network ACL, and by default it allows all outbound and inboun
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Bastions</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper04/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper04/</id>
-    <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-20T06:34:24.951Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="bastion-host">Bastion host</h1><ul><li><p>A bastion host is a special purpose computer on a network specifically designed and configured to withstand attacks.</p></li><li><p>A NAT Gateway or NAT instance is used to provide internet traffic to EC2 instances in a private subnets.</p></li><li><p>A Bastion is used to securely adminster EC2 instances(Using SSH or RDP). Bastions are called Jump Boxes in Australia.</p></li><li><p>You cannot use a NAT Gateway as a Bastion host.</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;bastion-host&quot;&gt;Bastion host&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;A bastion host is a special purpose computer on a network specifically designed and con
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>VPC Endpoints</title>
-    <link href="https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper06/"/>
-    <id>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/VPCs/chaper06/</id>
-    <published>2020-01-15T03:55:35.000Z</published>
-    <updated>2020-01-20T06:53:46.249Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="vpc-endpoints">VPC Endpoints</h1><ul><li><p>A VPC endpoint enables you to privately connect your VPC to supported AWS services and VPC endpoint services powered by PrivateLink without requiring an internet gateway. NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC do not require public IP addresses to communicate with reesource in the service. Traffic between your VPC and the other service does not leave the Amazon network.</p></li><li><p>Endpoints are virtual devices.<br>They are horizontally scaled, redundant, and highly available VPC components that allow communication between instances in your VPC and services without imposing availability risks or bandwidth constraints on your network traffic</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;vpc-endpoints&quot;&gt;VPC Endpoints&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;A VPC endpoint enables you to privately connect your VPC to supported AWS services an
       
     
     </summary>
