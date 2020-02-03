@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/summary_all/</loc>
+    
+    <lastmod>2020-02-03T12:58:38.136Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/summary_word/</loc>
+    
+    <lastmod>2020-02-03T11:14:19.045Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Framework/SpringBoot/batch_init/</loc>
     
     <lastmod>2020-01-31T07:36:06.104Z</lastmod>
@@ -19,20 +33,6 @@
     <loc>https://gurioh.github.io/guriOH.github.io/Database/Mysql/sql_basic/</loc>
     
     <lastmod>2020-01-31T00:28:14.118Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/summary_word/</loc>
-    
-    <lastmod>2020-01-30T08:02:53.883Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/summary_all/</loc>
-    
-    <lastmod>2020-01-30T05:16:50.158Z</lastmod>
     
   </url>
   
