@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gurioh.github.io/guriOH.github.io/language/JavaScript/javascript_es6/</loc>
+    <loc>https://gurioh.github.io/guriOH.github.io/Basic/Browser/</loc>
     
-    <lastmod>2020-02-26T14:15:55.336Z</lastmod>
+    <lastmod>2020-02-28T15:20:31.967Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/Basic/internet/</loc>
+    
+    <lastmod>2020-02-28T15:01:15.670Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://gurioh.github.io/guriOH.github.io/Cloud/AWS/Exam/FAQ/</loc>
     
-    <lastmod>2020-02-26T11:08:14.498Z</lastmod>
+    <lastmod>2020-02-27T08:35:35.017Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gurioh.github.io/guriOH.github.io/language/JavaScript/javascript_es6/</loc>
+    
+    <lastmod>2020-02-26T14:15:55.336Z</lastmod>
     
   </url>
   
