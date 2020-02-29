@@ -6,6 +6,15 @@
     * [Shell](/guriOH.github.io/Linux/Shell/shellscript)
     * [스크립트 개발환경 만들기](/guriOH.github.io/Linux/Shell/Configuration_env_with_intellij)
   * AWS
+    * Exam
+      * [FAQ](/guriOH.github.io/Cloud/AWS/Exam/FAQ)
+      * [Part1](/guriOH.github.io/Cloud/AWS/Exam/part1)
+      * [Part2](/guriOH.github.io/Cloud/AWS/Exam/part2)
+      * [Part3](/guriOH.github.io/Cloud/AWS/Exam/part3)
+      * [Part4](/guriOH.github.io/Cloud/AWS/Exam/part4)
+      * [Part5](/guriOH.github.io/Cloud/AWS/Exam/part5)
+      * [Summary](/guriOH.github.io/Cloud/AWS/Exam/summary_all)
+      * [용어](/guriOH.github.io/Cloud/AWS/Exam/summary_word)
   * BigData
     * Kafka
       * [Kafka(카프카)](/guriOH.github.io/BigData/Kafka/What_is_kafka)
